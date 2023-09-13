@@ -1,0 +1,1659 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  commentId: T:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  id: KeyManagementService
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement
+  children:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Dispose
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(System.String,System.Security.Cryptography.RSAEncryptionPadding)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Hmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.HmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa(System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String,System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: KeyManagementService
+  nameWithType: KeyManagementService
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  type: Class
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: KeyManagementService
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 12
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: >-
+    GCP KeyManagementService
+
+    GCP 金鑰管理服務
+  example: []
+  syntax:
+    content: 'public class KeyManagementService : IKeyManagementServiceClient<KeyInfo>, IDisposable'
+    content.vb: Public Class KeyManagementService Implements IKeyManagementServiceClient(Of KeyInfo), IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Dispose
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Dispose
+  id: Dispose
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: KeyManagementService.Dispose()
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Dispose
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 23
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: Dispose
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(System.String,System.Security.Cryptography.RSAEncryptionPadding)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(System.String,System.Security.Cryptography.RSAEncryptionPadding)
+  id: Encrypt(System.String,System.Security.Cryptography.RSAEncryptionPadding)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: Encrypt(string, RSAEncryptionPadding)
+  nameWithType: KeyManagementService.Encrypt(string, RSAEncryptionPadding)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(string, System.Security.Cryptography.RSAEncryptionPadding)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Encrypt
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 35
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: 非對稱式加密
+  example: []
+  syntax:
+    content: public string Encrypt(string plaintext, RSAEncryptionPadding padding)
+    parameters:
+    - id: plaintext
+      type: System.String
+      description: 要加密的明文
+    - id: padding
+      type: System.Security.Cryptography.RSAEncryptionPadding
+      description: 加密演算法
+    return:
+      type: System.String
+      description: Base64String
+    content.vb: Public Function Encrypt(plaintext As String, padding As RSAEncryptionPadding) As String
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt*
+  exceptions:
+  - type: System.NullReferenceException
+    commentId: T:System.NullReferenceException
+    description: RSA is null. Please call the SetRsa() method first.
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: KeyManagementService.Encrypt(String, RSAEncryptionPadding)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(String, System.Security.Cryptography.RSAEncryptionPadding)
+  name.vb: Encrypt(String, RSAEncryptionPadding)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  id: Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: Encrypt(KeyInfo, string)
+  nameWithType: KeyManagementService.Encrypt(KeyInfo, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Encrypt
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 57
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: 對稱式加密
+  example: []
+  syntax:
+    content: public string Encrypt(KeyInfo keyInfo, string plaintext)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+      description: 金鑰資料
+    - id: plaintext
+      type: System.String
+      description: 要加密的明文
+    return:
+      type: System.String
+      description: Base64String
+    content.vb: Public Function Encrypt(keyInfo As KeyInfo, plaintext As String) As String
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  implements:
+  - Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  nameWithType.vb: KeyManagementService.Encrypt(KeyInfo, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, String)
+  name.vb: Encrypt(KeyInfo, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  id: Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: Decrypt(KeyInfo, string)
+  nameWithType: KeyManagementService.Decrypt(KeyInfo, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Decrypt
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 82
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: 對稱式解密
+  example: []
+  syntax:
+    content: public string Decrypt(KeyInfo keyInfo, string ciphertext)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+      description: 對稱式金鑰資料
+    - id: ciphertext
+      type: System.String
+      description: 加密後的Base64String
+    return:
+      type: System.String
+      description: 解密後的明文
+    content.vb: Public Function Decrypt(keyInfo As KeyInfo, ciphertext As String) As String
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  implements:
+  - Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  nameWithType.vb: KeyManagementService.Decrypt(KeyInfo, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, String)
+  name.vb: Decrypt(KeyInfo, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  id: Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: Decrypt(KeyInfoWithVersion, string)
+  nameWithType: KeyManagementService.Decrypt(KeyInfoWithVersion, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Decrypt
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 108
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: 非對稱式解密
+  example: []
+  syntax:
+    content: public string Decrypt(KeyInfoWithVersion keyInfo, string ciphertext)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+      description: 非對稱式金鑰資料
+    - id: ciphertext
+      type: System.String
+      description: 加密後的Base64String
+    return:
+      type: System.String
+      description: 解密後的明文
+    content.vb: Public Function Decrypt(keyInfo As KeyInfoWithVersion, ciphertext As String) As String
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: KeyManagementService.Decrypt(KeyInfoWithVersion, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, String)
+  name.vb: Decrypt(KeyInfoWithVersion, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Hmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Hmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  id: Hmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: Hmac(KeyInfoWithVersion, string)
+  nameWithType: KeyManagementService.Hmac(KeyInfoWithVersion, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Hmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Hmac
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 134
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: Hash Message Authentication Code
+  example: []
+  syntax:
+    content: public string Hmac(KeyInfoWithVersion keyInfo, string plaintext)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+      description: Hmac金鑰資料
+    - id: plaintext
+      type: System.String
+      description: 要hash的文字
+    return:
+      type: System.String
+      description: Base64String
+    content.vb: Public Function Hmac(keyInfo As KeyInfoWithVersion, plaintext As String) As String
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Hmac*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: KeyManagementService.Hmac(KeyInfoWithVersion, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Hmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, String)
+  name.vb: Hmac(KeyInfoWithVersion, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String,System.String)
+  id: VerifyHmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String,System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: VerifyHmac(KeyInfoWithVersion, string, string)
+  nameWithType: KeyManagementService.VerifyHmac(KeyInfoWithVersion, string, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, string, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: VerifyHmac
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 160
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: Verify Hash Message Authentication Code
+  example: []
+  syntax:
+    content: public bool VerifyHmac(KeyInfoWithVersion keyInfo, string plaintext, string signature)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+      description: Hmac金鑰資料
+    - id: plaintext
+      type: System.String
+      description: 原始文字
+    - id: signature
+      type: System.String
+      description: hash後的Base64String
+    return:
+      type: System.Boolean
+      description: 資料是否匹配
+    content.vb: Public Function VerifyHmac(keyInfo As KeyInfoWithVersion, plaintext As String, signature As String) As Boolean
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmac*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: KeyManagementService.VerifyHmac(KeyInfoWithVersion, String, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, String, String)
+  name.vb: VerifyHmac(KeyInfoWithVersion, String, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  id: EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: EncryptAsync(KeyInfo, string)
+  nameWithType: KeyManagementService.EncryptAsync(KeyInfo, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: EncryptAsync
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 186
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: 非同步對稱式加密
+  example: []
+  syntax:
+    content: public Task<string> EncryptAsync(KeyInfo keyInfo, string plaintext)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+      description: 對稱式金鑰資料
+    - id: plaintext
+      type: System.String
+      description: 要加密的明文
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Base64String
+    content.vb: Public Function EncryptAsync(keyInfo As KeyInfo, plaintext As String) As Task(Of String)
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.EncryptAsync*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  implements:
+  - Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  nameWithType.vb: KeyManagementService.EncryptAsync(KeyInfo, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, String)
+  name.vb: EncryptAsync(KeyInfo, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  id: DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: DecryptAsync(KeyInfo, string)
+  nameWithType: KeyManagementService.DecryptAsync(KeyInfo, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: DecryptAsync
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 211
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: 非同步對稱式解密
+  example: []
+  syntax:
+    content: public Task<string> DecryptAsync(KeyInfo keyInfo, string ciphertext)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+      description: 對稱式金鑰資料
+    - id: ciphertext
+      type: System.String
+      description: 加密後的Base64String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: 解密後的明文
+    content.vb: Public Function DecryptAsync(keyInfo As KeyInfo, ciphertext As String) As Task(Of String)
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  implements:
+  - Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  nameWithType.vb: KeyManagementService.DecryptAsync(KeyInfo, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, String)
+  name.vb: DecryptAsync(KeyInfo, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  id: DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: DecryptAsync(KeyInfoWithVersion, string)
+  nameWithType: KeyManagementService.DecryptAsync(KeyInfoWithVersion, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: DecryptAsync
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 237
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: 非同步非對稱式解密
+  example: []
+  syntax:
+    content: public Task<string> DecryptAsync(KeyInfoWithVersion keyInfo, string ciphertext)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+      description: 非對稱式金鑰資料
+    - id: ciphertext
+      type: System.String
+      description: 加密後的Base64String
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: 解密後的明文
+    content.vb: Public Function DecryptAsync(keyInfo As KeyInfoWithVersion, ciphertext As String) As Task(Of String)
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: KeyManagementService.DecryptAsync(KeyInfoWithVersion, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, String)
+  name.vb: DecryptAsync(KeyInfoWithVersion, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.HmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.HmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  id: HmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: HmacAsync(KeyInfoWithVersion, string)
+  nameWithType: KeyManagementService.HmacAsync(KeyInfoWithVersion, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.HmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: HmacAsync
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 264
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: Async Hash Message Authentication Code
+  example: []
+  syntax:
+    content: public Task<string> HmacAsync(KeyInfoWithVersion keyInfo, string plaintext)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+      description: Hmac金鑰資料
+    - id: plaintext
+      type: System.String
+      description: 要hash的文字
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: Base64String
+    content.vb: Public Function HmacAsync(keyInfo As KeyInfoWithVersion, plaintext As String) As Task(Of String)
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.HmacAsync*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: KeyManagementService.HmacAsync(KeyInfoWithVersion, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.HmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, String)
+  name.vb: HmacAsync(KeyInfoWithVersion, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String,System.String)
+  id: VerifyHmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String,System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: VerifyHmacAsync(KeyInfoWithVersion, string, string)
+  nameWithType: KeyManagementService.VerifyHmacAsync(KeyInfoWithVersion, string, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, string, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: VerifyHmacAsync
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 290
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: Async Verify Hash Message Authentication Code
+  example: []
+  syntax:
+    content: public Task<bool> VerifyHmacAsync(KeyInfoWithVersion keyInfo, string plaintext, string signature)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+      description: Hmac金鑰資料
+    - id: plaintext
+      type: System.String
+      description: 原始文字
+    - id: signature
+      type: System.String
+      description: hash後的Base64String
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: 資料是否匹配
+    content.vb: Public Function VerifyHmacAsync(keyInfo As KeyInfoWithVersion, plaintext As String, signature As String) As Task(Of Boolean)
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmacAsync*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: KeyManagementService.VerifyHmacAsync(KeyInfoWithVersion, String, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion, String, String)
+  name.vb: VerifyHmacAsync(KeyInfoWithVersion, String, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion)
+  id: SetRsa(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: SetRsa(KeyInfoWithVersion)
+  nameWithType: KeyManagementService.SetRsa(KeyInfoWithVersion)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: SetRsa
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 353
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: Set RSA (Public Key 透過 KeyInfoWithVersion 取得)
+  example: []
+  syntax:
+    content: public void SetRsa(KeyInfoWithVersion keyInfo)
+    parameters:
+    - id: keyInfo
+      type: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+      description: ''
+    content.vb: Public Sub SetRsa(keyInfo As KeyInfoWithVersion)
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa(System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa(System.String)
+  id: SetRsa(System.String)
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: SetRsa(string)
+  nameWithType: KeyManagementService.SetRsa(string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa(string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: SetRsa
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/KeyManagementService.cs
+    startLine: 371
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: Set RSA (Public Key 在本地端)
+  example: []
+  syntax:
+    content: public void SetRsa(string publicKeyStr)
+    parameters:
+    - id: publicKeyStr
+      type: System.String
+      description: ''
+    content.vb: Public Sub SetRsa(publicKeyStr As String)
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: ''
+  nameWithType.vb: KeyManagementService.SetRsa(String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa(String)
+  name.vb: SetRsa(String)
+references:
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement
+  commentId: N:Cathay.SDK.GCP.Security.CloudKeyManagement
+  href: Cathay.html
+  name: Cathay.SDK.GCP.Security.CloudKeyManagement
+  nameWithType: Cathay.SDK.GCP.Security.CloudKeyManagement
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security
+    name: Security
+    href: Cathay.SDK.GCP.Security.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement
+    name: CloudKeyManagement
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security
+    name: Security
+    href: Cathay.SDK.GCP.Security.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement
+    name: CloudKeyManagement
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}
+  commentId: T:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}
+  parent: Cathay.SDK.Cloud.Interface.KeyManagementService
+  definition: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  name: IKeyManagementServiceClient<KeyInfo>
+  nameWithType: IKeyManagementServiceClient<KeyInfo>
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo>
+  nameWithType.vb: IKeyManagementServiceClient(Of KeyInfo)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo)
+  name.vb: IKeyManagementServiceClient(Of KeyInfo)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+    name: IKeyManagementServiceClient
+  - name: <
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+    name: KeyInfo
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+    name: IKeyManagementServiceClient
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+    name: KeyInfo
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+  commentId: T:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+  name: IKeyManagementServiceClient<T>
+  nameWithType: IKeyManagementServiceClient<T>
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<T>
+  nameWithType.vb: IKeyManagementServiceClient(Of T)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of T)
+  name.vb: IKeyManagementServiceClient(Of T)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+    name: IKeyManagementServiceClient
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+    name: IKeyManagementServiceClient
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+  commentId: N:Cathay.SDK.Cloud.Interface.KeyManagementService
+  name: Cathay.SDK.Cloud.Interface.KeyManagementService
+  nameWithType: Cathay.SDK.Cloud.Interface.KeyManagementService
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+    name: KeyManagementService
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+    name: KeyManagementService
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Dispose*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Dispose
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html#Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Dispose
+  name: Dispose
+  nameWithType: KeyManagementService.Dispose
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.NullReferenceException
+  commentId: T:System.NullReferenceException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullreferenceexception
+  name: NullReferenceException
+  nameWithType: NullReferenceException
+  fullName: System.NullReferenceException
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html#Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt(System.String,System.Security.Cryptography.RSAEncryptionPadding)
+  name: Encrypt
+  nameWithType: KeyManagementService.Encrypt
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Encrypt
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Security.Cryptography.RSAEncryptionPadding
+  commentId: T:System.Security.Cryptography.RSAEncryptionPadding
+  parent: System.Security.Cryptography
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.cryptography.rsaencryptionpadding
+  name: RSAEncryptionPadding
+  nameWithType: RSAEncryptionPadding
+  fullName: System.Security.Cryptography.RSAEncryptionPadding
+- uid: System.Security.Cryptography
+  commentId: N:System.Security.Cryptography
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Security.Cryptography
+  nameWithType: System.Security.Cryptography
+  fullName: System.Security.Cryptography
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Cryptography
+    name: Cryptography
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.cryptography
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Cryptography
+    name: Cryptography
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.cryptography
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  parent: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}
+  definition: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.Encrypt(`0,System.String)
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  name: Encrypt(KeyInfo, string)
+  nameWithType: IKeyManagementServiceClient<KeyInfo>.Encrypt(KeyInfo, string)
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo>.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, string)
+  nameWithType.vb: IKeyManagementServiceClient(Of KeyInfo).Encrypt(KeyInfo, String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo).Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, String)
+  name.vb: Encrypt(KeyInfo, String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+    name: Encrypt
+  - name: (
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+    name: KeyInfo
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.Encrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+    name: Encrypt
+  - name: (
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+    name: KeyInfo
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+  commentId: T:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  name: KeyInfo
+  nameWithType: KeyInfo
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.Encrypt(`0,System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.Encrypt(`0,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Encrypt(T, string)
+  nameWithType: IKeyManagementServiceClient<T>.Encrypt(T, string)
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<T>.Encrypt(T, string)
+  nameWithType.vb: IKeyManagementServiceClient(Of T).Encrypt(T, String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of T).Encrypt(T, String)
+  name.vb: Encrypt(T, String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.Encrypt(`0,System.String)
+    name: Encrypt
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.Encrypt(`0,System.String)
+    name: Encrypt
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html#Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  name: Decrypt
+  nameWithType: KeyManagementService.Decrypt
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Decrypt
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  parent: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}
+  definition: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.Decrypt(`0,System.String)
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  name: Decrypt(KeyInfo, string)
+  nameWithType: IKeyManagementServiceClient<KeyInfo>.Decrypt(KeyInfo, string)
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo>.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, string)
+  nameWithType.vb: IKeyManagementServiceClient(Of KeyInfo).Decrypt(KeyInfo, String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo).Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, String)
+  name.vb: Decrypt(KeyInfo, String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+    name: Decrypt
+  - name: (
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+    name: KeyInfo
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.Decrypt(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+    name: Decrypt
+  - name: (
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+    name: KeyInfo
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.Decrypt(`0,System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.Decrypt(`0,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Decrypt(T, string)
+  nameWithType: IKeyManagementServiceClient<T>.Decrypt(T, string)
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<T>.Decrypt(T, string)
+  nameWithType.vb: IKeyManagementServiceClient(Of T).Decrypt(T, String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of T).Decrypt(T, String)
+  name.vb: Decrypt(T, String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.Decrypt(`0,System.String)
+    name: Decrypt
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.Decrypt(`0,System.String)
+    name: Decrypt
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+  commentId: T:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion.html
+  name: KeyInfoWithVersion
+  nameWithType: KeyInfoWithVersion
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Hmac*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Hmac
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html#Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Hmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  name: Hmac
+  nameWithType: KeyManagementService.Hmac
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.Hmac
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmac*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmac
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html#Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmac(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String,System.String)
+  name: VerifyHmac
+  nameWithType: KeyManagementService.VerifyHmac
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmac
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.EncryptAsync*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.EncryptAsync
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html#Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  name: EncryptAsync
+  nameWithType: KeyManagementService.EncryptAsync
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.EncryptAsync
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  parent: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}
+  definition: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.EncryptAsync(`0,System.String)
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  name: EncryptAsync(KeyInfo, string)
+  nameWithType: IKeyManagementServiceClient<KeyInfo>.EncryptAsync(KeyInfo, string)
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo>.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, string)
+  nameWithType.vb: IKeyManagementServiceClient(Of KeyInfo).EncryptAsync(KeyInfo, String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo).EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, String)
+  name.vb: EncryptAsync(KeyInfo, String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+    name: EncryptAsync
+  - name: (
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+    name: KeyInfo
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.EncryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+    name: EncryptAsync
+  - name: (
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+    name: KeyInfo
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.EncryptAsync(`0,System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.EncryptAsync(`0,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: EncryptAsync(T, string)
+  nameWithType: IKeyManagementServiceClient<T>.EncryptAsync(T, string)
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<T>.EncryptAsync(T, string)
+  nameWithType.vb: IKeyManagementServiceClient(Of T).EncryptAsync(T, String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of T).EncryptAsync(T, String)
+  name.vb: EncryptAsync(T, String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.EncryptAsync(`0,System.String)
+    name: EncryptAsync
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.EncryptAsync(`0,System.String)
+    name: EncryptAsync
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html#Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  name: DecryptAsync
+  nameWithType: KeyManagementService.DecryptAsync
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.DecryptAsync
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+  parent: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}
+  definition: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.DecryptAsync(`0,System.String)
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  name: DecryptAsync(KeyInfo, string)
+  nameWithType: IKeyManagementServiceClient<KeyInfo>.DecryptAsync(KeyInfo, string)
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo>.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, string)
+  nameWithType.vb: IKeyManagementServiceClient(Of KeyInfo).DecryptAsync(KeyInfo, String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo).DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo, String)
+  name.vb: DecryptAsync(KeyInfo, String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+    name: DecryptAsync
+  - name: (
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+    name: KeyInfo
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient{Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo}.DecryptAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo,System.String)
+    name: DecryptAsync
+  - name: (
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+    name: KeyInfo
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.DecryptAsync(`0,System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.DecryptAsync(`0,System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: DecryptAsync(T, string)
+  nameWithType: IKeyManagementServiceClient<T>.DecryptAsync(T, string)
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<T>.DecryptAsync(T, string)
+  nameWithType.vb: IKeyManagementServiceClient(Of T).DecryptAsync(T, String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of T).DecryptAsync(T, String)
+  name.vb: DecryptAsync(T, String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.DecryptAsync(`0,System.String)
+    name: DecryptAsync
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1.DecryptAsync(`0,System.String)
+    name: DecryptAsync
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.HmacAsync*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.HmacAsync
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html#Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.HmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String)
+  name: HmacAsync
+  nameWithType: KeyManagementService.HmacAsync
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.HmacAsync
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmacAsync*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmacAsync
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html#Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmacAsync(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion,System.String,System.String)
+  name: VerifyHmacAsync
+  nameWithType: KeyManagementService.VerifyHmacAsync
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.VerifyHmacAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html#Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa(Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion)
+  name: SetRsa
+  nameWithType: KeyManagementService.SetRsa
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.SetRsa

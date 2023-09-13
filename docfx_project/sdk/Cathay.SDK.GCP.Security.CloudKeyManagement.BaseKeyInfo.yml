@@ -1,0 +1,595 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  commentId: T:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  id: BaseKeyInfo
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement
+  children:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.#ctor(System.String,System.String,System.String,System.String)
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyId
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyRingId
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.LocationId
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.ProjectId
+  langs:
+  - csharp
+  - vb
+  name: BaseKeyInfo
+  nameWithType: BaseKeyInfo
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  type: Class
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: BaseKeyInfo
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+    startLine: 7
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: 基礎金鑰資料
+  example: []
+  syntax:
+    content: 'public class BaseKeyInfo : IBaseKeyInfo'
+    content.vb: Public Class BaseKeyInfo Implements IBaseKeyInfo
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+  implements:
+  - Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.#ctor(System.String,System.String,System.String,System.String)
+  commentId: M:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.#ctor(System.String,System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String,System.String)'
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  langs:
+  - csharp
+  - vb
+  name: BaseKeyInfo(string, string, string, string)
+  nameWithType: BaseKeyInfo.BaseKeyInfo(string, string, string, string)
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.BaseKeyInfo(string, string, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: .ctor
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+    startLine: 16
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: 基礎金鑰資料
+  example: []
+  syntax:
+    content: protected BaseKeyInfo(string projectId, string locationId, string keyRingId, string keyId)
+    parameters:
+    - id: projectId
+      type: System.String
+      description: GCP ProjectId
+    - id: locationId
+      type: System.String
+      description: GCP LocationId
+    - id: keyRingId
+      type: System.String
+      description: GCP KeyRingId
+    - id: keyId
+      type: System.String
+      description: GCP KeyId
+    content.vb: Protected Sub New(projectId As String, locationId As String, keyRingId As String, keyId As String)
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.#ctor*
+  nameWithType.vb: BaseKeyInfo.New(String, String, String, String)
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.New(String, String, String, String)
+  name.vb: New(String, String, String, String)
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.ProjectId
+  commentId: P:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.ProjectId
+  id: ProjectId
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  langs:
+  - csharp
+  - vb
+  name: ProjectId
+  nameWithType: BaseKeyInfo.ProjectId
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.ProjectId
+  type: Property
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: ProjectId
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+    startLine: 27
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: GCP ProjectId
+  example: []
+  syntax:
+    content: public string ProjectId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProjectId As String
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.ProjectId*
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.LocationId
+  commentId: P:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.LocationId
+  id: LocationId
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  langs:
+  - csharp
+  - vb
+  name: LocationId
+  nameWithType: BaseKeyInfo.LocationId
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.LocationId
+  type: Property
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: LocationId
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+    startLine: 31
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: GCP LocationId
+  example: []
+  syntax:
+    content: public string LocationId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property LocationId As String
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.LocationId*
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyRingId
+  commentId: P:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyRingId
+  id: KeyRingId
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  langs:
+  - csharp
+  - vb
+  name: KeyRingId
+  nameWithType: BaseKeyInfo.KeyRingId
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyRingId
+  type: Property
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: KeyRingId
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+    startLine: 35
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: GCP KeyRingId
+  example: []
+  syntax:
+    content: public string KeyRingId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property KeyRingId As String
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyRingId*
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyId
+  commentId: P:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyId
+  id: KeyId
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  langs:
+  - csharp
+  - vb
+  name: KeyId
+  nameWithType: BaseKeyInfo.KeyId
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyId
+  type: Property
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: KeyId
+    path: ../Cathay.SDK.GCP.Security.CloudKeyManagement/BaseKeyInfo.cs
+    startLine: 39
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+  namespace: Cathay.SDK.GCP.Security.CloudKeyManagement
+  summary: GCP KeyId
+  example: []
+  syntax:
+    content: public string KeyId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property KeyId As String
+  overload: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyId*
+  implements:
+  - Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId
+references:
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement
+  commentId: N:Cathay.SDK.GCP.Security.CloudKeyManagement
+  href: Cathay.html
+  name: Cathay.SDK.GCP.Security.CloudKeyManagement
+  nameWithType: Cathay.SDK.GCP.Security.CloudKeyManagement
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security
+    name: Security
+    href: Cathay.SDK.GCP.Security.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement
+    name: CloudKeyManagement
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security
+    name: Security
+    href: Cathay.SDK.GCP.Security.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement
+    name: CloudKeyManagement
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  commentId: T:Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  parent: Cathay.SDK.Cloud.Interface.KeyManagementService
+  name: IBaseKeyInfo
+  nameWithType: IBaseKeyInfo
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+  commentId: N:Cathay.SDK.Cloud.Interface.KeyManagementService
+  name: Cathay.SDK.Cloud.Interface.KeyManagementService
+  nameWithType: Cathay.SDK.Cloud.Interface.KeyManagementService
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+    name: KeyManagementService
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+    name: KeyManagementService
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.#ctor*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.#ctor
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.html#Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.#ctor(System.String,System.String,System.String,System.String)
+  name: BaseKeyInfo
+  nameWithType: BaseKeyInfo.BaseKeyInfo
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.BaseKeyInfo
+  nameWithType.vb: BaseKeyInfo.New
+  fullName.vb: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.ProjectId*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.ProjectId
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.html#Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.ProjectId
+  name: ProjectId
+  nameWithType: BaseKeyInfo.ProjectId
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.ProjectId
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.LocationId*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.LocationId
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.html#Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.LocationId
+  name: LocationId
+  nameWithType: BaseKeyInfo.LocationId
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.LocationId
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyRingId*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyRingId
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.html#Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyRingId
+  name: KeyRingId
+  nameWithType: BaseKeyInfo.KeyRingId
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyRingId
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyId*
+  commentId: Overload:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyId
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.html#Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyId
+  name: KeyId
+  nameWithType: BaseKeyInfo.KeyId
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.KeyId
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId
+  commentId: P:Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId
+  parent: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  name: KeyId
+  nameWithType: IBaseKeyInfo.KeyId
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId

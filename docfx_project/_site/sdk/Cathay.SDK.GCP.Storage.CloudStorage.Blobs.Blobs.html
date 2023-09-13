@@ -1,0 +1,629 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Blobs
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Blobs
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Cathay-CADS/Cathay.SDK.GCP/new/feature-docfx/apiSpec/new?filename=Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs.md&amp;value=---%0Auid%3A%20Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs">
+
+
+
+  <h1 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs" class="text-break">
+    Class Blobs
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cathay.html">Cathay</a>.<a class="xref" href="Cathay.SDK.html">SDK</a>.<a class="xref" href="Cathay.SDK.GCP.html">GCP</a>.<a class="xref" href="Cathay.SDK.GCP.Storage.html">Storage</a>.<a class="xref" href="Cathay.SDK.GCP.Storage.CloudStorage.html">CloudStorage</a>.<a class="xref" href="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.html">Blobs</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Cathay.SDK.GCP.Storage.CloudStorage.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Blobs : GenericBlobStorage, IBlobStorage, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">GenericBlobStorage</span></div>
+      <div><span class="xref">Blobs</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IBlobStorage</span></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">GenericBlobStorage.ListAsync(ListOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">GenericBlobStorage.DeleteAsync(IEnumerable&lt;string&gt;, bool, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">GenericBlobStorage.ExistsAsync(IEnumerable&lt;string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">GenericBlobStorage.GetBlobsAsync(IEnumerable&lt;string&gt;, CancellationToken)</a>
+    </div>
+    <div>
+      <span class="xref">GenericBlobStorage.Dispose()</span>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs__ctor_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.#ctor*"></a>
+
+  <h3 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs__ctor_System_String_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.#ctor(System.String)">
+  Blobs(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L20"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Blobs(string bucketName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bucketName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_DeleteSingleAsync_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync*"></a>
+
+  <h3 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_DeleteSingleAsync_System_String_System_Boolean_System_Threading_CancellationToken_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)">
+  DeleteSingleAsync(string, bool, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>異步刪除GCP Storage指定全路徑的檔案</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task DeleteSingleAsync(string fullPath, bool mustExist, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要刪除的Blob的全路徑。</p>
+</dd>
+    <dt><code>mustExist</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>指定Blob是否必須存在。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>可供取消操作的token。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>執行任務的異步操作。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_ExistsAsync_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync*"></a>
+
+  <h3 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_ExistsAsync_System_String_System_Threading_CancellationToken_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync(System.String,System.Threading.CancellationToken)">
+  ExistsAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>異步確定指定全路徑的檔案是否存在</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;bool&gt; ExistsAsync(string fullPath, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Blob的全路徑。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>可供取消操作的token。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd><p>如果存在返回true，否則返回false。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_GetBlobAsync_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync*"></a>
+
+  <h3 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_GetBlobAsync_System_String_Google_Cloud_Storage_V1_GetObjectOptions_System_Threading_CancellationToken_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(System.String,Google.Cloud.Storage.V1.GetObjectOptions,System.Threading.CancellationToken)">
+  GetBlobAsync(string, GetObjectOptions, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>異步獲取GCP Storage指定全路徑的檔案回傳成Blob格式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;Blob&gt; GetBlobAsync(string fullPath, GetObjectOptions options, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Blob的全路徑。</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/googleapis/google-cloud-dotnet/blob/275cc46f2b573453b1cb909b1b271e99c5598f91/apis/Google.Cloud.Storage.V1/Google.Cloud.Storage.V1/GetObjectOptions.cs">GetObjectOptions</a></dt>
+    <dd><p>獲取Blob的額外選項。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>可供取消操作的token。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Blob</span>&gt;</dt>
+    <dd><p>指定全路徑的Blob。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_GetBlobAsync_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync*"></a>
+
+  <h3 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_GetBlobAsync_System_String_System_Threading_CancellationToken_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(System.String,System.Threading.CancellationToken)">
+  GetBlobAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>異步獲取GCP Storage指定全路徑的檔案回傳成Blob格式</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;Blob&gt; GetBlobAsync(string fullPath, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Blob的全路徑。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>可供取消操作的token。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Blob</span>&gt;</dt>
+    <dd><p>指定全路徑的Blob。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_ListAtAsync_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync*"></a>
+
+  <h3 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_ListAtAsync_System_String_Cathay_SDK_Cloud_Interface_Storage_ListOptions_System_Threading_CancellationToken_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)">
+  ListAtAsync(string, ListOptions, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>異步列出GCP Storage上指定路徑的所有檔案</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override Task&lt;IReadOnlyCollection&lt;Blob&gt;&gt; ListAtAsync(string path, ListOptions options, CancellationToken cancellationToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>path</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>要列出Blob的路徑。</p>
+</dd>
+    <dt><code>options</code> <span class="xref">ListOptions</span></dt>
+    <dd><p>列出Blob的選項。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>可供取消操作的token。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<span class="xref">Blob</span>&gt;&gt;</dt>
+    <dd><p>指定路徑的Blob的集合。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_OpenReadAsync_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync*"></a>
+
+  <h3 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_OpenReadAsync_System_String_System_Threading_CancellationToken_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync(System.String,System.Threading.CancellationToken)">
+  OpenReadAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L236"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>異步獲取GCP Storage指定路徑檔案</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task&lt;Stream&gt; OpenReadAsync(string fullPath, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Blob的全路徑。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>可供取消操作的token。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>包含Blob內容的Stream。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_SetBlobsAsync_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync*"></a>
+
+  <h3 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_SetBlobsAsync_System_Collections_Generic_IEnumerable_Cathay_SDK_Cloud_Interface_Storage_Blob__System_Threading_CancellationToken_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)">
+  SetBlobsAsync(IEnumerable&lt;Blob&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>異步更新多個Blob Metadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task SetBlobsAsync(IEnumerable&lt;Blob&gt; blobs, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blobs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Blob</span>&gt;</dt>
+    <dd><p>要設置的Blob集合。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>可供取消操作的token。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>執行任務的異步操作。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_WriteAsync_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync*"></a>
+
+  <h3 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_WriteAsync_System_String_System_IO_Stream_System_Boolean_System_Threading_CancellationToken_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)">
+  WriteAsync(string, Stream, bool, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L205"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>將數據流(Stream)異步寫入到Google Cloud Storage中的指定全路徑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task WriteAsync(string fullPath, Stream dataStream, bool append = false, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Blob的全路徑。</p>
+</dd>
+    <dt><code>dataStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>要寫入的資料流。</p>
+</dd>
+    <dt><code>append</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否為追加模式。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>可供取消操作的token。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>執行任務的異步操作。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_WriteAsync_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync*"></a>
+
+  <h3 id="Cathay_SDK_GCP_Storage_CloudStorage_Blobs_Blobs_WriteAsync_System_String_System_IO_Stream_System_String_Google_Cloud_Storage_V1_UploadObjectOptions_System_Threading_CancellationToken_" data-uid="Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(System.String,System.IO.Stream,System.String,Google.Cloud.Storage.V1.UploadObjectOptions,System.Threading.CancellationToken)">
+  WriteAsync(string, Stream, string, UploadObjectOptions, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>將數據流(Stream)異步寫入到Google Cloud Storage中的指定全路徑</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task WriteAsync(string fullPath, Stream dataStream, string contentType, UploadObjectOptions options, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Blob的全路徑。</p>
+</dd>
+    <dt><code>dataStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>要寫入的資料流。</p>
+</dd>
+    <dt><code>contentType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>內容類型。</p>
+</dd>
+    <dt><code>options</code> <a class="xref" href="https://github.com/googleapis/google-cloud-dotnet/blob/275cc46f2b573453b1cb909b1b271e99c5598f91/apis/Google.Cloud.Storage.V1/Google.Cloud.Storage.V1/UploadObjectOptions.cs">UploadObjectOptions</a></dt>
+    <dd><p>上傳對象的額外選項。</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd><p>可供取消操作的token。</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>執行任務的異步操作。</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs/#L13" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

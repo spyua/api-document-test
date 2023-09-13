@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.PubSub
+  commentId: N:Cathay.SDK.GCP.PubSub
+  id: Cathay.SDK.GCP.PubSub
+  children:
+  - Cathay.SDK.GCP.PubSub.PubSubService
+  - Cathay.SDK.GCP.PubSub.Receiver
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.GCP.PubSub
+  nameWithType: Cathay.SDK.GCP.PubSub
+  fullName: Cathay.SDK.GCP.PubSub
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+references:
+- uid: Cathay.SDK.GCP.PubSub.Receiver
+  commentId: T:Cathay.SDK.GCP.PubSub.Receiver
+  parent: Cathay.SDK.GCP.PubSub
+  href: Cathay.SDK.GCP.PubSub.Receiver.html
+  name: Receiver
+  nameWithType: Receiver
+  fullName: Cathay.SDK.GCP.PubSub.Receiver
+- uid: Cathay.SDK.GCP.PubSub.PubSubService
+  commentId: T:Cathay.SDK.GCP.PubSub.PubSubService
+  href: Cathay.SDK.GCP.PubSub.PubSubService.html
+  name: PubSubService
+  nameWithType: PubSubService
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService
+- uid: Cathay.SDK.GCP.PubSub
+  commentId: N:Cathay.SDK.GCP.PubSub
+  href: Cathay.html
+  name: Cathay.SDK.GCP.PubSub
+  nameWithType: Cathay.SDK.GCP.PubSub
+  fullName: Cathay.SDK.GCP.PubSub
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.PubSub
+    name: PubSub
+    href: Cathay.SDK.GCP.PubSub.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.PubSub
+    name: PubSub
+    href: Cathay.SDK.GCP.PubSub.html

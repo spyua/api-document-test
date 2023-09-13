@@ -1,0 +1,1443 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.PubSub.PubSubService
+  commentId: T:Cathay.SDK.GCP.PubSub.PubSubService
+  id: PubSubService
+  parent: Cathay.SDK.GCP.PubSub
+  children:
+  - Cathay.SDK.GCP.PubSub.PubSubService.#ctor(Cathay.SDK.Cloud.Interface.MessageQueue.ClientType,System.String,System.String,System.Int32)
+  - Cathay.SDK.GCP.PubSub.PubSubService.#ctor(System.String,System.String,System.String)
+  - Cathay.SDK.GCP.PubSub.PubSubService.#ctor(System.String,System.String,System.String,System.Int32)
+  - Cathay.SDK.GCP.PubSub.PubSubService.CreateReceiver(System.String,System.Int32)
+  - Cathay.SDK.GCP.PubSub.PubSubService.GetContent(Google.Cloud.PubSub.V1.PubsubMessage)
+  - Cathay.SDK.GCP.PubSub.PubSubService.GetContent(Google.Cloud.PubSub.V1.ReceivedMessage)
+  - Cathay.SDK.GCP.PubSub.PubSubService.PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  - Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  - Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)
+  - Cathay.SDK.GCP.PubSub.PubSubService.Received(System.String)
+  - Cathay.SDK.GCP.PubSub.PubSubService.receiver
+  langs:
+  - csharp
+  - vb
+  name: PubSubService
+  nameWithType: PubSubService
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService
+  type: Class
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: PubSubService
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 9
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: PubSub Client Type
+  example: []
+  syntax:
+    content: 'public class PubSubService : IMessageQueue'
+    content.vb: Public Class PubSubService Implements IMessageQueue
+  inheritance:
+  - System.Object
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.receiver
+  commentId: P:Cathay.SDK.GCP.PubSub.PubSubService.receiver
+  id: receiver
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: receiver
+  nameWithType: PubSubService.receiver
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.receiver
+  type: Property
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: receiver
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 13
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  syntax:
+    content: public Receiver receiver { get; }
+    parameters: []
+    return:
+      type: Cathay.SDK.GCP.PubSub.Receiver
+    content.vb: Public Property receiver As Receiver
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.receiver*
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.#ctor(Cathay.SDK.Cloud.Interface.MessageQueue.ClientType,System.String,System.String,System.Int32)
+  commentId: M:Cathay.SDK.GCP.PubSub.PubSubService.#ctor(Cathay.SDK.Cloud.Interface.MessageQueue.ClientType,System.String,System.String,System.Int32)
+  id: '#ctor(Cathay.SDK.Cloud.Interface.MessageQueue.ClientType,System.String,System.String,System.Int32)'
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: PubSubService(ClientType, string, string, int)
+  nameWithType: PubSubService.PubSubService(ClientType, string, string, int)
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.PubSubService(Cathay.SDK.Cloud.Interface.MessageQueue.ClientType, string, string, int)
+  type: Constructor
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: .ctor
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 25
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: init Publisher or Subscriber
+  example: []
+  syntax:
+    content: public PubSubService(ClientType type, string projectID, string ID, int number = 1)
+    parameters:
+    - id: type
+      type: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+      description: PubSub Client Type
+    - id: projectID
+      type: System.String
+      description: 專案代碼
+    - id: ID
+      type: System.String
+      description: Client Name(Topic or Subscribe)
+    - id: number
+      type: System.Int32
+      description: Subscribe每一次讀取的訊息數
+    content.vb: Public Sub New(type As ClientType, projectID As String, ID As String, number As Integer = 1)
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.#ctor*
+  nameWithType.vb: PubSubService.New(ClientType, String, String, Integer)
+  fullName.vb: Cathay.SDK.GCP.PubSub.PubSubService.New(Cathay.SDK.Cloud.Interface.MessageQueue.ClientType, String, String, Integer)
+  name.vb: New(ClientType, String, String, Integer)
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.#ctor(System.String,System.String,System.String)
+  commentId: M:Cathay.SDK.GCP.PubSub.PubSubService.#ctor(System.String,System.String,System.String)
+  id: '#ctor(System.String,System.String,System.String)'
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: PubSubService(string, string, string)
+  nameWithType: PubSubService.PubSubService(string, string, string)
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.PubSubService(string, string, string)
+  type: Constructor
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: .ctor
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 44
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: init Queue Publisher
+  example: []
+  syntax:
+    content: public PubSubService(string projectID, string ID, string orderingKey)
+    parameters:
+    - id: projectID
+      type: System.String
+      description: 專案代碼
+    - id: ID
+      type: System.String
+      description: Client Name(Queue)
+    - id: orderingKey
+      type: System.String
+      description: 排序key
+    content.vb: Public Sub New(projectID As String, ID As String, orderingKey As String)
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.#ctor*
+  nameWithType.vb: PubSubService.New(String, String, String)
+  fullName.vb: Cathay.SDK.GCP.PubSub.PubSubService.New(String, String, String)
+  name.vb: New(String, String, String)
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.#ctor(System.String,System.String,System.String,System.Int32)
+  commentId: M:Cathay.SDK.GCP.PubSub.PubSubService.#ctor(System.String,System.String,System.String,System.Int32)
+  id: '#ctor(System.String,System.String,System.String,System.Int32)'
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: PubSubService(string, string, string, int)
+  nameWithType: PubSubService.PubSubService(string, string, string, int)
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.PubSubService(string, string, string, int)
+  type: Constructor
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: .ctor
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 58
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: init both Publisher and Subscriber
+  example: []
+  syntax:
+    content: public PubSubService(string projectID, string topicID, string subscribeID, int number = 1)
+    parameters:
+    - id: projectID
+      type: System.String
+      description: 專案代碼
+    - id: topicID
+      type: System.String
+      description: topic代碼
+    - id: subscribeID
+      type: System.String
+      description: subscribe代碼
+    - id: number
+      type: System.Int32
+      description: Subscribe每一次讀取的訊息數
+    content.vb: Public Sub New(projectID As String, topicID As String, subscribeID As String, number As Integer = 1)
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.#ctor*
+  nameWithType.vb: PubSubService.New(String, String, String, Integer)
+  fullName.vb: Cathay.SDK.GCP.PubSub.PubSubService.New(String, String, String, Integer)
+  name.vb: New(String, String, String, Integer)
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  commentId: M:Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  id: PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: PublishTopicMessage(string, Dictionary<string, string>, string)
+  nameWithType: PubSubService.PublishTopicMessage(string, Dictionary<string, string>, string)
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessage(string, System.Collections.Generic.Dictionary<string, string>, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: PublishTopicMessage
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 74
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: 推送訊息至TOPIC
+  example: []
+  syntax:
+    content: public bool PublishTopicMessage(string message, Dictionary<string, string> arrtibute = null, string topicID = "")
+    parameters:
+    - id: message
+      type: System.String
+      description: 訊息內容
+    - id: arrtibute
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: 訊息資訊
+    - id: topicID
+      type: System.String
+      description: 目標Topic, 未指定則使用初始值
+    return:
+      type: System.Boolean
+      description: 是否推送成功
+    content.vb: Public Function PublishTopicMessage(message As String, arrtibute As Dictionary(Of String, String) = Nothing, topicID As String = "") As Boolean
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessage*
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  nameWithType.vb: PubSubService.PublishTopicMessage(String, Dictionary(Of String, String), String)
+  fullName.vb: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessage(String, System.Collections.Generic.Dictionary(Of String, String), String)
+  name.vb: PublishTopicMessage(String, Dictionary(Of String, String), String)
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)
+  commentId: M:Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)
+  id: PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: PublishTopicMessages(IEnumerable<string>, bool, string)
+  nameWithType: PubSubService.PublishTopicMessages(IEnumerable<string>, bool, string)
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessages(System.Collections.Generic.IEnumerable<string>, bool, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: PublishTopicMessages
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 89
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: 推送訊息至TOPIC(多筆)
+  example: []
+  syntax:
+    content: public int PublishTopicMessages(IEnumerable<string> messages, bool ignoreFail = false, string topicID = "")
+    parameters:
+    - id: messages
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: 訊息內容
+    - id: ignoreFail
+      type: System.Boolean
+      description: 推送發生異常時中斷或略過, 預設為中斷
+    - id: topicID
+      type: System.String
+      description: 目標Topic, 未指定則使用初始值
+    return:
+      type: System.Int32
+      description: 推送筆數
+    content.vb: Public Function PublishTopicMessages(messages As IEnumerable(Of String), ignoreFail As Boolean = False, topicID As String = "") As Integer
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessages*
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)
+  nameWithType.vb: PubSubService.PublishTopicMessages(IEnumerable(Of String), Boolean, String)
+  fullName.vb: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessages(System.Collections.Generic.IEnumerable(Of String), Boolean, String)
+  name.vb: PublishTopicMessages(IEnumerable(Of String), Boolean, String)
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  commentId: M:Cathay.SDK.GCP.PubSub.PubSubService.PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  id: PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: PublishQueueMessage(string, Dictionary<string, string>, string)
+  nameWithType: PubSubService.PublishQueueMessage(string, Dictionary<string, string>, string)
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.PublishQueueMessage(string, System.Collections.Generic.Dictionary<string, string>, string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: PublishQueueMessage
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 104
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: 推送訊息至Queue
+  example: []
+  syntax:
+    content: public bool PublishQueueMessage(string message, Dictionary<string, string> attribute = null, string queueID = "")
+    parameters:
+    - id: message
+      type: System.String
+      description: 訊息內容
+    - id: attribute
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: 目標Topic, 未指定則使用初始值
+    - id: queueID
+      type: System.String
+      description: 目標Topic, 未指定則使用初始值
+    return:
+      type: System.Boolean
+      description: 是否推送成功
+    content.vb: Public Function PublishQueueMessage(message As String, attribute As Dictionary(Of String, String) = Nothing, queueID As String = "") As Boolean
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.PublishQueueMessage*
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  nameWithType.vb: PubSubService.PublishQueueMessage(String, Dictionary(Of String, String), String)
+  fullName.vb: Cathay.SDK.GCP.PubSub.PubSubService.PublishQueueMessage(String, System.Collections.Generic.Dictionary(Of String, String), String)
+  name.vb: PublishQueueMessage(String, Dictionary(Of String, String), String)
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.CreateReceiver(System.String,System.Int32)
+  commentId: M:Cathay.SDK.GCP.PubSub.PubSubService.CreateReceiver(System.String,System.Int32)
+  id: CreateReceiver(System.String,System.Int32)
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: CreateReceiver(string, int)
+  nameWithType: PubSubService.CreateReceiver(string, int)
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.CreateReceiver(string, int)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: CreateReceiver
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 210
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: 建立 Receiver
+  example: []
+  syntax:
+    content: public void CreateReceiver(string ID, int number)
+    parameters:
+    - id: ID
+      type: System.String
+      description: subscription
+    - id: number
+      type: System.Int32
+      description: 接收筆數
+    content.vb: Public Sub CreateReceiver(ID As String, number As Integer)
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.CreateReceiver*
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.CreateReceiver(System.String,System.Int32)
+  nameWithType.vb: PubSubService.CreateReceiver(String, Integer)
+  fullName.vb: Cathay.SDK.GCP.PubSub.PubSubService.CreateReceiver(String, Integer)
+  name.vb: CreateReceiver(String, Integer)
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.Received(System.String)
+  commentId: M:Cathay.SDK.GCP.PubSub.PubSubService.Received(System.String)
+  id: Received(System.String)
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: Received(string)
+  nameWithType: PubSubService.Received(string)
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.Received(string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Received
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 219
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: Acknowledge
+  example: []
+  syntax:
+    content: public bool Received(string ackID)
+    parameters:
+    - id: ackID
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: 是否ack成功
+    content.vb: Public Function Received(ackID As String) As Boolean
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.Received*
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.Received(System.String)
+  nameWithType.vb: PubSubService.Received(String)
+  fullName.vb: Cathay.SDK.GCP.PubSub.PubSubService.Received(String)
+  name.vb: Received(String)
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.GetContent(Google.Cloud.PubSub.V1.ReceivedMessage)
+  commentId: M:Cathay.SDK.GCP.PubSub.PubSubService.GetContent(Google.Cloud.PubSub.V1.ReceivedMessage)
+  id: GetContent(Google.Cloud.PubSub.V1.ReceivedMessage)
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: GetContent(ReceivedMessage)
+  nameWithType: PubSubService.GetContent(ReceivedMessage)
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.GetContent(Google.Cloud.PubSub.V1.ReceivedMessage)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: GetContent
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 235
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: 從ReceivedMessage的訊息中獲取資料內容
+  example: []
+  syntax:
+    content: public string GetContent(ReceivedMessage message)
+    parameters:
+    - id: message
+      type: Google.Cloud.PubSub.V1.ReceivedMessage
+      description: 從 Pub/Sub 接收到的訊息
+    return:
+      type: System.String
+      description: 訊息的內容，如果訊息為空則返回空字串
+    content.vb: Public Function GetContent(message As ReceivedMessage) As String
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.GetContent*
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.GetContent(Google.Cloud.PubSub.V1.PubsubMessage)
+  commentId: M:Cathay.SDK.GCP.PubSub.PubSubService.GetContent(Google.Cloud.PubSub.V1.PubsubMessage)
+  id: GetContent(Google.Cloud.PubSub.V1.PubsubMessage)
+  parent: Cathay.SDK.GCP.PubSub.PubSubService
+  langs:
+  - csharp
+  - vb
+  name: GetContent(PubsubMessage)
+  nameWithType: PubSubService.GetContent(PubsubMessage)
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.GetContent(Google.Cloud.PubSub.V1.PubsubMessage)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubService.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: GetContent
+    path: ../Cathay.SDK.GCP.PubSub/PubSubService.cs
+    startLine: 249
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: 從PubsubMessage的訊息中獲取資料內容
+  example: []
+  syntax:
+    content: public string GetContent(PubsubMessage message)
+    parameters:
+    - id: message
+      type: Google.Cloud.PubSub.V1.PubsubMessage
+      description: 從 Pub/Sub 接收到的訊息
+    return:
+      type: System.String
+      description: 訊息的內容，如果訊息為空則返回空字串
+    content.vb: Public Function GetContent(message As PubsubMessage) As String
+  overload: Cathay.SDK.GCP.PubSub.PubSubService.GetContent*
+references:
+- uid: Cathay.SDK.GCP.PubSub
+  commentId: N:Cathay.SDK.GCP.PubSub
+  href: Cathay.html
+  name: Cathay.SDK.GCP.PubSub
+  nameWithType: Cathay.SDK.GCP.PubSub
+  fullName: Cathay.SDK.GCP.PubSub
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.PubSub
+    name: PubSub
+    href: Cathay.SDK.GCP.PubSub.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.PubSub
+    name: PubSub
+    href: Cathay.SDK.GCP.PubSub.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  commentId: T:Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue
+  name: IMessageQueue
+  nameWithType: IMessageQueue
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue
+  commentId: N:Cathay.SDK.Cloud.Interface.MessageQueue
+  name: Cathay.SDK.Cloud.Interface.MessageQueue
+  nameWithType: Cathay.SDK.Cloud.Interface.MessageQueue
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue
+    name: MessageQueue
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue
+    name: MessageQueue
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.receiver*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.PubSubService.receiver
+  href: Cathay.SDK.GCP.PubSub.PubSubService.html#Cathay.SDK.GCP.PubSub.PubSubService.receiver
+  name: receiver
+  nameWithType: PubSubService.receiver
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.receiver
+- uid: Cathay.SDK.GCP.PubSub.Receiver
+  commentId: T:Cathay.SDK.GCP.PubSub.Receiver
+  parent: Cathay.SDK.GCP.PubSub
+  href: Cathay.SDK.GCP.PubSub.Receiver.html
+  name: Receiver
+  nameWithType: Receiver
+  fullName: Cathay.SDK.GCP.PubSub.Receiver
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.#ctor*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.PubSubService.#ctor
+  href: Cathay.SDK.GCP.PubSub.PubSubService.html#Cathay.SDK.GCP.PubSub.PubSubService.#ctor(Cathay.SDK.Cloud.Interface.MessageQueue.ClientType,System.String,System.String,System.Int32)
+  name: PubSubService
+  nameWithType: PubSubService.PubSubService
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.PubSubService
+  nameWithType.vb: PubSubService.New
+  fullName.vb: Cathay.SDK.GCP.PubSub.PubSubService.New
+  name.vb: New
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  commentId: T:Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue
+  name: ClientType
+  nameWithType: ClientType
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessage*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessage
+  href: Cathay.SDK.GCP.PubSub.PubSubService.html#Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  name: PublishTopicMessage
+  nameWithType: PubSubService.PublishTopicMessage
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessage
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: PublishTopicMessage(string, Dictionary<string, string>, string)
+  nameWithType: IMessageQueue.PublishTopicMessage(string, Dictionary<string, string>, string)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessage(string, System.Collections.Generic.Dictionary<string, string>, string)
+  nameWithType.vb: IMessageQueue.PublishTopicMessage(String, Dictionary(Of String, String), String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessage(String, System.Collections.Generic.Dictionary(Of String, String), String)
+  name.vb: PublishTopicMessage(String, Dictionary(Of String, String), String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+    name: PublishTopicMessage
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+    name: PublishTopicMessage
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, string>
+  nameWithType: Dictionary<string, string>
+  fullName: System.Collections.Generic.Dictionary<string, string>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessages*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessages
+  href: Cathay.SDK.GCP.PubSub.PubSubService.html#Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)
+  name: PublishTopicMessages
+  nameWithType: PubSubService.PublishTopicMessages
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.PublishTopicMessages
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: PublishTopicMessages(IEnumerable<string>, bool, string)
+  nameWithType: IMessageQueue.PublishTopicMessages(IEnumerable<string>, bool, string)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessages(System.Collections.Generic.IEnumerable<string>, bool, string)
+  nameWithType.vb: IMessageQueue.PublishTopicMessages(IEnumerable(Of String), Boolean, String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessages(System.Collections.Generic.IEnumerable(Of String), Boolean, String)
+  name.vb: PublishTopicMessages(IEnumerable(Of String), Boolean, String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)
+    name: PublishTopicMessages
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)
+    name: PublishTopicMessages
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.PublishQueueMessage*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.PubSubService.PublishQueueMessage
+  href: Cathay.SDK.GCP.PubSub.PubSubService.html#Cathay.SDK.GCP.PubSub.PubSubService.PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  name: PublishQueueMessage
+  nameWithType: PubSubService.PublishQueueMessage
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.PublishQueueMessage
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: PublishQueueMessage(string, Dictionary<string, string>, string)
+  nameWithType: IMessageQueue.PublishQueueMessage(string, Dictionary<string, string>, string)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishQueueMessage(string, System.Collections.Generic.Dictionary<string, string>, string)
+  nameWithType.vb: IMessageQueue.PublishQueueMessage(String, Dictionary(Of String, String), String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishQueueMessage(String, System.Collections.Generic.Dictionary(Of String, String), String)
+  name.vb: PublishQueueMessage(String, Dictionary(Of String, String), String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+    name: PublishQueueMessage
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+    name: PublishQueueMessage
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.CreateReceiver*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.PubSubService.CreateReceiver
+  href: Cathay.SDK.GCP.PubSub.PubSubService.html#Cathay.SDK.GCP.PubSub.PubSubService.CreateReceiver(System.String,System.Int32)
+  name: CreateReceiver
+  nameWithType: PubSubService.CreateReceiver
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.CreateReceiver
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.CreateReceiver(System.String,System.Int32)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.CreateReceiver(System.String,System.Int32)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: CreateReceiver(string, int)
+  nameWithType: IMessageQueue.CreateReceiver(string, int)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.CreateReceiver(string, int)
+  nameWithType.vb: IMessageQueue.CreateReceiver(String, Integer)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.CreateReceiver(String, Integer)
+  name.vb: CreateReceiver(String, Integer)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.CreateReceiver(System.String,System.Int32)
+    name: CreateReceiver
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.CreateReceiver(System.String,System.Int32)
+    name: CreateReceiver
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.Received*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.PubSubService.Received
+  href: Cathay.SDK.GCP.PubSub.PubSubService.html#Cathay.SDK.GCP.PubSub.PubSubService.Received(System.String)
+  name: Received
+  nameWithType: PubSubService.Received
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.Received
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.Received(System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.Received(System.String)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Received(string)
+  nameWithType: IMessageQueue.Received(string)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.Received(string)
+  nameWithType.vb: IMessageQueue.Received(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.Received(String)
+  name.vb: Received(String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.Received(System.String)
+    name: Received
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.Received(System.String)
+    name: Received
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.GCP.PubSub.PubSubService.GetContent*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.PubSubService.GetContent
+  href: Cathay.SDK.GCP.PubSub.PubSubService.html#Cathay.SDK.GCP.PubSub.PubSubService.GetContent(Google.Cloud.PubSub.V1.ReceivedMessage)
+  name: GetContent
+  nameWithType: PubSubService.GetContent
+  fullName: Cathay.SDK.GCP.PubSub.PubSubService.GetContent
+- uid: Google.Cloud.PubSub.V1.ReceivedMessage
+  commentId: T:Google.Cloud.PubSub.V1.ReceivedMessage
+  parent: Google.Cloud.PubSub.V1
+  isExternal: true
+  href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  name: ReceivedMessage
+  nameWithType: ReceivedMessage
+  fullName: Google.Cloud.PubSub.V1.ReceivedMessage
+- uid: Google.Cloud.PubSub.V1
+  commentId: N:Google.Cloud.PubSub.V1
+  isExternal: true
+  name: Google.Cloud.PubSub.V1
+  nameWithType: Google.Cloud.PubSub.V1
+  fullName: Google.Cloud.PubSub.V1
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud
+    name: Cloud
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.PubSub
+    name: PubSub
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.PubSub.V1
+    name: V1
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud
+    name: Cloud
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.PubSub
+    name: PubSub
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.PubSub.V1
+    name: V1
+    isExternal: true
+- uid: Google.Cloud.PubSub.V1.PubsubMessage
+  commentId: T:Google.Cloud.PubSub.V1.PubsubMessage
+  parent: Google.Cloud.PubSub.V1
+  isExternal: true
+  href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  name: PubsubMessage
+  nameWithType: PubsubMessage
+  fullName: Google.Cloud.PubSub.V1.PubsubMessage

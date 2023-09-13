@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.MemoryStore.Redis
+  commentId: N:Cathay.SDK.GCP.MemoryStore.Redis
+  id: Cathay.SDK.GCP.MemoryStore.Redis
+  children:
+  - Cathay.SDK.GCP.MemoryStore.Redis.RedisClient
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.GCP.MemoryStore.Redis
+  nameWithType: Cathay.SDK.GCP.MemoryStore.Redis
+  fullName: Cathay.SDK.GCP.MemoryStore.Redis
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.GCP.MemoryStore.Redis
+references:
+- uid: Cathay.SDK.GCP.MemoryStore.Redis.RedisClient
+  commentId: T:Cathay.SDK.GCP.MemoryStore.Redis.RedisClient
+  href: Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.html
+  name: RedisClient
+  nameWithType: RedisClient
+  fullName: Cathay.SDK.GCP.MemoryStore.Redis.RedisClient

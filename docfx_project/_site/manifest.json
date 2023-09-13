@@ -1,0 +1,245 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Project/api-document-test/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html"
+        },
+        ".json": {
+          "relative_path": "articles/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.Database.SQL.PostgreSQL.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.Database.SQL.PostgreSQL.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.MemoryStore.Redis.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.MemoryStore.Redis.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.PubSub.PubSubService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.PubSub.PubSubService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.PubSub.Receiver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.PubSub.Receiver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.PubSub.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.PubSub.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.Security.CloudKeyManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.Security.CloudKeyManagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "sdk/Cathay.SDK.GCP.Storage.CloudStorage.Blobs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Cathay.SDK.GCP.Storage.CloudStorage.Blobs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sdk/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "sdk/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/toc.html"
+        },
+        ".json": {
+          "relative_path": "sdk/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

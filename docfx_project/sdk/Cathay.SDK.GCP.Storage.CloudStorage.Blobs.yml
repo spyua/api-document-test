@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  commentId: N:Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  id: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  children:
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  nameWithType: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+references:
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  commentId: T:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.html
+  name: Blobs
+  nameWithType: Blobs
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs

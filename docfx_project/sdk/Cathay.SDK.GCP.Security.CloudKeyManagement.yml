@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement
+  commentId: N:Cathay.SDK.GCP.Security.CloudKeyManagement
+  id: Cathay.SDK.GCP.Security.CloudKeyManagement
+  children:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+  - Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.GCP.Security.CloudKeyManagement
+  nameWithType: Cathay.SDK.GCP.Security.CloudKeyManagement
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.GCP.Security.CloudKeyManagement
+references:
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  commentId: T:Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo.html
+  name: BaseKeyInfo
+  nameWithType: BaseKeyInfo
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+  commentId: T:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo.html
+  name: KeyInfo
+  nameWithType: KeyInfo
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+  commentId: T:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+  parent: Cathay.SDK.GCP.Security.CloudKeyManagement
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion.html
+  name: KeyInfoWithVersion
+  nameWithType: KeyInfoWithVersion
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  commentId: T:Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+  href: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService.html
+  name: KeyManagementService
+  nameWithType: KeyManagementService
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
+- uid: Cathay.SDK.GCP.Security.CloudKeyManagement
+  commentId: N:Cathay.SDK.GCP.Security.CloudKeyManagement
+  href: Cathay.html
+  name: Cathay.SDK.GCP.Security.CloudKeyManagement
+  nameWithType: Cathay.SDK.GCP.Security.CloudKeyManagement
+  fullName: Cathay.SDK.GCP.Security.CloudKeyManagement
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security
+    name: Security
+    href: Cathay.SDK.GCP.Security.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement
+    name: CloudKeyManagement
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security
+    name: Security
+    href: Cathay.SDK.GCP.Security.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement
+    name: CloudKeyManagement
+    href: Cathay.SDK.GCP.Security.CloudKeyManagement.html

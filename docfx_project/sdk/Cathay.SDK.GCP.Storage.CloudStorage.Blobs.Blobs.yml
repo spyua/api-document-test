@@ -1,0 +1,1922 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  commentId: T:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  id: Blobs
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  children:
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.#ctor(System.String)
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync(System.String,System.Threading.CancellationToken)
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(System.String,Google.Cloud.Storage.V1.GetObjectOptions,System.Threading.CancellationToken)
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(System.String,System.Threading.CancellationToken)
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync(System.String,System.Threading.CancellationToken)
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)
+  - Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(System.String,System.IO.Stream,System.String,Google.Cloud.Storage.V1.UploadObjectOptions,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: Blobs
+  nameWithType: Blobs
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  type: Class
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Blobs
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 12
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  syntax:
+    content: 'public class Blobs : GenericBlobStorage, IBlobStorage, IDisposable'
+    content.vb: Public Class Blobs Inherits GenericBlobStorage Implements IBlobStorage, IDisposable
+  inheritance:
+  - System.Object
+  - Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  implements:
+  - Cathay.SDK.Cloud.Interface.Storage.IBlobStorage
+  - System.IDisposable
+  inheritedMembers:
+  - Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAsync(Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  - Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteAsync(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
+  - Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  - Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  - Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.#ctor(System.String)
+  commentId: M:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: Blobs(string)
+  nameWithType: Blobs.Blobs(string)
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.Blobs(string)
+  type: Constructor
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: .ctor
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 19
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  syntax:
+    content: public Blobs(string bucketName)
+    parameters:
+    - id: bucketName
+      type: System.String
+    content.vb: Public Sub New(bucketName As String)
+  overload: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.#ctor*
+  nameWithType.vb: Blobs.New(String)
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.New(String)
+  name.vb: New(String)
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  id: ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: ListAtAsync(string, ListOptions, CancellationToken)
+  nameWithType: Blobs.ListAtAsync(string, ListOptions, CancellationToken)
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync(string, Cathay.SDK.Cloud.Interface.Storage.ListOptions, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: ListAtAsync
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 32
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  summary: 異步列出GCP Storage上指定路徑的所有檔案
+  example: []
+  syntax:
+    content: protected override Task<IReadOnlyCollection<Blob>> ListAtAsync(string path, ListOptions options, CancellationToken cancellationToken)
+    parameters:
+    - id: path
+      type: System.String
+      description: 要列出Blob的路徑。
+    - id: options
+      type: Cathay.SDK.Cloud.Interface.Storage.ListOptions
+      description: 列出Blob的選項。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 可供取消操作的token。
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyCollection{Cathay.SDK.Cloud.Interface.Storage.Blob}}
+      description: 指定路徑的Blob的集合。
+    content.vb: Protected Overrides Function ListAtAsync(path As String, options As ListOptions, cancellationToken As CancellationToken) As Task(Of IReadOnlyCollection(Of Blob))
+  overridden: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  overload: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync*
+  nameWithType.vb: Blobs.ListAtAsync(String, ListOptions, CancellationToken)
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync(String, Cathay.SDK.Cloud.Interface.Storage.ListOptions, System.Threading.CancellationToken)
+  name.vb: ListAtAsync(String, ListOptions, CancellationToken)
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)
+  id: SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: SetBlobsAsync(IEnumerable<Blob>, CancellationToken)
+  nameWithType: Blobs.SetBlobsAsync(IEnumerable<Blob>, CancellationToken)
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync(System.Collections.Generic.IEnumerable<Cathay.SDK.Cloud.Interface.Storage.Blob>, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: SetBlobsAsync
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 68
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  summary: 異步更新多個Blob Metadata
+  example: []
+  syntax:
+    content: public override Task SetBlobsAsync(IEnumerable<Blob> blobs, CancellationToken cancellationToken = default)
+    parameters:
+    - id: blobs
+      type: System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob}
+      description: 要設置的Blob集合。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 可供取消操作的token。
+    return:
+      type: System.Threading.Tasks.Task
+      description: 執行任務的異步操作。
+    content.vb: Public Overrides Function SetBlobsAsync(blobs As IEnumerable(Of Blob), cancellationToken As CancellationToken = Nothing) As Task
+  overridden: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)
+  overload: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync*
+  nameWithType.vb: Blobs.SetBlobsAsync(IEnumerable(Of Blob), CancellationToken)
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync(System.Collections.Generic.IEnumerable(Of Cathay.SDK.Cloud.Interface.Storage.Blob), System.Threading.CancellationToken)
+  name.vb: SetBlobsAsync(IEnumerable(Of Blob), CancellationToken)
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(System.String,System.Threading.CancellationToken)
+  id: GetBlobAsync(System.String,System.Threading.CancellationToken)
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: GetBlobAsync(string, CancellationToken)
+  nameWithType: Blobs.GetBlobAsync(string, CancellationToken)
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: GetBlobAsync
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 111
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  summary: 異步獲取GCP Storage指定全路徑的檔案回傳成Blob格式
+  example: []
+  syntax:
+    content: protected override Task<Blob> GetBlobAsync(string fullPath, CancellationToken cancellationToken)
+    parameters:
+    - id: fullPath
+      type: System.String
+      description: Blob的全路徑。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 可供取消操作的token。
+    return:
+      type: System.Threading.Tasks.Task{Cathay.SDK.Cloud.Interface.Storage.Blob}
+      description: 指定全路徑的Blob。
+    content.vb: Protected Overrides Function GetBlobAsync(fullPath As String, cancellationToken As CancellationToken) As Task(Of Blob)
+  overridden: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobAsync(System.String,System.Threading.CancellationToken)
+  overload: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync*
+  nameWithType.vb: Blobs.GetBlobAsync(String, CancellationToken)
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(String, System.Threading.CancellationToken)
+  name.vb: GetBlobAsync(String, CancellationToken)
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(System.String,Google.Cloud.Storage.V1.GetObjectOptions,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(System.String,Google.Cloud.Storage.V1.GetObjectOptions,System.Threading.CancellationToken)
+  id: GetBlobAsync(System.String,Google.Cloud.Storage.V1.GetObjectOptions,System.Threading.CancellationToken)
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: GetBlobAsync(string, GetObjectOptions, CancellationToken)
+  nameWithType: Blobs.GetBlobAsync(string, GetObjectOptions, CancellationToken)
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(string, Google.Cloud.Storage.V1.GetObjectOptions, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: GetBlobAsync
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 138
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  summary: 異步獲取GCP Storage指定全路徑的檔案回傳成Blob格式
+  example: []
+  syntax:
+    content: public Task<Blob> GetBlobAsync(string fullPath, GetObjectOptions options, CancellationToken cancellationToken = default)
+    parameters:
+    - id: fullPath
+      type: System.String
+      description: Blob的全路徑。
+    - id: options
+      type: Google.Cloud.Storage.V1.GetObjectOptions
+      description: 獲取Blob的額外選項。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 可供取消操作的token。
+    return:
+      type: System.Threading.Tasks.Task{Cathay.SDK.Cloud.Interface.Storage.Blob}
+      description: 指定全路徑的Blob。
+    content.vb: Public Function GetBlobAsync(fullPath As String, options As GetObjectOptions, cancellationToken As CancellationToken = Nothing) As Task(Of Blob)
+  overload: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync*
+  nameWithType.vb: Blobs.GetBlobAsync(String, GetObjectOptions, CancellationToken)
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(String, Google.Cloud.Storage.V1.GetObjectOptions, System.Threading.CancellationToken)
+  name.vb: GetBlobAsync(String, GetObjectOptions, CancellationToken)
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  id: DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: DeleteSingleAsync(string, bool, CancellationToken)
+  nameWithType: Blobs.DeleteSingleAsync(string, bool, CancellationToken)
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync(string, bool, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: DeleteSingleAsync
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 160
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  summary: 異步刪除GCP Storage指定全路徑的檔案
+  example: []
+  syntax:
+    content: protected override Task DeleteSingleAsync(string fullPath, bool mustExist, CancellationToken cancellationToken)
+    parameters:
+    - id: fullPath
+      type: System.String
+      description: 要刪除的Blob的全路徑。
+    - id: mustExist
+      type: System.Boolean
+      description: 指定Blob是否必須存在。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 可供取消操作的token。
+    return:
+      type: System.Threading.Tasks.Task
+      description: 執行任務的異步操作。
+    content.vb: Protected Overrides Function DeleteSingleAsync(fullPath As String, mustExist As Boolean, cancellationToken As CancellationToken) As Task
+  overridden: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  overload: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync*
+  nameWithType.vb: Blobs.DeleteSingleAsync(String, Boolean, CancellationToken)
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync(String, Boolean, System.Threading.CancellationToken)
+  name.vb: DeleteSingleAsync(String, Boolean, CancellationToken)
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync(System.String,System.Threading.CancellationToken)
+  id: ExistsAsync(System.String,System.Threading.CancellationToken)
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: ExistsAsync(string, CancellationToken)
+  nameWithType: Blobs.ExistsAsync(string, CancellationToken)
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: ExistsAsync
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 181
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  summary: 異步確定指定全路徑的檔案是否存在
+  example: []
+  syntax:
+    content: protected override Task<bool> ExistsAsync(string fullPath, CancellationToken cancellationToken)
+    parameters:
+    - id: fullPath
+      type: System.String
+      description: Blob的全路徑。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 可供取消操作的token。
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+      description: 如果存在返回true，否則返回false。
+    content.vb: Protected Overrides Function ExistsAsync(fullPath As String, cancellationToken As CancellationToken) As Task(Of Boolean)
+  overridden: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.String,System.Threading.CancellationToken)
+  overload: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync*
+  nameWithType.vb: Blobs.ExistsAsync(String, CancellationToken)
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync(String, System.Threading.CancellationToken)
+  name.vb: ExistsAsync(String, CancellationToken)
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)
+  id: WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(string, Stream, bool, CancellationToken)
+  nameWithType: Blobs.WriteAsync(string, Stream, bool, CancellationToken)
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(string, System.IO.Stream, bool, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: WriteAsync
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 204
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  summary: 將數據流(Stream)異步寫入到Google Cloud Storage中的指定全路徑
+  example: []
+  syntax:
+    content: public override Task WriteAsync(string fullPath, Stream dataStream, bool append = false, CancellationToken cancellationToken = default)
+    parameters:
+    - id: fullPath
+      type: System.String
+      description: Blob的全路徑。
+    - id: dataStream
+      type: System.IO.Stream
+      description: 要寫入的資料流。
+    - id: append
+      type: System.Boolean
+      description: 是否為追加模式。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 可供取消操作的token。
+    return:
+      type: System.Threading.Tasks.Task
+      description: 執行任務的異步操作。
+    content.vb: Public Overrides Function WriteAsync(fullPath As String, dataStream As Stream, append As Boolean = False, cancellationToken As CancellationToken = Nothing) As Task
+  overridden: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)
+  overload: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync*
+  nameWithType.vb: Blobs.WriteAsync(String, Stream, Boolean, CancellationToken)
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(String, System.IO.Stream, Boolean, System.Threading.CancellationToken)
+  name.vb: WriteAsync(String, Stream, Boolean, CancellationToken)
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(System.String,System.IO.Stream,System.String,Google.Cloud.Storage.V1.UploadObjectOptions,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(System.String,System.IO.Stream,System.String,Google.Cloud.Storage.V1.UploadObjectOptions,System.Threading.CancellationToken)
+  id: WriteAsync(System.String,System.IO.Stream,System.String,Google.Cloud.Storage.V1.UploadObjectOptions,System.Threading.CancellationToken)
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: WriteAsync(string, Stream, string, UploadObjectOptions, CancellationToken)
+  nameWithType: Blobs.WriteAsync(string, Stream, string, UploadObjectOptions, CancellationToken)
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(string, System.IO.Stream, string, Google.Cloud.Storage.V1.UploadObjectOptions, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: WriteAsync
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 221
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  summary: 將數據流(Stream)異步寫入到Google Cloud Storage中的指定全路徑
+  example: []
+  syntax:
+    content: public Task WriteAsync(string fullPath, Stream dataStream, string contentType, UploadObjectOptions options, CancellationToken cancellationToken = default)
+    parameters:
+    - id: fullPath
+      type: System.String
+      description: Blob的全路徑。
+    - id: dataStream
+      type: System.IO.Stream
+      description: 要寫入的資料流。
+    - id: contentType
+      type: System.String
+      description: 內容類型。
+    - id: options
+      type: Google.Cloud.Storage.V1.UploadObjectOptions
+      description: 上傳對象的額外選項。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 可供取消操作的token。
+    return:
+      type: System.Threading.Tasks.Task
+      description: 執行任務的異步操作。
+    content.vb: Public Function WriteAsync(fullPath As String, dataStream As Stream, contentType As String, options As UploadObjectOptions, cancellationToken As CancellationToken = Nothing) As Task
+  overload: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync*
+  nameWithType.vb: Blobs.WriteAsync(String, Stream, String, UploadObjectOptions, CancellationToken)
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(String, System.IO.Stream, String, Google.Cloud.Storage.V1.UploadObjectOptions, System.Threading.CancellationToken)
+  name.vb: WriteAsync(String, Stream, String, UploadObjectOptions, CancellationToken)
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync(System.String,System.Threading.CancellationToken)
+  id: OpenReadAsync(System.String,System.Threading.CancellationToken)
+  parent: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
+  langs:
+  - csharp
+  - vb
+  name: OpenReadAsync(string, CancellationToken)
+  nameWithType: Blobs.OpenReadAsync(string, CancellationToken)
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync(string, System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: OpenReadAsync
+    path: ../Cathay.SDK.GCP.Storage.CloudStorage/Blobs/Blobs.cs
+    startLine: 235
+  assemblies:
+  - Cathay.SDK.GCP.Storage.CloudStorage
+  namespace: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  summary: 異步獲取GCP Storage指定路徑檔案
+  example: []
+  syntax:
+    content: public override Task<Stream> OpenReadAsync(string fullPath, CancellationToken cancellationToken = default)
+    parameters:
+    - id: fullPath
+      type: System.String
+      description: Blob的全路徑。
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: 可供取消操作的token。
+    return:
+      type: System.Threading.Tasks.Task{System.IO.Stream}
+      description: 包含Blob內容的Stream。
+    content.vb: Public Overrides Function OpenReadAsync(fullPath As String, cancellationToken As CancellationToken = Nothing) As Task(Of Stream)
+  overridden: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.OpenReadAsync(System.String,System.Threading.CancellationToken)
+  overload: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync*
+  nameWithType.vb: Blobs.OpenReadAsync(String, CancellationToken)
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync(String, System.Threading.CancellationToken)
+  name.vb: OpenReadAsync(String, CancellationToken)
+references:
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  commentId: N:Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  href: Cathay.html
+  name: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  nameWithType: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Storage
+    name: Storage
+    href: Cathay.SDK.GCP.Storage.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Storage.CloudStorage
+    name: CloudStorage
+    href: Cathay.SDK.GCP.Storage.CloudStorage.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+    name: Blobs
+    href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Storage
+    name: Storage
+    href: Cathay.SDK.GCP.Storage.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Storage.CloudStorage
+    name: CloudStorage
+    href: Cathay.SDK.GCP.Storage.CloudStorage.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
+    name: Blobs
+    href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  name: GenericBlobStorage
+  nameWithType: GenericBlobStorage
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+- uid: Cathay.SDK.Cloud.Interface.Storage.IBlobStorage
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.IBlobStorage
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  name: IBlobStorage
+  nameWithType: IBlobStorage
+  fullName: Cathay.SDK.Cloud.Interface.Storage.IBlobStorage
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAsync(Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAsync(Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: ListAsync(ListOptions, CancellationToken)
+  nameWithType: GenericBlobStorage.ListAsync(ListOptions, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAsync(Cathay.SDK.Cloud.Interface.Storage.ListOptions, System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAsync(Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+    name: ListAsync
+  - name: (
+  - uid: Cathay.SDK.Cloud.Interface.Storage.ListOptions
+    name: ListOptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAsync(Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+    name: ListAsync
+  - name: (
+  - uid: Cathay.SDK.Cloud.Interface.Storage.ListOptions
+    name: ListOptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteAsync(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteAsync(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: DeleteAsync(IEnumerable<string>, bool, CancellationToken)
+  nameWithType: GenericBlobStorage.DeleteAsync(IEnumerable<string>, bool, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteAsync(System.Collections.Generic.IEnumerable<string>, bool, System.Threading.CancellationToken)
+  nameWithType.vb: GenericBlobStorage.DeleteAsync(IEnumerable(Of String), Boolean, CancellationToken)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteAsync(System.Collections.Generic.IEnumerable(Of String), Boolean, System.Threading.CancellationToken)
+  name.vb: DeleteAsync(IEnumerable(Of String), Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteAsync(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
+    name: DeleteAsync
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteAsync(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)
+    name: DeleteAsync
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: ExistsAsync(IEnumerable<string>, CancellationToken)
+  nameWithType: GenericBlobStorage.ExistsAsync(IEnumerable<string>, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.Collections.Generic.IEnumerable<string>, System.Threading.CancellationToken)
+  nameWithType.vb: GenericBlobStorage.ExistsAsync(IEnumerable(Of String), CancellationToken)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
+  name.vb: ExistsAsync(IEnumerable(Of String), CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+    name: ExistsAsync
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+    name: ExistsAsync
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: GetBlobsAsync(IEnumerable<string>, CancellationToken)
+  nameWithType: GenericBlobStorage.GetBlobsAsync(IEnumerable<string>, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobsAsync(System.Collections.Generic.IEnumerable<string>, System.Threading.CancellationToken)
+  nameWithType.vb: GenericBlobStorage.GetBlobsAsync(IEnumerable(Of String), CancellationToken)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobsAsync(System.Collections.Generic.IEnumerable(Of String), System.Threading.CancellationToken)
+  name.vb: GetBlobsAsync(IEnumerable(Of String), CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+    name: GetBlobsAsync
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)
+    name: GetBlobsAsync
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.Dispose
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.Dispose
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  name: Dispose()
+  nameWithType: GenericBlobStorage.Dispose()
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.Dispose()
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.Dispose
+    name: Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.Dispose
+    name: Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cathay.SDK.Cloud.Interface.Storage
+  commentId: N:Cathay.SDK.Cloud.Interface.Storage
+  name: Cathay.SDK.Cloud.Interface.Storage
+  nameWithType: Cathay.SDK.Cloud.Interface.Storage
+  fullName: Cathay.SDK.Cloud.Interface.Storage
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Storage
+    name: Storage
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Storage
+    name: Storage
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.#ctor*
+  commentId: Overload:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.#ctor
+  href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.html#Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.#ctor(System.String)
+  name: Blobs
+  nameWithType: Blobs.Blobs
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.Blobs
+  nameWithType.vb: Blobs.New
+  fullName.vb: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ListAtAsync(string, ListOptions, CancellationToken)
+  nameWithType: GenericBlobStorage.ListAtAsync(string, ListOptions, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAtAsync(string, Cathay.SDK.Cloud.Interface.Storage.ListOptions, System.Threading.CancellationToken)
+  nameWithType.vb: GenericBlobStorage.ListAtAsync(String, ListOptions, CancellationToken)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAtAsync(String, Cathay.SDK.Cloud.Interface.Storage.ListOptions, System.Threading.CancellationToken)
+  name.vb: ListAtAsync(String, ListOptions, CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+    name: ListAtAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Cathay.SDK.Cloud.Interface.Storage.ListOptions
+    name: ListOptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+    name: ListAtAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: Cathay.SDK.Cloud.Interface.Storage.ListOptions
+    name: ListOptions
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync*
+  commentId: Overload:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync
+  href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.html#Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync(System.String,Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)
+  name: ListAtAsync
+  nameWithType: Blobs.ListAtAsync
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ListAtAsync
+- uid: Cathay.SDK.Cloud.Interface.Storage.ListOptions
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.ListOptions
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  name: ListOptions
+  nameWithType: ListOptions
+  fullName: Cathay.SDK.Cloud.Interface.Storage.ListOptions
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyCollection{Cathay.SDK.Cloud.Interface.Storage.Blob}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IReadOnlyCollection{Cathay.SDK.Cloud.Interface.Storage.Blob}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IReadOnlyCollection<Blob>>
+  nameWithType: Task<IReadOnlyCollection<Blob>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyCollection<Cathay.SDK.Cloud.Interface.Storage.Blob>>
+  nameWithType.vb: Task(Of IReadOnlyCollection(Of Blob))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IReadOnlyCollection(Of Cathay.SDK.Cloud.Interface.Storage.Blob))
+  name.vb: Task(Of IReadOnlyCollection(Of Blob))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+  - name: )
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: SetBlobsAsync(IEnumerable<Blob>, CancellationToken)
+  nameWithType: GenericBlobStorage.SetBlobsAsync(IEnumerable<Blob>, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.SetBlobsAsync(System.Collections.Generic.IEnumerable<Cathay.SDK.Cloud.Interface.Storage.Blob>, System.Threading.CancellationToken)
+  nameWithType.vb: GenericBlobStorage.SetBlobsAsync(IEnumerable(Of Blob), CancellationToken)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.SetBlobsAsync(System.Collections.Generic.IEnumerable(Of Cathay.SDK.Cloud.Interface.Storage.Blob), System.Threading.CancellationToken)
+  name.vb: SetBlobsAsync(IEnumerable(Of Blob), CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)
+    name: SetBlobsAsync
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)
+    name: SetBlobsAsync
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync*
+  commentId: Overload:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync
+  href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.html#Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)
+  name: SetBlobsAsync
+  nameWithType: Blobs.SetBlobsAsync
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.SetBlobsAsync
+- uid: System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob}
+  commentId: T:System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Blob>
+  nameWithType: IEnumerable<Blob>
+  fullName: System.Collections.Generic.IEnumerable<Cathay.SDK.Cloud.Interface.Storage.Blob>
+  nameWithType.vb: IEnumerable(Of Blob)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Cathay.SDK.Cloud.Interface.Storage.Blob)
+  name.vb: IEnumerable(Of Blob)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobAsync(System.String,System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetBlobAsync(string, CancellationToken)
+  nameWithType: GenericBlobStorage.GetBlobAsync(string, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: GenericBlobStorage.GetBlobAsync(String, CancellationToken)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobAsync(String, System.Threading.CancellationToken)
+  name.vb: GetBlobAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobAsync(System.String,System.Threading.CancellationToken)
+    name: GetBlobAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.GetBlobAsync(System.String,System.Threading.CancellationToken)
+    name: GetBlobAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync*
+  commentId: Overload:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync
+  href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.html#Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync(System.String,System.Threading.CancellationToken)
+  name: GetBlobAsync
+  nameWithType: Blobs.GetBlobAsync
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.GetBlobAsync
+- uid: System.Threading.Tasks.Task{Cathay.SDK.Cloud.Interface.Storage.Blob}
+  commentId: T:System.Threading.Tasks.Task{Cathay.SDK.Cloud.Interface.Storage.Blob}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Blob>
+  nameWithType: Task<Blob>
+  fullName: System.Threading.Tasks.Task<Cathay.SDK.Cloud.Interface.Storage.Blob>
+  nameWithType.vb: Task(Of Blob)
+  fullName.vb: System.Threading.Tasks.Task(Of Cathay.SDK.Cloud.Interface.Storage.Blob)
+  name.vb: Task(Of Blob)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+  - name: )
+- uid: Google.Cloud.Storage.V1.GetObjectOptions
+  commentId: T:Google.Cloud.Storage.V1.GetObjectOptions
+  parent: Google.Cloud.Storage.V1
+  isExternal: true
+  href: https://github.com/googleapis/google-cloud-dotnet/blob/275cc46f2b573453b1cb909b1b271e99c5598f91/apis/Google.Cloud.Storage.V1/Google.Cloud.Storage.V1/GetObjectOptions.cs
+  name: GetObjectOptions
+  nameWithType: GetObjectOptions
+  fullName: Google.Cloud.Storage.V1.GetObjectOptions
+- uid: Google.Cloud.Storage.V1
+  commentId: N:Google.Cloud.Storage.V1
+  isExternal: true
+  name: Google.Cloud.Storage.V1
+  nameWithType: Google.Cloud.Storage.V1
+  fullName: Google.Cloud.Storage.V1
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud
+    name: Cloud
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.Storage
+    name: Storage
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.Storage.V1
+    name: V1
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud
+    name: Cloud
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.Storage
+    name: Storage
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.Storage.V1
+    name: V1
+    isExternal: true
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: DeleteSingleAsync(string, bool, CancellationToken)
+  nameWithType: GenericBlobStorage.DeleteSingleAsync(string, bool, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteSingleAsync(string, bool, System.Threading.CancellationToken)
+  nameWithType.vb: GenericBlobStorage.DeleteSingleAsync(String, Boolean, CancellationToken)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteSingleAsync(String, Boolean, System.Threading.CancellationToken)
+  name.vb: DeleteSingleAsync(String, Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+    name: DeleteSingleAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+    name: DeleteSingleAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync*
+  commentId: Overload:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync
+  href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.html#Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync(System.String,System.Boolean,System.Threading.CancellationToken)
+  name: DeleteSingleAsync
+  nameWithType: Blobs.DeleteSingleAsync
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.DeleteSingleAsync
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.String,System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: ExistsAsync(string, CancellationToken)
+  nameWithType: GenericBlobStorage.ExistsAsync(string, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: GenericBlobStorage.ExistsAsync(String, CancellationToken)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(String, System.Threading.CancellationToken)
+  name.vb: ExistsAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.String,System.Threading.CancellationToken)
+    name: ExistsAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.ExistsAsync(System.String,System.Threading.CancellationToken)
+    name: ExistsAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync*
+  commentId: Overload:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync
+  href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.html#Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync(System.String,System.Threading.CancellationToken)
+  name: ExistsAsync
+  nameWithType: Blobs.ExistsAsync
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.ExistsAsync
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: WriteAsync(string, Stream, bool, CancellationToken)
+  nameWithType: GenericBlobStorage.WriteAsync(string, Stream, bool, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.WriteAsync(string, System.IO.Stream, bool, System.Threading.CancellationToken)
+  nameWithType.vb: GenericBlobStorage.WriteAsync(String, Stream, Boolean, CancellationToken)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.WriteAsync(String, System.IO.Stream, Boolean, System.Threading.CancellationToken)
+  name.vb: WriteAsync(String, Stream, Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)
+    name: WriteAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)
+    name: WriteAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync*
+  commentId: Overload:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync
+  href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.html#Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)
+  name: WriteAsync
+  nameWithType: Blobs.WriteAsync
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.WriteAsync
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Google.Cloud.Storage.V1.UploadObjectOptions
+  commentId: T:Google.Cloud.Storage.V1.UploadObjectOptions
+  parent: Google.Cloud.Storage.V1
+  isExternal: true
+  href: https://github.com/googleapis/google-cloud-dotnet/blob/275cc46f2b573453b1cb909b1b271e99c5598f91/apis/Google.Cloud.Storage.V1/Google.Cloud.Storage.V1/UploadObjectOptions.cs
+  name: UploadObjectOptions
+  nameWithType: UploadObjectOptions
+  fullName: Google.Cloud.Storage.V1.UploadObjectOptions
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.OpenReadAsync(System.String,System.Threading.CancellationToken)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.OpenReadAsync(System.String,System.Threading.CancellationToken)
+  parent: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: OpenReadAsync(string, CancellationToken)
+  nameWithType: GenericBlobStorage.OpenReadAsync(string, CancellationToken)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.OpenReadAsync(string, System.Threading.CancellationToken)
+  nameWithType.vb: GenericBlobStorage.OpenReadAsync(String, CancellationToken)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.OpenReadAsync(String, System.Threading.CancellationToken)
+  name.vb: OpenReadAsync(String, CancellationToken)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.OpenReadAsync(System.String,System.Threading.CancellationToken)
+    name: OpenReadAsync
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.OpenReadAsync(System.String,System.Threading.CancellationToken)
+    name: OpenReadAsync
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync*
+  commentId: Overload:Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync
+  href: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.html#Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync(System.String,System.Threading.CancellationToken)
+  name: OpenReadAsync
+  nameWithType: Blobs.OpenReadAsync
+  fullName: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs.OpenReadAsync
+- uid: System.Threading.Tasks.Task{System.IO.Stream}
+  commentId: T:System.Threading.Tasks.Task{System.IO.Stream}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<Stream>
+  nameWithType: Task<Stream>
+  fullName: System.Threading.Tasks.Task<System.IO.Stream>
+  nameWithType.vb: Task(Of Stream)
+  fullName.vb: System.Threading.Tasks.Task(Of System.IO.Stream)
+  name.vb: Task(Of Stream)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IO.Stream
+    name: Stream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  - name: )

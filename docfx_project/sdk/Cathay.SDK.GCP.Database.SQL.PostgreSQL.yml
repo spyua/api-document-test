@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  commentId: N:Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  id: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  children:
+  - Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  nameWithType: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.GCP.Databases.SQL.PostgreSQL
+references:
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  commentId: T:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  href: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.html
+  name: Sql
+  nameWithType: Sql
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql

@@ -1,0 +1,891 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  commentId: T:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  id: Sql
+  parent: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  children:
+  - Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckEnv(System.String)
+  - Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckFileExist(System.String)
+  - Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Conn(System.String)
+  - Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Dispose
+  - Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString
+  - Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  langs:
+  - csharp
+  - vb
+  name: Sql
+  nameWithType: Sql
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  type: Class
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Sql
+    path: ../Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+    startLine: 5
+  assemblies:
+  - Cathay.SDK.GCP.Databases.SQL.PostgreSQL
+  namespace: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  syntax:
+    content: 'public class Sql : ISql<NpgsqlConnection, NpgsqlConnectionStringBuilder>, IDisposable'
+    content.vb: Public Class Sql Implements ISql(Of NpgsqlConnection, NpgsqlConnectionStringBuilder), IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Conn(System.String)
+  commentId: M:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Conn(System.String)
+  id: Conn(System.String)
+  parent: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  langs:
+  - csharp
+  - vb
+  name: Conn(string)
+  nameWithType: Sql.Conn(string)
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Conn(string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Conn
+    path: ../Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+    startLine: 8
+  assemblies:
+  - Cathay.SDK.GCP.Databases.SQL.PostgreSQL
+  namespace: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  summary: Build connection to SQL.
+  example: []
+  syntax:
+    content: public NpgsqlConnection Conn(string connectionString)
+    parameters:
+    - id: connectionString
+      type: System.String
+      description: Connection string
+    return:
+      type: Npgsql.NpgsqlConnection
+      description: ''
+    content.vb: Public Function Conn(connectionString As String) As NpgsqlConnection
+  overload: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Conn*
+  implements:
+  - Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.Conn(System.String)
+  nameWithType.vb: Sql.Conn(String)
+  fullName.vb: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Conn(String)
+  name.vb: Conn(String)
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString
+  commentId: M:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString
+  id: GetSqlConnString
+  parent: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  langs:
+  - csharp
+  - vb
+  name: GetSqlConnString()
+  nameWithType: Sql.GetSqlConnString()
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString()
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: GetSqlConnString
+    path: ../Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+    startLine: 19
+  assemblies:
+  - Cathay.SDK.GCP.Databases.SQL.PostgreSQL
+  namespace: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  summary: 獲取DB Connection連線資訊字串
+  example: []
+  syntax:
+    content: public NpgsqlConnectionStringBuilder GetSqlConnString()
+    return:
+      type: Npgsql.NpgsqlConnectionStringBuilder
+      description: DB Connection連線資訊字串
+    content.vb: Public Function GetSqlConnString() As NpgsqlConnectionStringBuilder
+  overload: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString*
+  implements:
+  - Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.GetSqlConnString
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  commentId: M:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  id: GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  parent: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  langs:
+  - csharp
+  - vb
+  name: GetSqlConnString(DbConn)
+  nameWithType: Sql.GetSqlConnString(DbConn)
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: GetSqlConnString
+    path: ../Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+    startLine: 61
+  assemblies:
+  - Cathay.SDK.GCP.Databases.SQL.PostgreSQL
+  namespace: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  summary: 獲取DB Connection連線資訊字串
+  example: []
+  syntax:
+    content: public NpgsqlConnectionStringBuilder GetSqlConnString(DbConn dbInfo)
+    parameters:
+    - id: dbInfo
+      type: Cathay.SDK.Cloud.Interface.SQL.DbConn
+      description: DB Setting Information
+    return:
+      type: Npgsql.NpgsqlConnectionStringBuilder
+      description: DB Connection連線資訊字串
+    content.vb: Public Function GetSqlConnString(dbInfo As DbConn) As NpgsqlConnectionStringBuilder
+  overload: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: Port is invalid format
+  implements:
+  - Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckEnv(System.String)
+  commentId: M:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckEnv(System.String)
+  id: CheckEnv(System.String)
+  parent: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  langs:
+  - csharp
+  - vb
+  name: CheckEnv(string)
+  nameWithType: Sql.CheckEnv(string)
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckEnv(string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: CheckEnv
+    path: ../Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+    startLine: 97
+  assemblies:
+  - Cathay.SDK.GCP.Databases.SQL.PostgreSQL
+  namespace: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  syntax:
+    content: public string CheckEnv(string variable)
+    parameters:
+    - id: variable
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function CheckEnv(variable As String) As String
+  overload: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckEnv*
+  nameWithType.vb: Sql.CheckEnv(String)
+  fullName.vb: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckEnv(String)
+  name.vb: CheckEnv(String)
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckFileExist(System.String)
+  commentId: M:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckFileExist(System.String)
+  id: CheckFileExist(System.String)
+  parent: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  langs:
+  - csharp
+  - vb
+  name: CheckFileExist(string)
+  nameWithType: Sql.CheckFileExist(string)
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckFileExist(string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: CheckFileExist
+    path: ../Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+    startLine: 108
+  assemblies:
+  - Cathay.SDK.GCP.Databases.SQL.PostgreSQL
+  namespace: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  syntax:
+    content: public void CheckFileExist(string filePath)
+    parameters:
+    - id: filePath
+      type: System.String
+    content.vb: Public Sub CheckFileExist(filePath As String)
+  overload: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckFileExist*
+  nameWithType.vb: Sql.CheckFileExist(String)
+  fullName.vb: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckFileExist(String)
+  name.vb: CheckFileExist(String)
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Dispose
+  commentId: M:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Dispose
+  id: Dispose
+  parent: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Sql.Dispose()
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Dispose()
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Dispose
+    path: ../Cathay.SDK.GCP.Databases.SQL.PostgreSQL/PostgreSQL/SQL.cs
+    startLine: 130
+  assemblies:
+  - Cathay.SDK.GCP.Databases.SQL.PostgreSQL
+  namespace: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  summary: Dispose any unused resources
+  example: []
+  syntax:
+    content: public virtual void Dispose()
+    content.vb: Public Overridable Sub Dispose()
+  overload: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  commentId: N:Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  href: Cathay.html
+  name: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  nameWithType: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Database
+    name: Database
+    href: Cathay.SDK.GCP.Database.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Database.SQL
+    name: SQL
+    href: Cathay.SDK.GCP.Database.SQL.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+    name: PostgreSQL
+    href: Cathay.SDK.GCP.Database.SQL.PostgreSQL.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Database
+    name: Database
+    href: Cathay.SDK.GCP.Database.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Database.SQL
+    name: SQL
+    href: Cathay.SDK.GCP.Database.SQL.html
+  - name: .
+  - uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL
+    name: PostgreSQL
+    href: Cathay.SDK.GCP.Database.SQL.PostgreSQL.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}
+  commentId: T:Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}
+  parent: Cathay.SDK.Cloud.Interface.SQL
+  definition: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  name: ISql<NpgsqlConnection, NpgsqlConnectionStringBuilder>
+  nameWithType: ISql<NpgsqlConnection, NpgsqlConnectionStringBuilder>
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<Npgsql.NpgsqlConnection, Npgsql.NpgsqlConnectionStringBuilder>
+  nameWithType.vb: ISql(Of NpgsqlConnection, NpgsqlConnectionStringBuilder)
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of Npgsql.NpgsqlConnection, Npgsql.NpgsqlConnectionStringBuilder)
+  name.vb: ISql(Of NpgsqlConnection, NpgsqlConnectionStringBuilder)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+    name: ISql
+  - name: <
+  - uid: Npgsql.NpgsqlConnection
+    name: NpgsqlConnection
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Npgsql.NpgsqlConnectionStringBuilder
+    name: NpgsqlConnectionStringBuilder
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+    name: ISql
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Npgsql.NpgsqlConnection
+    name: NpgsqlConnection
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Npgsql.NpgsqlConnectionStringBuilder
+    name: NpgsqlConnectionStringBuilder
+    isExternal: true
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  commentId: T:Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  name: ISql<TConnection, TStringBuilder>
+  nameWithType: ISql<TConnection, TStringBuilder>
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder)
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder)
+  name.vb: ISql(Of TConnection, TStringBuilder)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+    name: ISql
+  - name: <
+  - name: TConnection
+  - name: ','
+  - name: " "
+  - name: TStringBuilder
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+    name: ISql
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TConnection
+  - name: ','
+  - name: " "
+  - name: TStringBuilder
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.SQL
+  commentId: N:Cathay.SDK.Cloud.Interface.SQL
+  name: Cathay.SDK.Cloud.Interface.SQL
+  nameWithType: Cathay.SDK.Cloud.Interface.SQL
+  fullName: Cathay.SDK.Cloud.Interface.SQL
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.SQL
+    name: SQL
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.SQL
+    name: SQL
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Conn*
+  commentId: Overload:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Conn
+  href: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.html#Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Conn(System.String)
+  name: Conn
+  nameWithType: Sql.Conn
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Conn
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.Conn(System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.Conn(System.String)
+  parent: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}
+  definition: Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn(System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Conn(string)
+  nameWithType: ISql<NpgsqlConnection, NpgsqlConnectionStringBuilder>.Conn(string)
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<Npgsql.NpgsqlConnection, Npgsql.NpgsqlConnectionStringBuilder>.Conn(string)
+  nameWithType.vb: ISql(Of NpgsqlConnection, NpgsqlConnectionStringBuilder).Conn(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of Npgsql.NpgsqlConnection, Npgsql.NpgsqlConnectionStringBuilder).Conn(String)
+  name.vb: Conn(String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.Conn(System.String)
+    name: Conn
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.Conn(System.String)
+    name: Conn
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Npgsql.NpgsqlConnection
+  commentId: T:Npgsql.NpgsqlConnection
+  parent: Npgsql
+  isExternal: true
+  name: NpgsqlConnection
+  nameWithType: NpgsqlConnection
+  fullName: Npgsql.NpgsqlConnection
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn(System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Conn(string)
+  nameWithType: ISql<TConnection, TStringBuilder>.Conn(string)
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>.Conn(string)
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder).Conn(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder).Conn(String)
+  name.vb: Conn(String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn(System.String)
+    name: Conn
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn(System.String)
+    name: Conn
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Npgsql
+  commentId: N:Npgsql
+  isExternal: true
+  name: Npgsql
+  nameWithType: Npgsql
+  fullName: Npgsql
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString*
+  commentId: Overload:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString
+  href: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.html#Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString
+  name: GetSqlConnString
+  nameWithType: Sql.GetSqlConnString
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.GetSqlConnString
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.GetSqlConnString
+  commentId: M:Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.GetSqlConnString
+  parent: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}
+  definition: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString
+  name: GetSqlConnString()
+  nameWithType: ISql<NpgsqlConnection, NpgsqlConnectionStringBuilder>.GetSqlConnString()
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<Npgsql.NpgsqlConnection, Npgsql.NpgsqlConnectionStringBuilder>.GetSqlConnString()
+  nameWithType.vb: ISql(Of NpgsqlConnection, NpgsqlConnectionStringBuilder).GetSqlConnString()
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of Npgsql.NpgsqlConnection, Npgsql.NpgsqlConnectionStringBuilder).GetSqlConnString()
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.GetSqlConnString
+    name: GetSqlConnString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.GetSqlConnString
+    name: GetSqlConnString
+  - name: (
+  - name: )
+- uid: Npgsql.NpgsqlConnectionStringBuilder
+  commentId: T:Npgsql.NpgsqlConnectionStringBuilder
+  parent: Npgsql
+  isExternal: true
+  name: NpgsqlConnectionStringBuilder
+  nameWithType: NpgsqlConnectionStringBuilder
+  fullName: Npgsql.NpgsqlConnectionStringBuilder
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString
+  commentId: M:Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString
+  name: GetSqlConnString()
+  nameWithType: ISql<TConnection, TStringBuilder>.GetSqlConnString()
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>.GetSqlConnString()
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder).GetSqlConnString()
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder).GetSqlConnString()
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString
+    name: GetSqlConnString
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString
+    name: GetSqlConnString
+  - name: (
+  - name: )
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  commentId: M:Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  parent: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}
+  definition: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  name: GetSqlConnString(DbConn)
+  nameWithType: ISql<NpgsqlConnection, NpgsqlConnectionStringBuilder>.GetSqlConnString(DbConn)
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<Npgsql.NpgsqlConnection, Npgsql.NpgsqlConnectionStringBuilder>.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  nameWithType.vb: ISql(Of NpgsqlConnection, NpgsqlConnectionStringBuilder).GetSqlConnString(DbConn)
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of Npgsql.NpgsqlConnection, Npgsql.NpgsqlConnectionStringBuilder).GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+    name: GetSqlConnString
+  - name: (
+  - uid: Cathay.SDK.Cloud.Interface.SQL.DbConn
+    name: DbConn
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql{Npgsql.NpgsqlConnection,Npgsql.NpgsqlConnectionStringBuilder}.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+    name: GetSqlConnString
+  - name: (
+  - uid: Cathay.SDK.Cloud.Interface.SQL.DbConn
+    name: DbConn
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.SQL.DbConn
+  commentId: T:Cathay.SDK.Cloud.Interface.SQL.DbConn
+  parent: Cathay.SDK.Cloud.Interface.SQL
+  name: DbConn
+  nameWithType: DbConn
+  fullName: Cathay.SDK.Cloud.Interface.SQL.DbConn
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  commentId: M:Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  name: GetSqlConnString(DbConn)
+  nameWithType: ISql<TConnection, TStringBuilder>.GetSqlConnString(DbConn)
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder).GetSqlConnString(DbConn)
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder).GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+    name: GetSqlConnString
+  - name: (
+  - uid: Cathay.SDK.Cloud.Interface.SQL.DbConn
+    name: DbConn
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+    name: GetSqlConnString
+  - name: (
+  - uid: Cathay.SDK.Cloud.Interface.SQL.DbConn
+    name: DbConn
+  - name: )
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckEnv*
+  commentId: Overload:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckEnv
+  href: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.html#Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckEnv(System.String)
+  name: CheckEnv
+  nameWithType: Sql.CheckEnv
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckEnv
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckFileExist*
+  commentId: Overload:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckFileExist
+  href: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.html#Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckFileExist(System.String)
+  name: CheckFileExist
+  nameWithType: Sql.CheckFileExist
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.CheckFileExist
+- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Dispose*
+  commentId: Overload:Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Dispose
+  href: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.html#Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Dispose
+  name: Dispose
+  nameWithType: Sql.Dispose
+  fullName: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

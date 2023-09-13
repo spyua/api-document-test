@@ -1,0 +1,1337 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.GCP.PubSub.Receiver
+  commentId: T:Cathay.SDK.GCP.PubSub.Receiver
+  id: Receiver
+  parent: Cathay.SDK.GCP.PubSub
+  children:
+  - Cathay.SDK.GCP.PubSub.Receiver.#ctor(System.String,System.String,System.Int32)
+  - Cathay.SDK.GCP.PubSub.Receiver.PullMessage(System.Boolean)
+  - Cathay.SDK.GCP.PubSub.Receiver.PullMessages(System.Boolean)
+  - Cathay.SDK.GCP.PubSub.Receiver.PullMessages(System.Int32,System.Boolean)
+  - Cathay.SDK.GCP.PubSub.Receiver.PullMessagesAsync(System.Int32,System.Boolean)
+  - Cathay.SDK.GCP.PubSub.Receiver.Received(System.String)
+  langs:
+  - csharp
+  - vb
+  name: Receiver
+  nameWithType: Receiver
+  fullName: Cathay.SDK.GCP.PubSub.Receiver
+  type: Class
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Receiver
+    path: ../Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+    startLine: 9
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: Pub Sub Receiver
+  example: []
+  syntax:
+    content: 'public class Receiver : IReceiver<ReceivedMessage, PubsubMessage>'
+    content.vb: Public Class Receiver Implements IReceiver(Of ReceivedMessage, PubsubMessage)
+  inheritance:
+  - System.Object
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Cathay.SDK.GCP.PubSub.Receiver.#ctor(System.String,System.String,System.Int32)
+  commentId: M:Cathay.SDK.GCP.PubSub.Receiver.#ctor(System.String,System.String,System.Int32)
+  id: '#ctor(System.String,System.String,System.Int32)'
+  parent: Cathay.SDK.GCP.PubSub.Receiver
+  langs:
+  - csharp
+  - vb
+  name: Receiver(string, string, int)
+  nameWithType: Receiver.Receiver(string, string, int)
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.Receiver(string, string, int)
+  type: Constructor
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: .ctor
+    path: ../Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+    startLine: 20
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: PubSub Message Receiver
+  example: []
+  syntax:
+    content: public Receiver(string projectID, string subscriptionID, int number = 1)
+    parameters:
+    - id: projectID
+      type: System.String
+      description: 專案代碼
+    - id: subscriptionID
+      type: System.String
+      description: 訂閱者代碼
+    - id: number
+      type: System.Int32
+      description: 回傳訊息數(sync使用)
+    content.vb: Public Sub New(projectID As String, subscriptionID As String, number As Integer = 1)
+  overload: Cathay.SDK.GCP.PubSub.Receiver.#ctor*
+  nameWithType.vb: Receiver.New(String, String, Integer)
+  fullName.vb: Cathay.SDK.GCP.PubSub.Receiver.New(String, String, Integer)
+  name.vb: New(String, String, Integer)
+- uid: Cathay.SDK.GCP.PubSub.Receiver.PullMessage(System.Boolean)
+  commentId: M:Cathay.SDK.GCP.PubSub.Receiver.PullMessage(System.Boolean)
+  id: PullMessage(System.Boolean)
+  parent: Cathay.SDK.GCP.PubSub.Receiver
+  langs:
+  - csharp
+  - vb
+  name: PullMessage(bool)
+  nameWithType: Receiver.PullMessage(bool)
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.PullMessage(bool)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: PullMessage
+    path: ../Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+    startLine: 34
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: 取得訊息
+  example: []
+  syntax:
+    content: public ReceivedMessage PullMessage(bool received = true)
+    parameters:
+    - id: received
+      type: System.Boolean
+      description: 是否回復gcp ack
+    return:
+      type: Google.Cloud.PubSub.V1.ReceivedMessage
+      description: 訊息
+    content.vb: Public Function PullMessage(received As Boolean = True) As ReceivedMessage
+  overload: Cathay.SDK.GCP.PubSub.Receiver.PullMessage*
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessage(System.Boolean)
+  nameWithType.vb: Receiver.PullMessage(Boolean)
+  fullName.vb: Cathay.SDK.GCP.PubSub.Receiver.PullMessage(Boolean)
+  name.vb: PullMessage(Boolean)
+- uid: Cathay.SDK.GCP.PubSub.Receiver.PullMessages(System.Boolean)
+  commentId: M:Cathay.SDK.GCP.PubSub.Receiver.PullMessages(System.Boolean)
+  id: PullMessages(System.Boolean)
+  parent: Cathay.SDK.GCP.PubSub.Receiver
+  langs:
+  - csharp
+  - vb
+  name: PullMessages(bool)
+  nameWithType: Receiver.PullMessages(bool)
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.PullMessages(bool)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: PullMessages
+    path: ../Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+    startLine: 44
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: 取得訊息列
+  example: []
+  syntax:
+    content: public IEnumerable<ReceivedMessage> PullMessages(bool received = true)
+    parameters:
+    - id: received
+      type: System.Boolean
+      description: 是否回復gcp ack
+    return:
+      type: System.Collections.Generic.IEnumerable{Google.Cloud.PubSub.V1.ReceivedMessage}
+      description: 訊息列
+    content.vb: Public Function PullMessages(received As Boolean = True) As IEnumerable(Of ReceivedMessage)
+  overload: Cathay.SDK.GCP.PubSub.Receiver.PullMessages*
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessages(System.Boolean)
+  nameWithType.vb: Receiver.PullMessages(Boolean)
+  fullName.vb: Cathay.SDK.GCP.PubSub.Receiver.PullMessages(Boolean)
+  name.vb: PullMessages(Boolean)
+- uid: Cathay.SDK.GCP.PubSub.Receiver.PullMessages(System.Int32,System.Boolean)
+  commentId: M:Cathay.SDK.GCP.PubSub.Receiver.PullMessages(System.Int32,System.Boolean)
+  id: PullMessages(System.Int32,System.Boolean)
+  parent: Cathay.SDK.GCP.PubSub.Receiver
+  langs:
+  - csharp
+  - vb
+  name: PullMessages(int, bool)
+  nameWithType: Receiver.PullMessages(int, bool)
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.PullMessages(int, bool)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: PullMessages
+    path: ../Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+    startLine: 55
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: 取得訊息列
+  example: []
+  syntax:
+    content: public IEnumerable<ReceivedMessage> PullMessages(int number, bool received = true)
+    parameters:
+    - id: number
+      type: System.Int32
+      description: 取得筆數
+    - id: received
+      type: System.Boolean
+      description: 是否回復gcp ack
+    return:
+      type: System.Collections.Generic.IEnumerable{Google.Cloud.PubSub.V1.ReceivedMessage}
+      description: 訊息列
+    content.vb: Public Function PullMessages(number As Integer, received As Boolean = True) As IEnumerable(Of ReceivedMessage)
+  overload: Cathay.SDK.GCP.PubSub.Receiver.PullMessages*
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessages(System.Int32,System.Boolean)
+  nameWithType.vb: Receiver.PullMessages(Integer, Boolean)
+  fullName.vb: Cathay.SDK.GCP.PubSub.Receiver.PullMessages(Integer, Boolean)
+  name.vb: PullMessages(Integer, Boolean)
+- uid: Cathay.SDK.GCP.PubSub.Receiver.PullMessagesAsync(System.Int32,System.Boolean)
+  commentId: M:Cathay.SDK.GCP.PubSub.Receiver.PullMessagesAsync(System.Int32,System.Boolean)
+  id: PullMessagesAsync(System.Int32,System.Boolean)
+  parent: Cathay.SDK.GCP.PubSub.Receiver
+  langs:
+  - csharp
+  - vb
+  name: PullMessagesAsync(int, bool)
+  nameWithType: Receiver.PullMessagesAsync(int, bool)
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.PullMessagesAsync(int, bool)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: PullMessagesAsync
+    path: ../Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+    startLine: 71
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: 取得訊息(非同步)
+  remarks: '!!!!! Async回傳後無法再執行Ack !!!!!'
+  example: []
+  syntax:
+    content: public Task<IEnumerable<PubsubMessage>> PullMessagesAsync(int millisecond, bool acknowledge = true)
+    parameters:
+    - id: millisecond
+      type: System.Int32
+      description: 執行時間(毫秒)
+    - id: acknowledge
+      type: System.Boolean
+      description: 是否ack
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Google.Cloud.PubSub.V1.PubsubMessage}}
+      description: 回傳訊息(可能少於指定筆數)
+    content.vb: Public Function PullMessagesAsync(millisecond As Integer, acknowledge As Boolean = True) As Task(Of IEnumerable(Of PubsubMessage))
+  overload: Cathay.SDK.GCP.PubSub.Receiver.PullMessagesAsync*
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessagesAsync(System.Int32,System.Boolean)
+  nameWithType.vb: Receiver.PullMessagesAsync(Integer, Boolean)
+  fullName.vb: Cathay.SDK.GCP.PubSub.Receiver.PullMessagesAsync(Integer, Boolean)
+  name.vb: PullMessagesAsync(Integer, Boolean)
+- uid: Cathay.SDK.GCP.PubSub.Receiver.Received(System.String)
+  commentId: M:Cathay.SDK.GCP.PubSub.Receiver.Received(System.String)
+  id: Received(System.String)
+  parent: Cathay.SDK.GCP.PubSub.Receiver
+  langs:
+  - csharp
+  - vb
+  name: Received(string)
+  nameWithType: Receiver.Received(string)
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.Received(string)
+  type: Method
+  source:
+    remote:
+      path: Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+      branch: feature-docfx
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.GCP.git
+    id: Received
+    path: ../Cathay.SDK.GCP.PubSub/PubSubReceiver.cs
+    startLine: 93
+  assemblies:
+  - Cathay.SDK.GCP.PubSub
+  namespace: Cathay.SDK.GCP.PubSub
+  summary: Acknowledge
+  example: []
+  syntax:
+    content: public bool Received(string ackID)
+    parameters:
+    - id: ackID
+      type: System.String
+      description: ReceivedMessage.AckId
+    return:
+      type: System.Boolean
+      description: 是否ack成功
+    content.vb: Public Function Received(ackID As String) As Boolean
+  overload: Cathay.SDK.GCP.PubSub.Receiver.Received*
+  implements:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.Received(System.String)
+  nameWithType.vb: Receiver.Received(String)
+  fullName.vb: Cathay.SDK.GCP.PubSub.Receiver.Received(String)
+  name.vb: Received(String)
+references:
+- uid: Cathay.SDK.GCP.PubSub
+  commentId: N:Cathay.SDK.GCP.PubSub
+  href: Cathay.html
+  name: Cathay.SDK.GCP.PubSub
+  nameWithType: Cathay.SDK.GCP.PubSub
+  fullName: Cathay.SDK.GCP.PubSub
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.PubSub
+    name: PubSub
+    href: Cathay.SDK.GCP.PubSub.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.GCP
+    name: GCP
+    href: Cathay.SDK.GCP.html
+  - name: .
+  - uid: Cathay.SDK.GCP.PubSub
+    name: PubSub
+    href: Cathay.SDK.GCP.PubSub.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}
+  commentId: T:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue
+  definition: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  name: IReceiver<ReceivedMessage, PubsubMessage>
+  nameWithType: IReceiver<ReceivedMessage, PubsubMessage>
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage>
+  nameWithType.vb: IReceiver(Of ReceivedMessage, PubsubMessage)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage)
+  name.vb: IReceiver(Of ReceivedMessage, PubsubMessage)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+    name: IReceiver
+  - name: <
+  - uid: Google.Cloud.PubSub.V1.ReceivedMessage
+    name: ReceivedMessage
+    isExternal: true
+    href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  - name: ','
+  - name: " "
+  - uid: Google.Cloud.PubSub.V1.PubsubMessage
+    name: PubsubMessage
+    isExternal: true
+    href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+    name: IReceiver
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Google.Cloud.PubSub.V1.ReceivedMessage
+    name: ReceivedMessage
+    isExternal: true
+    href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  - name: ','
+  - name: " "
+  - uid: Google.Cloud.PubSub.V1.PubsubMessage
+    name: PubsubMessage
+    isExternal: true
+    href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  commentId: T:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  name: IReceiver<T, R>
+  nameWithType: IReceiver<T, R>
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>
+  nameWithType.vb: IReceiver(Of T, R)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R)
+  name.vb: IReceiver(Of T, R)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+    name: IReceiver
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: R
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+    name: IReceiver
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: R
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue
+  commentId: N:Cathay.SDK.Cloud.Interface.MessageQueue
+  name: Cathay.SDK.Cloud.Interface.MessageQueue
+  nameWithType: Cathay.SDK.Cloud.Interface.MessageQueue
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue
+    name: MessageQueue
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue
+    name: MessageQueue
+- uid: Cathay.SDK.GCP.PubSub.Receiver.#ctor*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.Receiver.#ctor
+  href: Cathay.SDK.GCP.PubSub.Receiver.html#Cathay.SDK.GCP.PubSub.Receiver.#ctor(System.String,System.String,System.Int32)
+  name: Receiver
+  nameWithType: Receiver.Receiver
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.Receiver
+  nameWithType.vb: Receiver.New
+  fullName.vb: Cathay.SDK.GCP.PubSub.Receiver.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cathay.SDK.GCP.PubSub.Receiver.PullMessage*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.Receiver.PullMessage
+  href: Cathay.SDK.GCP.PubSub.Receiver.html#Cathay.SDK.GCP.PubSub.Receiver.PullMessage(System.Boolean)
+  name: PullMessage
+  nameWithType: Receiver.PullMessage
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.PullMessage
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessage(System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessage(System.Boolean)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}
+  definition: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage(System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: PullMessage(bool)
+  nameWithType: IReceiver<ReceivedMessage, PubsubMessage>.PullMessage(bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage>.PullMessage(bool)
+  nameWithType.vb: IReceiver(Of ReceivedMessage, PubsubMessage).PullMessage(Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage).PullMessage(Boolean)
+  name.vb: PullMessage(Boolean)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessage(System.Boolean)
+    name: PullMessage
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessage(System.Boolean)
+    name: PullMessage
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Google.Cloud.PubSub.V1.ReceivedMessage
+  commentId: T:Google.Cloud.PubSub.V1.ReceivedMessage
+  parent: Google.Cloud.PubSub.V1
+  isExternal: true
+  href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  name: ReceivedMessage
+  nameWithType: ReceivedMessage
+  fullName: Google.Cloud.PubSub.V1.ReceivedMessage
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage(System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage(System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: PullMessage(bool)
+  nameWithType: IReceiver<T, R>.PullMessage(bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessage(bool)
+  nameWithType.vb: IReceiver(Of T, R).PullMessage(Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessage(Boolean)
+  name.vb: PullMessage(Boolean)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage(System.Boolean)
+    name: PullMessage
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage(System.Boolean)
+    name: PullMessage
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Google.Cloud.PubSub.V1
+  commentId: N:Google.Cloud.PubSub.V1
+  isExternal: true
+  name: Google.Cloud.PubSub.V1
+  nameWithType: Google.Cloud.PubSub.V1
+  fullName: Google.Cloud.PubSub.V1
+  spec.csharp:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud
+    name: Cloud
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.PubSub
+    name: PubSub
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.PubSub.V1
+    name: V1
+    isExternal: true
+  spec.vb:
+  - uid: Google
+    name: Google
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud
+    name: Cloud
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.PubSub
+    name: PubSub
+    isExternal: true
+  - name: .
+  - uid: Google.Cloud.PubSub.V1
+    name: V1
+    isExternal: true
+- uid: Cathay.SDK.GCP.PubSub.Receiver.PullMessages*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.Receiver.PullMessages
+  href: Cathay.SDK.GCP.PubSub.Receiver.html#Cathay.SDK.GCP.PubSub.Receiver.PullMessages(System.Boolean)
+  name: PullMessages
+  nameWithType: Receiver.PullMessages
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.PullMessages
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessages(System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessages(System.Boolean)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}
+  definition: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: PullMessages(bool)
+  nameWithType: IReceiver<ReceivedMessage, PubsubMessage>.PullMessages(bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage>.PullMessages(bool)
+  nameWithType.vb: IReceiver(Of ReceivedMessage, PubsubMessage).PullMessages(Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage).PullMessages(Boolean)
+  name.vb: PullMessages(Boolean)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessages(System.Boolean)
+    name: PullMessages
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessages(System.Boolean)
+    name: PullMessages
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Google.Cloud.PubSub.V1.ReceivedMessage}
+  commentId: T:System.Collections.Generic.IEnumerable{Google.Cloud.PubSub.V1.ReceivedMessage}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ReceivedMessage>
+  nameWithType: IEnumerable<ReceivedMessage>
+  fullName: System.Collections.Generic.IEnumerable<Google.Cloud.PubSub.V1.ReceivedMessage>
+  nameWithType.vb: IEnumerable(Of ReceivedMessage)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Google.Cloud.PubSub.V1.ReceivedMessage)
+  name.vb: IEnumerable(Of ReceivedMessage)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Google.Cloud.PubSub.V1.ReceivedMessage
+    name: ReceivedMessage
+    isExternal: true
+    href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Google.Cloud.PubSub.V1.ReceivedMessage
+    name: ReceivedMessage
+    isExternal: true
+    href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: PullMessages(bool)
+  nameWithType: IReceiver<T, R>.PullMessages(bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessages(bool)
+  nameWithType.vb: IReceiver(Of T, R).PullMessages(Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessages(Boolean)
+  name.vb: PullMessages(Boolean)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Boolean)
+    name: PullMessages
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Boolean)
+    name: PullMessages
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessages(System.Int32,System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessages(System.Int32,System.Boolean)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}
+  definition: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Int32,System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: PullMessages(int, bool)
+  nameWithType: IReceiver<ReceivedMessage, PubsubMessage>.PullMessages(int, bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage>.PullMessages(int, bool)
+  nameWithType.vb: IReceiver(Of ReceivedMessage, PubsubMessage).PullMessages(Integer, Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage).PullMessages(Integer, Boolean)
+  name.vb: PullMessages(Integer, Boolean)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessages(System.Int32,System.Boolean)
+    name: PullMessages
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessages(System.Int32,System.Boolean)
+    name: PullMessages
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Int32,System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Int32,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: PullMessages(int, bool)
+  nameWithType: IReceiver<T, R>.PullMessages(int, bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessages(int, bool)
+  nameWithType.vb: IReceiver(Of T, R).PullMessages(Integer, Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessages(Integer, Boolean)
+  name.vb: PullMessages(Integer, Boolean)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Int32,System.Boolean)
+    name: PullMessages
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Int32,System.Boolean)
+    name: PullMessages
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: Cathay.SDK.GCP.PubSub.Receiver.PullMessagesAsync*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.Receiver.PullMessagesAsync
+  href: Cathay.SDK.GCP.PubSub.Receiver.html#Cathay.SDK.GCP.PubSub.Receiver.PullMessagesAsync(System.Int32,System.Boolean)
+  name: PullMessagesAsync
+  nameWithType: Receiver.PullMessagesAsync
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.PullMessagesAsync
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessagesAsync(System.Int32,System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessagesAsync(System.Int32,System.Boolean)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}
+  definition: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync(System.Int32,System.Boolean)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: PullMessagesAsync(int, bool)
+  nameWithType: IReceiver<ReceivedMessage, PubsubMessage>.PullMessagesAsync(int, bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage>.PullMessagesAsync(int, bool)
+  nameWithType.vb: IReceiver(Of ReceivedMessage, PubsubMessage).PullMessagesAsync(Integer, Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage).PullMessagesAsync(Integer, Boolean)
+  name.vb: PullMessagesAsync(Integer, Boolean)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessagesAsync(System.Int32,System.Boolean)
+    name: PullMessagesAsync
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.PullMessagesAsync(System.Int32,System.Boolean)
+    name: PullMessagesAsync
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Google.Cloud.PubSub.V1.PubsubMessage}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{Google.Cloud.PubSub.V1.PubsubMessage}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<PubsubMessage>>
+  nameWithType: Task<IEnumerable<PubsubMessage>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<Google.Cloud.PubSub.V1.PubsubMessage>>
+  nameWithType.vb: Task(Of IEnumerable(Of PubsubMessage))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of Google.Cloud.PubSub.V1.PubsubMessage))
+  name.vb: Task(Of IEnumerable(Of PubsubMessage))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Google.Cloud.PubSub.V1.PubsubMessage
+    name: PubsubMessage
+    isExternal: true
+    href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Google.Cloud.PubSub.V1.PubsubMessage
+    name: PubsubMessage
+    isExternal: true
+    href: https://github.com/googleapis/google-cloud-dotnet/blob/e04f8619b11622885373485321b5dfe2f75a29d6/apis/Google.Cloud.PubSub.V1/Google.Cloud.PubSub.V1/Pubsub.g.cs
+  - name: )
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync(System.Int32,System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync(System.Int32,System.Boolean)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: PullMessagesAsync(int, bool)
+  nameWithType: IReceiver<T, R>.PullMessagesAsync(int, bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessagesAsync(int, bool)
+  nameWithType.vb: IReceiver(Of T, R).PullMessagesAsync(Integer, Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessagesAsync(Integer, Boolean)
+  name.vb: PullMessagesAsync(Integer, Boolean)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync(System.Int32,System.Boolean)
+    name: PullMessagesAsync
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync(System.Int32,System.Boolean)
+    name: PullMessagesAsync
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Cathay.SDK.GCP.PubSub.Receiver.Received*
+  commentId: Overload:Cathay.SDK.GCP.PubSub.Receiver.Received
+  href: Cathay.SDK.GCP.PubSub.Receiver.html#Cathay.SDK.GCP.PubSub.Receiver.Received(System.String)
+  name: Received
+  nameWithType: Receiver.Received
+  fullName: Cathay.SDK.GCP.PubSub.Receiver.Received
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.Received(System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.Received(System.String)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}
+  definition: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received(System.String)
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Received(string)
+  nameWithType: IReceiver<ReceivedMessage, PubsubMessage>.Received(string)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage>.Received(string)
+  nameWithType.vb: IReceiver(Of ReceivedMessage, PubsubMessage).Received(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of Google.Cloud.PubSub.V1.ReceivedMessage, Google.Cloud.PubSub.V1.PubsubMessage).Received(String)
+  name.vb: Received(String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.Received(System.String)
+    name: Received
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver{Google.Cloud.PubSub.V1.ReceivedMessage,Google.Cloud.PubSub.V1.PubsubMessage}.Received(System.String)
+    name: Received
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received(System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: Received(string)
+  nameWithType: IReceiver<T, R>.Received(string)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.Received(string)
+  nameWithType.vb: IReceiver(Of T, R).Received(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).Received(String)
+  name.vb: Received(String)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received(System.String)
+    name: Received
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received(System.String)
+    name: Received
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

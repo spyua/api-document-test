@@ -1,0 +1,4408 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class RedisClient
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class RedisClient
+ ">
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Cathay-CADS/Cathay.SDK.GCP/new/feature-docfx/apiSpec/new?filename=Cathay_SDK_GCP_MemoryStore_Redis_RedisClient.md&amp;value=---%0Auid%3A%20Cathay.SDK.GCP.MemoryStore.Redis.RedisClient%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../public/main.js'
+    import { init } from './../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient">
+
+
+
+  <h1 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient" class="text-break">
+    Class RedisClient
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L9"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cathay.html">Cathay</a>.<a class="xref" href="Cathay.SDK.html">SDK</a>.<a class="xref" href="Cathay.SDK.GCP.html">GCP</a>.<a class="xref" href="Cathay.SDK.GCP.MemoryStore.html">MemoryStore</a>.<a class="xref" href="Cathay.SDK.GCP.MemoryStore.Redis.html">Redis</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Cathay.SDK.GCP.MemoryStore.Redis.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>GCP Memory Store Redis Native Commands
+Reference: <a href="https://redis.io/commands/">https://redis.io/commands/</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class RedisClient : IRedisClient&lt;Order, SortType&gt;, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">RedisClient</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IRedisClient</span>&lt;<span class="xref">Order</span>, <span class="xref">SortType</span>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient__ctor_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.#ctor*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient__ctor" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.#ctor">
+  RedisClient()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClient.cs/#L19"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>取得預設環境變數名稱並建立 Redis 連線</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RedisClient()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient__ctor_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.#ctor*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient__ctor_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.#ctor(System.String)">
+  RedisClient(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClient.cs/#L49"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>建立 Redis 連線</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RedisClient(string connString)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>connString</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Redis 連線格式字串</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient__ctor_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.#ctor*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient__ctor_System_String_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.#ctor(System.String,System.String,System.String)">
+  RedisClient(string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClient.cs/#L35"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>取得指定環境變數名稱並建立 Redis 連線</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public RedisClient(string env_redis, string env_port, string env_auth)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>env_redis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>指定 IP 環境變數</p>
+</dd>
+    <dt><code>env_port</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>指定 Port 環境變數</p>
+</dd>
+    <dt><code>env_auth</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>指定 Auth String 環境變數</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Append_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Append*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Append_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Append(System.String,System.String)">
+  Append(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Append(string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Decr_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Decr*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Decr_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Decr(System.String)">
+  Decr(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Decr(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_DecrBy_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.DecrBy*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_DecrBy_System_String_System_Int64_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.DecrBy(System.String,System.Int64)">
+  DecrBy(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long DecrBy(string key, long decrBy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>decrBy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Del_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Del*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Del_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Del(System.String[])">
+  Del(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L141"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;bool&gt; Del(params string[] keys)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Dispose_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Dispose*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Dispose" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Dispose">
+  Dispose()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClient.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Exists_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Exists*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Exists_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Exists(System.String)">
+  Exists(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Exists(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Expire_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Expire*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Expire_System_String_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Expire(System.String,System.Int32)">
+  Expire(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L304"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Expire(string key, int seconds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>seconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ExpireAt_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ExpireAt*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ExpireAt_System_String_System_Int64_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ExpireAt(System.String,System.Int64)">
+  ExpireAt(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L326"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExpireAt(string key, long unixTime)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>unixTime</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Get_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Get*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Get_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Get(System.String)">
+  Get(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Get(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_GetBit_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.GetBit*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_GetBit_System_String_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.GetBit(System.String,System.Int32)">
+  GetBit(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetBit(string key, int offset)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_GetRange_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.GetRange*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_GetRange_System_String_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.GetRange(System.String,System.Int32,System.Int32)">
+  GetRange(string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L223"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetRange(string key, int fromIndex, int toIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fromIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>toIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HDel_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HDel*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HDel_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HDel(System.String,System.String)">
+  HDel(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HDel(string hashId, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HExists_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HExists*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HExists_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HExists(System.String,System.String)">
+  HExists(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HExists(string hashId, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HGet_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HGet*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HGet_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HGet(System.String,System.String)">
+  HGet(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HGet(string hashId, string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HGetAll_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HGetAll*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HGetAll_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HGetAll(System.String)">
+  HGetAll(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CHashEntry&gt; HGetAll(string hashId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">CHashEntry</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HIncrby_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HIncrby*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HIncrby_System_String_System_String_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HIncrby(System.String,System.String,System.Int32)">
+  HIncrby(string, string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long HIncrby(string hashId, string key, int incrementBy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>incrementBy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HIncrbyFloat_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HIncrbyFloat*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HIncrbyFloat_System_String_System_String_System_Double_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HIncrbyFloat(System.String,System.String,System.Double)">
+  HIncrbyFloat(string, string, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double HIncrbyFloat(string hashId, string key, double incrementBy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>incrementBy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HKeys_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HKeys*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HKeys_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HKeys(System.String)">
+  HKeys(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L136"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; HKeys(string hashId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HLen_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HLen*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HLen_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HLen(System.String)">
+  HLen(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long HLen(string hashId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HMGet_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HMGet*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HMGet_System_String_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HMGet(System.String,System.String[])">
+  HMGet(string, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; HMGet(string hashId, params string[] keysAndArgs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>keysAndArgs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HSet_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HSet*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HSet_System_String_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HSet(System.String,System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})">
+  HSet(string, IEnumerable&lt;string&gt;, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L26"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void HSet(string hashId, IEnumerable&lt;string&gt; keys, IEnumerable&lt;string&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>keys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HSet_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HSet*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HSet_System_String_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HSet(System.String,System.String,System.String)">
+  HSet(string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L15"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HSet(string hashId, string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HSetNX_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HSetNX*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HSetNX_System_String_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HSetNX(System.String,System.String,System.String)">
+  HSetNX(string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HSetNX(string hashId, string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HVals_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HVals*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_HVals_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.HVals(System.String)">
+  HVals(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientHash.cs/#L147"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; HVals(string hashId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>hashId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Incr_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Incr*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Incr_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Incr(System.String)">
+  Incr(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L157"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Incr(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_IncrBy_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.IncrBy*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_IncrBy_System_String_System_Int64_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.IncrBy(System.String,System.Int64)">
+  IncrBy(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long IncrBy(string key, long incrBy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>incrBy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_IncrByFloat_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.IncrByFloat*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_IncrByFloat_System_String_System_Double_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.IncrByFloat(System.String,System.Double)">
+  IncrByFloat(string, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L179"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double IncrByFloat(string key, double incrBy)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>incrBy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LIndex_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LIndex*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LIndex_System_String_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LIndex(System.String,System.Int32)">
+  LIndex(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LIndex(string listId, int listIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>listIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LInsert_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LInsert*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LInsert_System_String_System_Boolean_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LInsert(System.String,System.Boolean,System.String,System.String)">
+  LInsert(string, bool, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LInsert(string listId, bool insertBefore, string pivot, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>insertBefore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>pivot</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LLen_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LLen*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LLen_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LLen(System.String)">
+  LLen(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long LLen(string listId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LPop_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LPop*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LPop_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LPop(System.String)">
+  LPop(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LPop(string listId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LPop_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LPop*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LPop_System_String_System_Int64_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LPop(System.String,System.Int64)">
+  LPop(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; LPop(string listId, long count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LPush_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LPush*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LPush_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LPush(System.String,System.String)">
+  LPush(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long LPush(string listId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LPushX_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LPushX*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LPushX_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LPushX(System.String,System.String)">
+  LPushX(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long LPushX(string listId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LRange_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LRange*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LRange_System_String_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LRange(System.String,System.Int32,System.Int32)">
+  LRange(string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; LRange(string listId, int startingFrom, int endingAt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>startingFrom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>endingAt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LRem_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LRem*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LRem_System_String_System_Int32_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LRem(System.String,System.Int32,System.String)">
+  LRem(string, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long LRem(string listId, int removeNoOfMatches, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>removeNoOfMatches</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LSet_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LSet*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LSet_System_String_System_Int32_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LSet(System.String,System.Int32,System.String)">
+  LSet(string, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LSet(string listId, int listIndex, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>listIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LTrim_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LTrim*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_LTrim_System_String_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.LTrim(System.String,System.Int32,System.Int32)">
+  LTrim(string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LTrim(string listId, int keepStartingFrom, int keepEndingAt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>keepStartingFrom</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>keepEndingAt</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_MGet_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.MGet*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_MGet_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.MGet(System.String[])">
+  MGet(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; MGet(params string[] keys)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_MSet_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.MSet*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_MSet_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.MSet(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})">
+  MSet(IEnumerable&lt;string&gt;, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MSet(IEnumerable&lt;string&gt; keys, IEnumerable&lt;string&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_MSetNX_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.MSetNX*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_MSetNX_System_Collections_Generic_IEnumerable_System_String__System_Collections_Generic_IEnumerable_System_String__" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.MSetNX(System.Collections.Generic.IEnumerable{System.String},System.Collections.Generic.IEnumerable{System.String})">
+  MSetNX(IEnumerable&lt;string&gt;, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool MSetNX(IEnumerable&lt;string&gt; keys, IEnumerable&lt;string&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_PExpire_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.PExpire*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_PExpire_System_String_System_Int64_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.PExpire(System.String,System.Int64)">
+  PExpire(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L315"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PExpire(string key, long ttlMs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>ttlMs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_PExpireAt_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.PExpireAt*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_PExpireAt_System_String_System_Int64_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.PExpireAt(System.String,System.Int64)">
+  PExpireAt(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L340"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PExpireAt(string key, long unixTimeMs)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>unixTimeMs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_PTtl_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.PTtl*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_PTtl_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.PTtl(System.String)">
+  PTtl(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L364"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long PTtl(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Persist_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Persist*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Persist_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Persist(System.String)">
+  Persist(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Persist(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Quit_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Quit*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Quit" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Quit">
+  Quit()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClient.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>中斷連線</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Quit()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RPop_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RPop*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RPop_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RPop(System.String)">
+  RPop(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L178"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RPop(string listId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RPop_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RPop*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RPop_System_String_System_Int64_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RPop(System.String,System.Int64)">
+  RPop(string, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; RPop(string listId, long count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RPush_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RPush*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RPush_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RPush(System.String,System.String)">
+  RPush(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L31"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long RPush(string listId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RPushX_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RPushX*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RPushX_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RPushX(System.String,System.String)">
+  RPushX(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientList.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long RPushX(string listId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RandomKey_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RandomKey*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RandomKey" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RandomKey">
+  RandomKey()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L267"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string RandomKey()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Rename_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Rename*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Rename_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Rename(System.String,System.String)">
+  Rename(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L277"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Rename(string oldKeyName, string newKeyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldKeyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>newKeyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RenameNX_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RenameNX*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_RenameNX_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.RenameNX(System.String,System.String)">
+  RenameNX(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RenameNX(string oldKeyName, string newKeyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>oldKeyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>newKeyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SAdd_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SAdd*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SAdd_System_String_System_Collections_Generic_IEnumerable_System_String__" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SAdd(System.String,System.Collections.Generic.IEnumerable{System.String})">
+  SAdd(string, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L39"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long SAdd(string setId, IEnumerable&lt;string&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SAdd_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SAdd*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SAdd_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SAdd(System.String,System.String)">
+  SAdd(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L27"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SAdd(string setId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SCard_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SCard*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SCard_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SCard(System.String)">
+  SCard(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long SCard(string setId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SDiff_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SDiff*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SDiff_System_String_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SDiff(System.String,System.String[])">
+  SDiff(string, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; SDiff(string fromSetId, params string[] withSetIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromSetId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>withSetIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SDiffStore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SDiffStore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SDiffStore_System_String_System_String_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SDiffStore(System.String,System.String,System.String[])">
+  SDiffStore(string, string, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L199"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SDiffStore(string intoSetId, string fromSetId, params string[] withSetIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intoSetId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fromSetId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>withSetIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SInter_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SInter*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SInter_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SInter(System.String[])">
+  SInter(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L128"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; SInter(params string[] setIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SInterStore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SInterStore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SInterStore_System_String_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SInterStore(System.String,System.String[])">
+  SInterStore(string, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SInterStore(string intoSetId, params string[] setIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intoSetId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>setIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SIsMember_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SIsMember*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SIsMember_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SIsMember(System.String,System.String)">
+  SIsMember(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SIsMember(string setId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SMembers_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SMembers*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SMembers_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SMembers(System.String)">
+  SMembers(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; SMembers(string setId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SMove_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SMove*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SMove_System_String_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SMove(System.String,System.String,System.String)">
+  SMove(string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SMove(string fromSetId, string toSetId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fromSetId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>toSetId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SPop_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SPop*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SPop_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SPop(System.String)">
+  SPop(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SPop(string setId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SPop_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SPop*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SPop_System_String_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SPop(System.String,System.Int32)">
+  SPop(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; SPop(string setId, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SRandMember_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SRandMember*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SRandMember_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SRandMember(System.String)">
+  SRandMember(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SRandMember(string setId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SRem_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SRem*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SRem_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SRem(System.String,System.String)">
+  SRem(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SRem(string setId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SUnion_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SUnion*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SUnion_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SUnion(System.String[])">
+  SUnion(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L155"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; SUnion(params string[] setIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SUnionStore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SUnionStore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SUnionStore_System_String_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SUnionStore(System.String,System.String[])">
+  SUnionStore(string, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSet.cs/#L169"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SUnionStore(string intoSetId, params string[] setIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intoSetId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>setIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Set_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Set*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Set_System_String_System_Int32_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Set(System.String,System.Int32,System.String)">
+  Set(string, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L57"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(string key, int expireInSeconds, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>expireInSeconds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Set_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Set*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Set_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Set(System.String,System.String)">
+  Set(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(string key, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SetBit_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SetBit*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SetBit_System_String_System_Int32_System_Boolean_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SetBit(System.String,System.Int32,System.Boolean)">
+  SetBit(string, int, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L258"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetBit(string key, int offset, bool bit)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>bit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SetRange_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SetRange*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_SetRange_System_String_System_Int32_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.SetRange(System.String,System.Int32,System.String)">
+  SetRange(string, int, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L235"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long SetRange(string key, int offset, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>offset</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Sort_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Sort*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Sort_System_String_StackExchange_Redis_Order_StackExchange_Redis_SortType_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Sort(System.String,StackExchange.Redis.Order,StackExchange.Redis.SortType)">
+  Sort(string, Order, SortType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClient.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>根據指定的排序規則對Redis中的list, set或sorted set進行排序，並返回排序後的結果</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; Sort(string listOrSetId, Order order = Order.Ascending, SortType sortType = SortType.Alphabetic)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>listOrSetId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>order</code> <span class="xref">Order</span></dt>
+    <dd></dd>
+    <dt><code>sortType</code> <span class="xref">SortType</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_StrLen_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.StrLen*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_StrLen_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.StrLen(System.String)">
+  StrLen(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L36"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long StrLen(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Ttl_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Ttl*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Ttl_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Ttl(System.String)">
+  Ttl(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L353"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Ttl(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Type_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Type*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Type_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Type(System.String)">
+  Type(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientKey.cs/#L16"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Type(string key)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_UnWatch_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.UnWatch*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_UnWatch" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.UnWatch">
+  UnWatch()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClient.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnWatch()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Watch_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Watch*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_Watch_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.Watch(System.String[])">
+  Watch(params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClient.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Watch(params string[] keys)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>keys</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZAdd_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZAdd*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZAdd_System_String_System_Double_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZAdd(System.String,System.Double,System.String)">
+  ZAdd(string, double, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L18"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ZAdd(string setId, double score, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>score</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZAdd_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZAdd*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZAdd_System_String_System_Int64_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZAdd(System.String,System.Int64,System.String)">
+  ZAdd(string, long, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L30"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ZAdd(string setId, long score, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>score</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZCard_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZCard*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZCard_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZCard(System.String)">
+  ZCard(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L317"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZCard(string setId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZIncrBy_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZIncrBy*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZIncrBy_System_String_System_Double_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZIncrBy(System.String,System.Double,System.String)">
+  ZIncrBy(string, double, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ZIncrBy(string setId, double incrBy, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>incrBy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZIncrBy_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZIncrBy*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZIncrBy_System_String_System_Int64_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZIncrBy(System.String,System.Int64,System.String)">
+  ZIncrBy(string, long, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ZIncrBy(string setId, long incrBy, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>incrBy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZInterStore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZInterStore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZInterStore_System_String_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZInterStore(System.String,System.String[])">
+  ZInterStore(string, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L355"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZInterStore(string intoSetId, params string[] setIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intoSetId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>setIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZLexCount_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZLexCount*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZLexCount_System_String_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZLexCount(System.String,System.String,System.String)">
+  ZLexCount(string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L388"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZLexCount(string setId, string min, string max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRange_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRange*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRange_System_String_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRange(System.String,System.Int32,System.Int32)">
+  ZRange(string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L111"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ZRange(string setId, int min, int max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeByLex_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeByLex*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeByLex_System_String_System_String_System_String_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeByLex(System.String,System.String,System.String,System.Int32,System.Int32)">
+  ZRangeByLex(string, string, string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L374"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ZRangeByLex(string setId, string min, string max, int skip = 0, int take = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>skip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>take</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeByScore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeByScore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeByScore_System_String_System_Double_System_Double_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeByScore(System.String,System.Double,System.Double,System.Int32,System.Int32)">
+  ZRangeByScore(string, double, double, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ZRangeByScore(string setId, double min, double max, int skip = 0, int take = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>skip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>take</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeByScore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeByScore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeByScore_System_String_System_Int64_System_Int64_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeByScore(System.String,System.Int64,System.Int64,System.Int32,System.Int32)">
+  ZRangeByScore(string, long, long, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L180"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ZRangeByScore(string setId, long min, long max, int skip = 0, int take = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>skip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>take</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeByScoreWithScores_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeByScoreWithScores*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeByScoreWithScores_System_String_System_Double_System_Double_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeByScoreWithScores(System.String,System.Double,System.Double,System.Int32,System.Int32)">
+  ZRangeByScoreWithScores(string, double, double, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L195"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CSortedSetResult&gt; ZRangeByScoreWithScores(string setId, double min, double max, int skip = 0, int take = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>skip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>take</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">CSortedSetResult</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeByScoreWithScores_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeByScoreWithScores*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeByScoreWithScores_System_String_System_Int64_System_Int64_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeByScoreWithScores(System.String,System.Int64,System.Int64,System.Int32,System.Int32)">
+  ZRangeByScoreWithScores(string, long, long, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CSortedSetResult&gt; ZRangeByScoreWithScores(string setId, long min, long max, int skip = 0, int take = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>skip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>take</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">CSortedSetResult</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeWithScores_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeWithScores*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRangeWithScores_System_String_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRangeWithScores(System.String,System.Int32,System.Int32)">
+  ZRangeWithScores(string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L124"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CSortedSetResult&gt; ZRangeWithScores(string setId, int min, int max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">CSortedSetResult</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRank_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRank*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRank_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRank(System.String,System.String)">
+  ZRank(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZRank(string setId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRem_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRem*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRem_System_String_System_Collections_Generic_IEnumerable_System_String__" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRem(System.String,System.Collections.Generic.IEnumerable{System.String})">
+  ZRem(string, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZRem(string setId, IEnumerable&lt;string&gt; values)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>values</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRem_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRem*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRem_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRem(System.String,System.String)">
+  ZRem(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ZRem(string setId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRemRangeByLex_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRemRangeByLex*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRemRangeByLex_System_String_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRemRangeByLex(System.String,System.String,System.String)">
+  ZRemRangeByLex(string, string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L401"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZRemRangeByLex(string setId, string min, string max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRemRangeByRank_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRemRangeByRank*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRemRangeByRank_System_String_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRemRangeByRank(System.String,System.Int32,System.Int32)">
+  ZRemRangeByRank(string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L283"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZRemRangeByRank(string setId, int min, int max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRemRangeByScore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRemRangeByScore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRemRangeByScore_System_String_System_Double_System_Double_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRemRangeByScore(System.String,System.Double,System.Double)">
+  ZRemRangeByScore(string, double, double)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L295"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZRemRangeByScore(string setId, double fromScore, double toScore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fromScore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>toScore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRemRangeByScore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRemRangeByScore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRemRangeByScore_System_String_System_Int64_System_Int64_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRemRangeByScore(System.String,System.Int64,System.Int64)">
+  ZRemRangeByScore(string, long, long)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZRemRangeByScore(string setId, long fromScore, long toScore)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>fromScore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>toScore</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRange_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRange*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRange_System_String_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRange(System.String,System.Int32,System.Int32)">
+  ZRevRange(string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ZRevRange(string setId, int min, int max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRangeByScore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRangeByScore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRangeByScore_System_String_System_Double_System_Double_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRangeByScore(System.String,System.Double,System.Double,System.Int32,System.Int32)">
+  ZRevRangeByScore(string, double, double, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L225"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ZRevRangeByScore(string setId, double min, double max, int skip = 0, int take = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>skip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>take</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRangeByScore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRangeByScore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRangeByScore_System_String_System_Int64_System_Int64_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRangeByScore(System.String,System.Int64,System.Int64,System.Int32,System.Int32)">
+  ZRevRangeByScore(string, long, long, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L240"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;string&gt; ZRevRangeByScore(string setId, long min, long max, int skip = 0, int take = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>skip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>take</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRangeByScoreWithScores_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRangeByScoreWithScores*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRangeByScoreWithScores_System_String_System_Double_System_Double_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRangeByScoreWithScores(System.String,System.Double,System.Double,System.Int32,System.Int32)">
+  ZRevRangeByScoreWithScores(string, double, double, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L255"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CSortedSetResult&gt; ZRevRangeByScoreWithScores(string setId, double min, double max, int skip = 0, int take = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>skip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>take</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">CSortedSetResult</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRangeByScoreWithScores_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRangeByScoreWithScores*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRangeByScoreWithScores_System_String_System_Int64_System_Int64_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRangeByScoreWithScores(System.String,System.Int64,System.Int64,System.Int32,System.Int32)">
+  ZRevRangeByScoreWithScores(string, long, long, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L270"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CSortedSetResult&gt; ZRevRangeByScoreWithScores(string setId, long min, long max, int skip = 0, int take = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+    <dt><code>skip</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>take</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">CSortedSetResult</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRangeWithScores_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRangeWithScores*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRangeWithScores_System_String_System_Int32_System_Int32_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRangeWithScores(System.String,System.Int32,System.Int32)">
+  ZRevRangeWithScores(string, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L150"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;CSortedSetResult&gt; ZRevRangeWithScores(string setId, int min, int max)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>min</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>max</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">CSortedSetResult</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRank_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRank*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZRevRank_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZRevRank(System.String,System.String)">
+  ZRevRank(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZRevRank(string setId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZScore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZScore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZScore_System_String_System_String_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZScore(System.String,System.String)">
+  ZScore(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L328"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double ZScore(string setId, string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>setId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZUnionStore_" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZUnionStore*"></a>
+
+  <h3 id="Cathay_SDK_GCP_MemoryStore_Redis_RedisClient_ZUnionStore_System_String_System_String___" data-uid="Cathay.SDK.GCP.MemoryStore.Redis.RedisClient.ZUnionStore(System.String,System.String[])">
+  ZUnionStore(string, params string[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L339"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long ZUnionStore(string intoSetId, params string[] setIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>intoSetId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>setIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Cathay-CADS/Cathay.SDK.GCP/blob/feature-docfx/Cathay.SDK.GCP.MemoryStore.Redis/RedisClientSortedSet.cs/#L9" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

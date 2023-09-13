@@ -1,4 +1,9 @@
-# Your GitHub workflow file under .github/workflows/
+name: deploy
+
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   publish-docs:

@@ -1,0 +1,59 @@
+### YamlMime:TableOfContent
+items:
+- uid: Cathay.SDK.Cloud.Interface
+  name: Cathay.SDK.Cloud.Interface
+  items:
+  - uid: Cathay.SDK.Cloud.Interface.GenericValidation
+    name: GenericValidation
+  - uid: Cathay.SDK.Cloud.Interface.StoragePath
+    name: StoragePath
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+  name: Cathay.SDK.Cloud.Interface.KeyManagementService
+  items:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+    name: IBaseKeyInfo
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+    name: IKeyManagementServiceClient<T>
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue
+  name: Cathay.SDK.Cloud.Interface.MessageQueue
+  items:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+    name: ClientType
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+    name: IMessageQueue
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+    name: IReceiver<T, R>
+- uid: Cathay.SDK.Cloud.Interface.Redis
+  name: Cathay.SDK.Cloud.Interface.Redis
+  items:
+  - uid: Cathay.SDK.Cloud.Interface.Redis.CHashEntry
+    name: CHashEntry
+  - uid: Cathay.SDK.Cloud.Interface.Redis.CSortedSetResult
+    name: CSortedSetResult
+  - uid: Cathay.SDK.Cloud.Interface.Redis.IRedisClient`2
+    name: IRedisClient<TOrder, TSortType>
+  - uid: Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync`2
+    name: IRedisNativeClientAsync<TOrder, TSortType>
+  - uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+    name: SortOptions
+- uid: Cathay.SDK.Cloud.Interface.SQL
+  name: Cathay.SDK.Cloud.Interface.SQL
+  items:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.DbConn
+    name: DbConn
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+    name: ISql<TConnection, TStringBuilder>
+- uid: Cathay.SDK.Cloud.Interface.Storage
+  name: Cathay.SDK.Cloud.Interface.Storage
+  items:
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+  - uid: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+    name: BlobItemKind
+  - uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+    name: GenericBlobStorage
+  - uid: Cathay.SDK.Cloud.Interface.Storage.IBlobStorage
+    name: IBlobStorage
+  - uid: Cathay.SDK.Cloud.Interface.Storage.ListOptions
+    name: ListOptions
+memberLayout: SamePage

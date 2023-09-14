@@ -1,0 +1,405 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.Redis.CHashEntry
+  commentId: T:Cathay.SDK.Cloud.Interface.Redis.CHashEntry
+  id: CHashEntry
+  parent: Cathay.SDK.Cloud.Interface.Redis
+  children:
+  - Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Name
+  - Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Value
+  langs:
+  - csharp
+  - vb
+  name: CHashEntry
+  nameWithType: CHashEntry
+  fullName: Cathay.SDK.Cloud.Interface.Redis.CHashEntry
+  type: Class
+  source:
+    remote:
+      path: Redis/CHashEntry.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: CHashEntry
+    path: ../Redis/CHashEntry.cs
+    startLine: 2
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public class CHashEntry
+    content.vb: Public Class CHashEntry
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Name
+  commentId: P:Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Name
+  id: Name
+  parent: Cathay.SDK.Cloud.Interface.Redis.CHashEntry
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: CHashEntry.Name
+  fullName: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Name
+  type: Property
+  source:
+    remote:
+      path: Redis/CHashEntry.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Name
+    path: ../Redis/CHashEntry.cs
+    startLine: 4
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Name*
+- uid: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Value
+  commentId: P:Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Value
+  id: Value
+  parent: Cathay.SDK.Cloud.Interface.Redis.CHashEntry
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: CHashEntry.Value
+  fullName: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Value
+  type: Property
+  source:
+    remote:
+      path: Redis/CHashEntry.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Value
+    path: ../Redis/CHashEntry.cs
+    startLine: 6
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public string Value { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Value As String
+  overload: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Value*
+references:
+- uid: Cathay.SDK.Cloud.Interface.Redis
+  commentId: N:Cathay.SDK.Cloud.Interface.Redis
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.Redis
+  nameWithType: Cathay.SDK.Cloud.Interface.Redis
+  fullName: Cathay.SDK.Cloud.Interface.Redis
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Redis
+    name: Redis
+    href: Cathay.SDK.Cloud.Interface.Redis.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Redis
+    name: Redis
+    href: Cathay.SDK.Cloud.Interface.Redis.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Name*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Name
+  href: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.html#Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Name
+  name: Name
+  nameWithType: CHashEntry.Name
+  fullName: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Value*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Value
+  href: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.html#Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Value
+  name: Value
+  nameWithType: CHashEntry.Value
+  fullName: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.Value

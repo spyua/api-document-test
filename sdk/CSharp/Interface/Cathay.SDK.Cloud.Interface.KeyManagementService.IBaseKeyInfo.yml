@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  commentId: T:Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  id: IBaseKeyInfo
+  parent: Cathay.SDK.Cloud.Interface.KeyManagementService
+  children:
+  - Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId
+  langs:
+  - csharp
+  - vb
+  name: IBaseKeyInfo
+  nameWithType: IBaseKeyInfo
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  type: Interface
+  source:
+    remote:
+      path: KeyManagementService/IBaseKeyInfo.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: IBaseKeyInfo
+    path: ../KeyManagementService/IBaseKeyInfo.cs
+    startLine: 2
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.KeyManagementService
+  syntax:
+    content: public interface IBaseKeyInfo
+    content.vb: Public Interface IBaseKeyInfo
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId
+  commentId: P:Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId
+  id: KeyId
+  parent: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  langs:
+  - csharp
+  - vb
+  name: KeyId
+  nameWithType: IBaseKeyInfo.KeyId
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId
+  type: Property
+  source:
+    remote:
+      path: KeyManagementService/IBaseKeyInfo.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: KeyId
+    path: ../KeyManagementService/IBaseKeyInfo.cs
+    startLine: 4
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.KeyManagementService
+  syntax:
+    content: string KeyId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property KeyId As String
+  overload: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId*
+references:
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+  commentId: N:Cathay.SDK.Cloud.Interface.KeyManagementService
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.KeyManagementService
+  nameWithType: Cathay.SDK.Cloud.Interface.KeyManagementService
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+    name: KeyManagementService
+    href: Cathay.SDK.Cloud.Interface.KeyManagementService.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+    name: KeyManagementService
+    href: Cathay.SDK.Cloud.Interface.KeyManagementService.html
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId
+  href: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.html#Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId
+  name: KeyId
+  nameWithType: IBaseKeyInfo.KeyId
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.KeyId
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

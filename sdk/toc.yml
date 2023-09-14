@@ -1,36 +1,7 @@
-### YamlMime:TableOfContent
-items:
-- uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL
-  name: Cathay.SDK.GCP.Database.SQL.PostgreSQL
-  items:
-  - uid: Cathay.SDK.GCP.Database.SQL.PostgreSQL.Sql
-    name: Sql
-- uid: Cathay.SDK.GCP.MemoryStore.Redis
-  name: Cathay.SDK.GCP.MemoryStore.Redis
-  items:
-  - uid: Cathay.SDK.GCP.MemoryStore.Redis.RedisClient
-    name: RedisClient
-- uid: Cathay.SDK.GCP.PubSub
-  name: Cathay.SDK.GCP.PubSub
-  items:
-  - uid: Cathay.SDK.GCP.PubSub.PubSubService
-    name: PubSubService
-  - uid: Cathay.SDK.GCP.PubSub.Receiver
-    name: Receiver
-- uid: Cathay.SDK.GCP.Security.CloudKeyManagement
-  name: Cathay.SDK.GCP.Security.CloudKeyManagement
-  items:
-  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.BaseKeyInfo
-    name: BaseKeyInfo
-  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfo
-    name: KeyInfo
-  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyInfoWithVersion
-    name: KeyInfoWithVersion
-  - uid: Cathay.SDK.GCP.Security.CloudKeyManagement.KeyManagementService
-    name: KeyManagementService
-- uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
-  name: Cathay.SDK.GCP.Storage.CloudStorage.Blobs
-  items:
-  - uid: Cathay.SDK.GCP.Storage.CloudStorage.Blobs.Blobs
-    name: Blobs
-memberLayout: SamePage
+- name: Introduction
+  href: intro.md
+- name: CSharp
+  href: CSharp/
+- name: Java
+  href: Java/
+

@@ -1,0 +1,136 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  commentId: T:Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  id: ClientType
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue
+  children:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.ClientType.Publisher
+  - Cathay.SDK.Cloud.Interface.MessageQueue.ClientType.Subscriber
+  langs:
+  - csharp
+  - vb
+  name: ClientType
+  nameWithType: ClientType
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  type: Enum
+  source:
+    remote:
+      path: MessageQueue/Enums.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: ClientType
+    path: ../MessageQueue/Enums.cs
+    startLine: 2
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.MessageQueue
+  syntax:
+    content: public enum ClientType
+    content.vb: Public Enum ClientType
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType.Publisher
+  commentId: F:Cathay.SDK.Cloud.Interface.MessageQueue.ClientType.Publisher
+  id: Publisher
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  langs:
+  - csharp
+  - vb
+  name: Publisher
+  nameWithType: ClientType.Publisher
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType.Publisher
+  type: Field
+  source:
+    remote:
+      path: MessageQueue/Enums.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Publisher
+    path: ../MessageQueue/Enums.cs
+    startLine: 4
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.MessageQueue
+  syntax:
+    content: Publisher = 0
+    return:
+      type: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType.Subscriber
+  commentId: F:Cathay.SDK.Cloud.Interface.MessageQueue.ClientType.Subscriber
+  id: Subscriber
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  langs:
+  - csharp
+  - vb
+  name: Subscriber
+  nameWithType: ClientType.Subscriber
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType.Subscriber
+  type: Field
+  source:
+    remote:
+      path: MessageQueue/Enums.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Subscriber
+    path: ../MessageQueue/Enums.cs
+    startLine: 5
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.MessageQueue
+  syntax:
+    content: Subscriber = 1
+    return:
+      type: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+references:
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue
+  commentId: N:Cathay.SDK.Cloud.Interface.MessageQueue
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.MessageQueue
+  nameWithType: Cathay.SDK.Cloud.Interface.MessageQueue
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue
+    name: MessageQueue
+    href: Cathay.SDK.Cloud.Interface.MessageQueue.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue
+    name: MessageQueue
+    href: Cathay.SDK.Cloud.Interface.MessageQueue.html
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  commentId: T:Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue
+  href: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType.html
+  name: ClientType
+  nameWithType: ClientType
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType

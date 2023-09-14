@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.Storage
+  commentId: N:Cathay.SDK.Cloud.Interface.Storage
+  id: Cathay.SDK.Cloud.Interface.Storage
+  children:
+  - Cathay.SDK.Cloud.Interface.Storage.Blob
+  - Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  - Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  - Cathay.SDK.Cloud.Interface.Storage.IBlobStorage
+  - Cathay.SDK.Cloud.Interface.Storage.ListOptions
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.Cloud.Interface.Storage
+  nameWithType: Cathay.SDK.Cloud.Interface.Storage
+  fullName: Cathay.SDK.Cloud.Interface.Storage
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+references:
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.Blob
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html
+  name: Blob
+  nameWithType: Blob
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob
+- uid: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  href: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.html
+  name: BlobItemKind
+  nameWithType: BlobItemKind
+  fullName: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+- uid: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+  href: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage.html
+  name: GenericBlobStorage
+  nameWithType: GenericBlobStorage
+  fullName: Cathay.SDK.Cloud.Interface.Storage.GenericBlobStorage
+- uid: Cathay.SDK.Cloud.Interface.Storage.IBlobStorage
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.IBlobStorage
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  href: Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.html
+  name: IBlobStorage
+  nameWithType: IBlobStorage
+  fullName: Cathay.SDK.Cloud.Interface.Storage.IBlobStorage
+- uid: Cathay.SDK.Cloud.Interface.Storage.ListOptions
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.ListOptions
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  href: Cathay.SDK.Cloud.Interface.Storage.ListOptions.html
+  name: ListOptions
+  nameWithType: ListOptions
+  fullName: Cathay.SDK.Cloud.Interface.Storage.ListOptions
+- uid: Cathay.SDK.Cloud.Interface.Storage
+  commentId: N:Cathay.SDK.Cloud.Interface.Storage
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.Storage
+  nameWithType: Cathay.SDK.Cloud.Interface.Storage
+  fullName: Cathay.SDK.Cloud.Interface.Storage
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Storage
+    name: Storage
+    href: Cathay.SDK.Cloud.Interface.Storage.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Storage
+    name: Storage
+    href: Cathay.SDK.Cloud.Interface.Storage.html

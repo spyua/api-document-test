@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.Redis
+  commentId: N:Cathay.SDK.Cloud.Interface.Redis
+  id: Cathay.SDK.Cloud.Interface.Redis
+  children:
+  - Cathay.SDK.Cloud.Interface.Redis.CHashEntry
+  - Cathay.SDK.Cloud.Interface.Redis.CSortedSetResult
+  - Cathay.SDK.Cloud.Interface.Redis.IRedisClient`2
+  - Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync`2
+  - Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.Cloud.Interface.Redis
+  nameWithType: Cathay.SDK.Cloud.Interface.Redis
+  fullName: Cathay.SDK.Cloud.Interface.Redis
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+references:
+- uid: Cathay.SDK.Cloud.Interface.Redis.CHashEntry
+  commentId: T:Cathay.SDK.Cloud.Interface.Redis.CHashEntry
+  href: Cathay.SDK.Cloud.Interface.Redis.CHashEntry.html
+  name: CHashEntry
+  nameWithType: CHashEntry
+  fullName: Cathay.SDK.Cloud.Interface.Redis.CHashEntry
+- uid: Cathay.SDK.Cloud.Interface.Redis.CSortedSetResult
+  commentId: T:Cathay.SDK.Cloud.Interface.Redis.CSortedSetResult
+  href: Cathay.SDK.Cloud.Interface.Redis.CSortedSetResult.html
+  name: CSortedSetResult
+  nameWithType: CSortedSetResult
+  fullName: Cathay.SDK.Cloud.Interface.Redis.CSortedSetResult
+- uid: Cathay.SDK.Cloud.Interface.Redis.IRedisClient`2
+  commentId: T:Cathay.SDK.Cloud.Interface.Redis.IRedisClient`2
+  href: Cathay.SDK.Cloud.Interface.Redis.IRedisClient-2.html
+  name: IRedisClient<TOrder, TSortType>
+  nameWithType: IRedisClient<TOrder, TSortType>
+  fullName: Cathay.SDK.Cloud.Interface.Redis.IRedisClient<TOrder, TSortType>
+  nameWithType.vb: IRedisClient(Of TOrder, TSortType)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Redis.IRedisClient(Of TOrder, TSortType)
+  name.vb: IRedisClient(Of TOrder, TSortType)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Redis.IRedisClient`2
+    name: IRedisClient
+    href: Cathay.SDK.Cloud.Interface.Redis.IRedisClient-2.html
+  - name: <
+  - name: TOrder
+  - name: ','
+  - name: " "
+  - name: TSortType
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Redis.IRedisClient`2
+    name: IRedisClient
+    href: Cathay.SDK.Cloud.Interface.Redis.IRedisClient-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOrder
+  - name: ','
+  - name: " "
+  - name: TSortType
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync`2
+  commentId: T:Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync`2
+  href: Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync-2.html
+  name: IRedisNativeClientAsync<TOrder, TSortType>
+  nameWithType: IRedisNativeClientAsync<TOrder, TSortType>
+  fullName: Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync<TOrder, TSortType>
+  nameWithType.vb: IRedisNativeClientAsync(Of TOrder, TSortType)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync(Of TOrder, TSortType)
+  name.vb: IRedisNativeClientAsync(Of TOrder, TSortType)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync`2
+    name: IRedisNativeClientAsync
+    href: Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync-2.html
+  - name: <
+  - name: TOrder
+  - name: ','
+  - name: " "
+  - name: TSortType
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync`2
+    name: IRedisNativeClientAsync
+    href: Cathay.SDK.Cloud.Interface.Redis.IRedisNativeClientAsync-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOrder
+  - name: ','
+  - name: " "
+  - name: TSortType
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  commentId: T:Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  href: Cathay.SDK.Cloud.Interface.Redis.SortOptions.html
+  name: SortOptions
+  nameWithType: SortOptions
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions

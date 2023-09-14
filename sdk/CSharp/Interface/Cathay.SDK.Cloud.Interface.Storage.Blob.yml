@@ -1,0 +1,1698 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.Blob
+  id: Blob
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  children:
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor(System.String,Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor(System.String,System.String,Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.Clone
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.CreatedTime
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.Equals(System.Object)
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.FolderPath
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.FullPath
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.GetHashCode
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.IsFile
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.IsRootFolder
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.Kind
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.LastModificationTime
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.MD5
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.Metadata
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.Name
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.Properties
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.SetFullPath(System.String)
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.Size
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.TryAddProperties(System.Object[])
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.TryGetProperty``1(System.String,``0@,``0)
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.op_Implicit(Cathay.SDK.Cloud.Interface.Storage.Blob)~System.String
+  - Cathay.SDK.Cloud.Interface.Storage.Blob.op_Implicit(System.String)~Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Blob
+  nameWithType: Blob
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob
+  type: Class
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Blob
+    path: ../Storage/Blob.cs
+    startLine: 4
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Blob item description
+  example: []
+  syntax:
+    content: 'public sealed class Blob : IEquatable<Blob>, ICloneable'
+    content.vb: Public NotInheritable Class Blob Implements IEquatable(Of Blob), ICloneable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Cathay.SDK.Cloud.Interface.Storage.Blob}
+  - System.ICloneable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Kind
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.Kind
+  id: Kind
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: Blob.Kind
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Kind
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Kind
+    path: ../Storage/Blob.cs
+    startLine: 9
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Gets the kind of item
+  example: []
+  syntax:
+    content: public BlobItemKind Kind { get; }
+    parameters: []
+    return:
+      type: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+    content.vb: Public Property Kind As BlobItemKind
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.Kind*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.IsFile
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.IsFile
+  id: IsFile
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: IsFile
+  nameWithType: Blob.IsFile
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.IsFile
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: IsFile
+    path: ../Storage/Blob.cs
+    startLine: 14
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Simply checks if kind of this item is <xref href="Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.File" data-throw-if-not-resolved="false"></xref>
+  example: []
+  syntax:
+    content: public bool IsFile { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFile As Boolean
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.IsFile*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.FolderPath
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.FolderPath
+  id: FolderPath
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: FolderPath
+  nameWithType: Blob.FolderPath
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.FolderPath
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: FolderPath
+    path: ../Storage/Blob.cs
+    startLine: 19
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Gets the folder path containing this item
+  example: []
+  syntax:
+    content: public string FolderPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property FolderPath As String
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.FolderPath*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Name
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.Name
+  id: Name
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: Blob.Name
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Name
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Name
+    path: ../Storage/Blob.cs
+    startLine: 24
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Gets the name of this blob, unique within the folder. In most providers this is the same as file name.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.Name*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Size
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.Size
+  id: Size
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: Blob.Size
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Size
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Size
+    path: ../Storage/Blob.cs
+    startLine: 29
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Blob size
+  example: []
+  syntax:
+    content: public long? Size { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int64}
+    content.vb: Public Property Size As Long?
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.Size*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.MD5
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.MD5
+  id: MD5
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: MD5
+  nameWithType: Blob.MD5
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.MD5
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: MD5
+    path: ../Storage/Blob.cs
+    startLine: 36
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: >-
+    MD5 content hash of the blob. Note that this property can be null if underlying storage has
+
+    no information about the hash, or it's very expensive to calculate it, for instance it would require
+
+    getting a whole content of the blob to hash it.
+  example: []
+  syntax:
+    content: public string MD5 { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property MD5 As String
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.MD5*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.CreatedTime
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.CreatedTime
+  id: CreatedTime
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: CreatedTime
+  nameWithType: Blob.CreatedTime
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.CreatedTime
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: CreatedTime
+    path: ../Storage/Blob.cs
+    startLine: 41
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Creation time when known
+  example: []
+  syntax:
+    content: public DateTimeOffset? CreatedTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property CreatedTime As DateTimeOffset?
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.CreatedTime*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.LastModificationTime
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.LastModificationTime
+  id: LastModificationTime
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: LastModificationTime
+  nameWithType: Blob.LastModificationTime
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.LastModificationTime
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: LastModificationTime
+    path: ../Storage/Blob.cs
+    startLine: 46
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Last modification time when known
+  example: []
+  syntax:
+    content: public DateTimeOffset? LastModificationTime { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Property LastModificationTime As DateTimeOffset?
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.LastModificationTime*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.FullPath
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.FullPath
+  id: FullPath
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: FullPath
+  nameWithType: Blob.FullPath
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.FullPath
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: FullPath
+    path: ../Storage/Blob.cs
+    startLine: 51
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Gets full path to this blob which is a combination of folder path and blob name
+  example: []
+  syntax:
+    content: public string FullPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property FullPath As String
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.FullPath*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Properties
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.Properties
+  id: Properties
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: Blob.Properties
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Properties
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Properties
+    path: ../Storage/Blob.cs
+    startLine: 56
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Custom provider-specific properties. Key names are case-insensitive.
+  example: []
+  syntax:
+    content: public Dictionary<string, object> Properties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.Object}
+    content.vb: Public Property Properties As Dictionary(Of String, Object)
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.Properties*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.TryGetProperty``1(System.String,``0@,``0)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.TryGetProperty``1(System.String,``0@,``0)
+  id: TryGetProperty``1(System.String,``0@,``0)
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: TryGetProperty<TValue>(string, out TValue, TValue)
+  nameWithType: Blob.TryGetProperty<TValue>(string, out TValue, TValue)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.TryGetProperty<TValue>(string, out TValue, TValue)
+  type: Method
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: TryGetProperty
+    path: ../Storage/Blob.cs
+    startLine: 61
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Try to get property and cast it to a specified type
+  example: []
+  syntax:
+    content: public bool TryGetProperty<TValue>(string name, out TValue value, TValue defaultValue = default)
+    parameters:
+    - id: name
+      type: System.String
+    - id: value
+      type: '{TValue}'
+    - id: defaultValue
+      type: '{TValue}'
+    typeParameters:
+    - id: TValue
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetProperty(Of TValue)(name As String, value As TValue, defaultValue As TValue = Nothing) As Boolean
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.TryGetProperty*
+  nameWithType.vb: Blob.TryGetProperty(Of TValue)(String, TValue, TValue)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.Blob.TryGetProperty(Of TValue)(String, TValue, TValue)
+  name.vb: TryGetProperty(Of TValue)(String, TValue, TValue)
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Metadata
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.Metadata
+  id: Metadata
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Metadata
+  nameWithType: Blob.Metadata
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Metadata
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Metadata
+    path: ../Storage/Blob.cs
+    startLine: 82
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: User defined metadata. Key names are case-insensitive.
+  example: []
+  syntax:
+    content: public Dictionary<string, string> Metadata { get; set; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+    content.vb: Public Property Metadata As Dictionary(Of String, String)
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.Metadata*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.TryAddProperties(System.Object[])
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.TryAddProperties(System.Object[])
+  id: TryAddProperties(System.Object[])
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: TryAddProperties(params object[])
+  nameWithType: Blob.TryAddProperties(params object[])
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.TryAddProperties(params object[])
+  type: Method
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: TryAddProperties
+    path: ../Storage/Blob.cs
+    startLine: 90
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Tries to add properties in pairs when value is not null
+  example: []
+  syntax:
+    content: public void TryAddProperties(params object[] keyValues)
+    parameters:
+    - id: keyValues
+      type: System.Object[]
+      description: ''
+    content.vb: Public Sub TryAddProperties(ParamArray keyValues As Object())
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.TryAddProperties*
+  nameWithType.vb: Blob.TryAddProperties(ParamArray Object())
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.Blob.TryAddProperties(ParamArray Object())
+  name.vb: TryAddProperties(ParamArray Object())
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor(System.String,Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor(System.String,Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  id: '#ctor(System.String,Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)'
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Blob(string, BlobItemKind)
+  nameWithType: Blob.Blob(string, BlobItemKind)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Blob(string, Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  type: Constructor
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: .ctor
+    path: ../Storage/Blob.cs
+    startLine: 112
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Create a new instance
+  example: []
+  syntax:
+    content: public Blob(string fullPath, BlobItemKind kind = BlobItemKind.File)
+    parameters:
+    - id: fullPath
+      type: System.String
+      description: ''
+    - id: kind
+      type: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+      description: ''
+    content.vb: Public Sub New(fullPath As String, kind As BlobItemKind = BlobItemKind.File)
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor*
+  nameWithType.vb: Blob.New(String, BlobItemKind)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.Blob.New(String, Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  name.vb: New(String, BlobItemKind)
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor(System.String,System.String,Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor(System.String,System.String,Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  id: '#ctor(System.String,System.String,Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)'
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Blob(string, string, BlobItemKind)
+  nameWithType: Blob.Blob(string, string, BlobItemKind)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Blob(string, string, Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  type: Constructor
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: .ctor
+    path: ../Storage/Blob.cs
+    startLine: 125
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Creates a new instance
+  example: []
+  syntax:
+    content: public Blob(string folderPath, string name, BlobItemKind kind)
+    parameters:
+    - id: folderPath
+      type: System.String
+      description: Folder path to the blob
+    - id: name
+      type: System.String
+      description: Name of the blob withing a specific folder.
+    - id: kind
+      type: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+      description: Blob kind (file or folder)
+    content.vb: Public Sub New(folderPath As String, name As String, kind As BlobItemKind)
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor*
+  nameWithType.vb: Blob.New(String, String, BlobItemKind)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.Blob.New(String, String, Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  name.vb: New(String, String, BlobItemKind)
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.IsRootFolder
+  commentId: P:Cathay.SDK.Cloud.Interface.Storage.Blob.IsRootFolder
+  id: IsRootFolder
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: IsRootFolder
+  nameWithType: Blob.IsRootFolder
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.IsRootFolder
+  type: Property
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: IsRootFolder
+    path: ../Storage/Blob.cs
+    startLine: 136
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Returns true if this item is a folder and it's a root folder
+  example: []
+  syntax:
+    content: public bool IsRootFolder { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRootFolder As Boolean
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.IsRootFolder*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  id: Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Equals(Blob)
+  nameWithType: Blob.Equals(Blob)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  type: Method
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Equals
+    path: ../Storage/Blob.cs
+    startLine: 142
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Equality check
+  example: []
+  syntax:
+    content: public bool Equals(Blob other)
+    parameters:
+    - id: other
+      type: Cathay.SDK.Cloud.Interface.Storage.Blob
+      description: ''
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As Blob) As Boolean
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.Equals*
+  implements:
+  - System.IEquatable{Cathay.SDK.Cloud.Interface.Storage.Blob}.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Equals(System.Object)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Equals(object)
+  nameWithType: Blob.Equals(object)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Equals(object)
+  type: Method
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Equals
+    path: ../Storage/Blob.cs
+    startLine: 156
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Equality check
+  example: []
+  syntax:
+    content: public override bool Equals(object other)
+    parameters:
+    - id: other
+      type: System.Object
+      description: ''
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(other As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.Equals*
+  nameWithType.vb: Blob.Equals(Object)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.Blob.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.GetHashCode
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.GetHashCode
+  id: GetHashCode
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Blob.GetHashCode()
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.GetHashCode()
+  type: Method
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: GetHashCode
+    path: ../Storage/Blob.cs
+    startLine: 171
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Hash code calculation
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.GetHashCode*
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.op_Implicit(System.String)~Cathay.SDK.Cloud.Interface.Storage.Blob
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.op_Implicit(System.String)~Cathay.SDK.Cloud.Interface.Storage.Blob
+  id: op_Implicit(System.String)~Cathay.SDK.Cloud.Interface.Storage.Blob
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: implicit operator Blob(string)
+  nameWithType: Blob.implicit operator Blob(string)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.implicit operator Cathay.SDK.Cloud.Interface.Storage.Blob(string)
+  type: Operator
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: op_Implicit
+    path: ../Storage/Blob.cs
+    startLine: 179
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Constructs a file blob by full ID
+  example: []
+  syntax:
+    content: public static implicit operator Blob(string fullPath)
+    parameters:
+    - id: fullPath
+      type: System.String
+    return:
+      type: Cathay.SDK.Cloud.Interface.Storage.Blob
+    content.vb: Public Shared Widening Operator CType(fullPath As String) As Blob
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.op_Implicit*
+  nameWithType.vb: Blob.CType(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.Blob.CType(String)
+  name.vb: CType(String)
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.op_Implicit(Cathay.SDK.Cloud.Interface.Storage.Blob)~System.String
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.op_Implicit(Cathay.SDK.Cloud.Interface.Storage.Blob)~System.String
+  id: op_Implicit(Cathay.SDK.Cloud.Interface.Storage.Blob)~System.String
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: implicit operator string(Blob)
+  nameWithType: Blob.implicit operator string(Blob)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.implicit operator string(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  type: Operator
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: op_Implicit
+    path: ../Storage/Blob.cs
+    startLine: 188
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Converts blob to string by using full path
+  example: []
+  syntax:
+    content: public static implicit operator string(Blob blob)
+    parameters:
+    - id: blob
+      type: Cathay.SDK.Cloud.Interface.Storage.Blob
+      description: ''
+    return:
+      type: System.String
+    content.vb: Public Shared Widening Operator CType(blob As Blob) As String
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.op_Implicit*
+  nameWithType.vb: Blob.CType(Blob)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.Blob.CType(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  name.vb: CType(Blob)
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.SetFullPath(System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.SetFullPath(System.String)
+  id: SetFullPath(System.String)
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: SetFullPath(string)
+  nameWithType: Blob.SetFullPath(string)
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.SetFullPath(string)
+  type: Method
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: SetFullPath
+    path: ../Storage/Blob.cs
+    startLine: 196
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Changes full path of this blob without modifying any other property
+  example: []
+  syntax:
+    content: public void SetFullPath(string fullPath)
+    parameters:
+    - id: fullPath
+      type: System.String
+    content.vb: Public Sub SetFullPath(fullPath As String)
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.SetFullPath*
+  nameWithType.vb: Blob.SetFullPath(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.Blob.SetFullPath(String)
+  name.vb: SetFullPath(String)
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Clone
+  commentId: M:Cathay.SDK.Cloud.Interface.Storage.Blob.Clone
+  id: Clone
+  parent: Cathay.SDK.Cloud.Interface.Storage.Blob
+  langs:
+  - csharp
+  - vb
+  name: Clone()
+  nameWithType: Blob.Clone()
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Clone()
+  type: Method
+  source:
+    remote:
+      path: Storage/Blob.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Clone
+    path: ../Storage/Blob.cs
+    startLine: 218
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Clones blob to best efforts
+  example: []
+  syntax:
+    content: public object Clone()
+    return:
+      type: System.Object
+      description: ''
+    content.vb: Public Function Clone() As Object
+  overload: Cathay.SDK.Cloud.Interface.Storage.Blob.Clone*
+  implements:
+  - System.ICloneable.Clone
+references:
+- uid: Cathay.SDK.Cloud.Interface.Storage
+  commentId: N:Cathay.SDK.Cloud.Interface.Storage
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.Storage
+  nameWithType: Cathay.SDK.Cloud.Interface.Storage
+  fullName: Cathay.SDK.Cloud.Interface.Storage
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Storage
+    name: Storage
+    href: Cathay.SDK.Cloud.Interface.Storage.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Storage
+    name: Storage
+    href: Cathay.SDK.Cloud.Interface.Storage.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Cathay.SDK.Cloud.Interface.Storage.Blob}
+  commentId: T:System.IEquatable{Cathay.SDK.Cloud.Interface.Storage.Blob}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Blob>
+  nameWithType: IEquatable<Blob>
+  fullName: System.IEquatable<Cathay.SDK.Cloud.Interface.Storage.Blob>
+  nameWithType.vb: IEquatable(Of Blob)
+  fullName.vb: System.IEquatable(Of Cathay.SDK.Cloud.Interface.Storage.Blob)
+  name.vb: IEquatable(Of Blob)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+    href: Cathay.SDK.Cloud.Interface.Storage.Blob.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+    href: Cathay.SDK.Cloud.Interface.Storage.Blob.html
+  - name: )
+- uid: System.ICloneable
+  commentId: T:System.ICloneable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable
+  name: ICloneable
+  nameWithType: ICloneable
+  fullName: System.ICloneable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Kind*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.Kind
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.Kind
+  name: Kind
+  nameWithType: Blob.Kind
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Kind
+- uid: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  href: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.html
+  name: BlobItemKind
+  nameWithType: BlobItemKind
+  fullName: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+- uid: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.File
+  commentId: F:Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.File
+  href: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.html#Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.File
+  name: File
+  nameWithType: BlobItemKind.File
+  fullName: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.File
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.IsFile*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.IsFile
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.IsFile
+  name: IsFile
+  nameWithType: Blob.IsFile
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.IsFile
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.FolderPath*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.FolderPath
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.FolderPath
+  name: FolderPath
+  nameWithType: Blob.FolderPath
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.FolderPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Name*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.Name
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.Name
+  name: Name
+  nameWithType: Blob.Name
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Name
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Size*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.Size
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.Size
+  name: Size
+  nameWithType: Blob.Size
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Size
+- uid: System.Nullable{System.Int64}
+  commentId: T:System.Nullable{System.Int64}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long?
+  nameWithType: long?
+  fullName: long?
+  nameWithType.vb: Long?
+  fullName.vb: Long?
+  name.vb: Long?
+  spec.csharp:
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+  spec.vb:
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.MD5*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.MD5
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.MD5
+  name: MD5
+  nameWithType: Blob.MD5
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.MD5
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.CreatedTime*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.CreatedTime
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.CreatedTime
+  name: CreatedTime
+  nameWithType: Blob.CreatedTime
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.CreatedTime
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.LastModificationTime*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.LastModificationTime
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.LastModificationTime
+  name: LastModificationTime
+  nameWithType: Blob.LastModificationTime
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.LastModificationTime
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.FullPath*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.FullPath
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.FullPath
+  name: FullPath
+  nameWithType: Blob.FullPath
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.FullPath
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Properties*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.Properties
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.Properties
+  name: Properties
+  nameWithType: Blob.Properties
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Properties
+- uid: System.Collections.Generic.Dictionary{System.String,System.Object}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, object>
+  nameWithType: Dictionary<string, object>
+  fullName: System.Collections.Generic.Dictionary<string, object>
+  nameWithType.vb: Dictionary(Of String, Object)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Object)
+  name.vb: Dictionary(Of String, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.TryGetProperty*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.TryGetProperty
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.TryGetProperty``1(System.String,``0@,``0)
+  name: TryGetProperty
+  nameWithType: Blob.TryGetProperty
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.TryGetProperty
+- uid: '{TValue}'
+  commentId: '!:TValue'
+  definition: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: TValue
+  name: TValue
+  nameWithType: TValue
+  fullName: TValue
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Metadata*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.Metadata
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.Metadata
+  name: Metadata
+  nameWithType: Blob.Metadata
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Metadata
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, string>
+  nameWithType: Dictionary<string, string>
+  fullName: System.Collections.Generic.Dictionary<string, string>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.TryAddProperties*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.TryAddProperties
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.TryAddProperties(System.Object[])
+  name: TryAddProperties
+  nameWithType: Blob.TryAddProperties
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.TryAddProperties
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.#ctor(System.String,Cathay.SDK.Cloud.Interface.Storage.BlobItemKind)
+  name: Blob
+  nameWithType: Blob.Blob
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Blob
+  nameWithType.vb: Blob.New
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.Blob.New
+  name.vb: New
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.IsRootFolder*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.IsRootFolder
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.IsRootFolder
+  name: IsRootFolder
+  nameWithType: Blob.IsRootFolder
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.IsRootFolder
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Equals*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.Equals
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  name: Equals
+  nameWithType: Blob.Equals
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Equals
+- uid: System.IEquatable{Cathay.SDK.Cloud.Interface.Storage.Blob}.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  commentId: M:System.IEquatable{Cathay.SDK.Cloud.Interface.Storage.Blob}.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  parent: System.IEquatable{Cathay.SDK.Cloud.Interface.Storage.Blob}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-cathay.sdk.cloud.interface.storage.blob-.equals#system-iequatable((cathay-sdk-cloud-interface-storage-blob))-equals(cathay-sdk-cloud-interface-storage-blob)
+  name: Equals(Blob)
+  nameWithType: IEquatable<Blob>.Equals(Blob)
+  fullName: System.IEquatable<Cathay.SDK.Cloud.Interface.Storage.Blob>.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  nameWithType.vb: IEquatable(Of Blob).Equals(Blob)
+  fullName.vb: System.IEquatable(Of Cathay.SDK.Cloud.Interface.Storage.Blob).Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+  spec.csharp:
+  - uid: System.IEquatable{Cathay.SDK.Cloud.Interface.Storage.Blob}.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-cathay.sdk.cloud.interface.storage.blob-.equals#system-iequatable((cathay-sdk-cloud-interface-storage-blob))-equals(cathay-sdk-cloud-interface-storage-blob)
+  - name: (
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+    href: Cathay.SDK.Cloud.Interface.Storage.Blob.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Cathay.SDK.Cloud.Interface.Storage.Blob}.Equals(Cathay.SDK.Cloud.Interface.Storage.Blob)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-cathay.sdk.cloud.interface.storage.blob-.equals#system-iequatable((cathay-sdk-cloud-interface-storage-blob))-equals(cathay-sdk-cloud-interface-storage-blob)
+  - name: (
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+    href: Cathay.SDK.Cloud.Interface.Storage.Blob.html
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.Blob
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html
+  name: Blob
+  nameWithType: Blob
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.GetHashCode*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.GetHashCode
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.GetHashCode
+  name: GetHashCode
+  nameWithType: Blob.GetHashCode
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.op_Implicit*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.op_Implicit
+  name: implicit operator
+  nameWithType: Blob.implicit operator
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.implicit operator
+  nameWithType.vb: Blob.CType
+  fullName.vb: Cathay.SDK.Cloud.Interface.Storage.Blob.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.SetFullPath*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.SetFullPath
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.SetFullPath(System.String)
+  name: SetFullPath
+  nameWithType: Blob.SetFullPath
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.SetFullPath
+- uid: Cathay.SDK.Cloud.Interface.Storage.Blob.Clone*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Storage.Blob.Clone
+  href: Cathay.SDK.Cloud.Interface.Storage.Blob.html#Cathay.SDK.Cloud.Interface.Storage.Blob.Clone
+  name: Clone
+  nameWithType: Blob.Clone
+  fullName: Cathay.SDK.Cloud.Interface.Storage.Blob.Clone
+- uid: System.ICloneable.Clone
+  commentId: M:System.ICloneable.Clone
+  parent: System.ICloneable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  name: Clone()
+  nameWithType: ICloneable.Clone()
+  fullName: System.ICloneable.Clone()
+  spec.csharp:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ICloneable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.icloneable.clone
+  - name: (
+  - name: )

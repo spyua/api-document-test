@@ -1,0 +1,647 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  commentId: T:Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  id: SortOptions
+  parent: Cathay.SDK.Cloud.Interface.Redis
+  children:
+  - Cathay.SDK.Cloud.Interface.Redis.SortOptions.GetPattern
+  - Cathay.SDK.Cloud.Interface.Redis.SortOptions.Skip
+  - Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortAlpha
+  - Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortDesc
+  - Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortPattern
+  - Cathay.SDK.Cloud.Interface.Redis.SortOptions.StoreAtKey
+  - Cathay.SDK.Cloud.Interface.Redis.SortOptions.Take
+  langs:
+  - csharp
+  - vb
+  name: SortOptions
+  nameWithType: SortOptions
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  type: Class
+  source:
+    remote:
+      path: Redis/SortOptions.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: SortOptions
+    path: ../Redis/SortOptions.cs
+    startLine: 2
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public class SortOptions
+    content.vb: Public Class SortOptions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortPattern
+  commentId: P:Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortPattern
+  id: SortPattern
+  parent: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  langs:
+  - csharp
+  - vb
+  name: SortPattern
+  nameWithType: SortOptions.SortPattern
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortPattern
+  type: Property
+  source:
+    remote:
+      path: Redis/SortOptions.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: SortPattern
+    path: ../Redis/SortOptions.cs
+    startLine: 4
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public string SortPattern { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SortPattern As String
+  overload: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortPattern*
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.Skip
+  commentId: P:Cathay.SDK.Cloud.Interface.Redis.SortOptions.Skip
+  id: Skip
+  parent: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  langs:
+  - csharp
+  - vb
+  name: Skip
+  nameWithType: SortOptions.Skip
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.Skip
+  type: Property
+  source:
+    remote:
+      path: Redis/SortOptions.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Skip
+    path: ../Redis/SortOptions.cs
+    startLine: 5
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public int? Skip { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Skip As Integer?
+  overload: Cathay.SDK.Cloud.Interface.Redis.SortOptions.Skip*
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.Take
+  commentId: P:Cathay.SDK.Cloud.Interface.Redis.SortOptions.Take
+  id: Take
+  parent: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  langs:
+  - csharp
+  - vb
+  name: Take
+  nameWithType: SortOptions.Take
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.Take
+  type: Property
+  source:
+    remote:
+      path: Redis/SortOptions.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Take
+    path: ../Redis/SortOptions.cs
+    startLine: 6
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public int? Take { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property Take As Integer?
+  overload: Cathay.SDK.Cloud.Interface.Redis.SortOptions.Take*
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.GetPattern
+  commentId: P:Cathay.SDK.Cloud.Interface.Redis.SortOptions.GetPattern
+  id: GetPattern
+  parent: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  langs:
+  - csharp
+  - vb
+  name: GetPattern
+  nameWithType: SortOptions.GetPattern
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.GetPattern
+  type: Property
+  source:
+    remote:
+      path: Redis/SortOptions.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: GetPattern
+    path: ../Redis/SortOptions.cs
+    startLine: 7
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public string GetPattern { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property GetPattern As String
+  overload: Cathay.SDK.Cloud.Interface.Redis.SortOptions.GetPattern*
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortAlpha
+  commentId: P:Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortAlpha
+  id: SortAlpha
+  parent: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  langs:
+  - csharp
+  - vb
+  name: SortAlpha
+  nameWithType: SortOptions.SortAlpha
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortAlpha
+  type: Property
+  source:
+    remote:
+      path: Redis/SortOptions.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: SortAlpha
+    path: ../Redis/SortOptions.cs
+    startLine: 8
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public bool SortAlpha { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property SortAlpha As Boolean
+  overload: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortAlpha*
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortDesc
+  commentId: P:Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortDesc
+  id: SortDesc
+  parent: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  langs:
+  - csharp
+  - vb
+  name: SortDesc
+  nameWithType: SortOptions.SortDesc
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortDesc
+  type: Property
+  source:
+    remote:
+      path: Redis/SortOptions.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: SortDesc
+    path: ../Redis/SortOptions.cs
+    startLine: 9
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public bool SortDesc { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property SortDesc As Boolean
+  overload: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortDesc*
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.StoreAtKey
+  commentId: P:Cathay.SDK.Cloud.Interface.Redis.SortOptions.StoreAtKey
+  id: StoreAtKey
+  parent: Cathay.SDK.Cloud.Interface.Redis.SortOptions
+  langs:
+  - csharp
+  - vb
+  name: StoreAtKey
+  nameWithType: SortOptions.StoreAtKey
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.StoreAtKey
+  type: Property
+  source:
+    remote:
+      path: Redis/SortOptions.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: StoreAtKey
+    path: ../Redis/SortOptions.cs
+    startLine: 10
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Redis
+  syntax:
+    content: public string StoreAtKey { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property StoreAtKey As String
+  overload: Cathay.SDK.Cloud.Interface.Redis.SortOptions.StoreAtKey*
+references:
+- uid: Cathay.SDK.Cloud.Interface.Redis
+  commentId: N:Cathay.SDK.Cloud.Interface.Redis
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.Redis
+  nameWithType: Cathay.SDK.Cloud.Interface.Redis
+  fullName: Cathay.SDK.Cloud.Interface.Redis
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Redis
+    name: Redis
+    href: Cathay.SDK.Cloud.Interface.Redis.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Redis
+    name: Redis
+    href: Cathay.SDK.Cloud.Interface.Redis.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortPattern*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortPattern
+  href: Cathay.SDK.Cloud.Interface.Redis.SortOptions.html#Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortPattern
+  name: SortPattern
+  nameWithType: SortOptions.SortPattern
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortPattern
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.Skip*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Redis.SortOptions.Skip
+  href: Cathay.SDK.Cloud.Interface.Redis.SortOptions.html#Cathay.SDK.Cloud.Interface.Redis.SortOptions.Skip
+  name: Skip
+  nameWithType: SortOptions.Skip
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.Skip
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.Take*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Redis.SortOptions.Take
+  href: Cathay.SDK.Cloud.Interface.Redis.SortOptions.html#Cathay.SDK.Cloud.Interface.Redis.SortOptions.Take
+  name: Take
+  nameWithType: SortOptions.Take
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.Take
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.GetPattern*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Redis.SortOptions.GetPattern
+  href: Cathay.SDK.Cloud.Interface.Redis.SortOptions.html#Cathay.SDK.Cloud.Interface.Redis.SortOptions.GetPattern
+  name: GetPattern
+  nameWithType: SortOptions.GetPattern
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.GetPattern
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortAlpha*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortAlpha
+  href: Cathay.SDK.Cloud.Interface.Redis.SortOptions.html#Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortAlpha
+  name: SortAlpha
+  nameWithType: SortOptions.SortAlpha
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortAlpha
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortDesc*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortDesc
+  href: Cathay.SDK.Cloud.Interface.Redis.SortOptions.html#Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortDesc
+  name: SortDesc
+  nameWithType: SortOptions.SortDesc
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.SortDesc
+- uid: Cathay.SDK.Cloud.Interface.Redis.SortOptions.StoreAtKey*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.Redis.SortOptions.StoreAtKey
+  href: Cathay.SDK.Cloud.Interface.Redis.SortOptions.html#Cathay.SDK.Cloud.Interface.Redis.SortOptions.StoreAtKey
+  name: StoreAtKey
+  nameWithType: SortOptions.StoreAtKey
+  fullName: Cathay.SDK.Cloud.Interface.Redis.SortOptions.StoreAtKey

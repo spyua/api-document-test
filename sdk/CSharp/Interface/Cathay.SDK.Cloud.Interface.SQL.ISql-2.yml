@@ -1,0 +1,285 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  commentId: T:Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  id: ISql`2
+  parent: Cathay.SDK.Cloud.Interface.SQL
+  children:
+  - Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn(System.String)
+  - Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString
+  - Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  langs:
+  - csharp
+  - vb
+  name: ISql<TConnection, TStringBuilder>
+  nameWithType: ISql<TConnection, TStringBuilder>
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>
+  type: Interface
+  source:
+    remote:
+      path: SQL/ISQL.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: ISql
+    path: ../SQL/ISQL.cs
+    startLine: 2
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.SQL
+  syntax:
+    content: 'public interface ISql<TConnection, TStringBuilder> : IDisposable'
+    typeParameters:
+    - id: TConnection
+    - id: TStringBuilder
+    content.vb: Public Interface ISql(Of TConnection, TStringBuilder) Inherits IDisposable
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder)
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder)
+  name.vb: ISql(Of TConnection, TStringBuilder)
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn(System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn(System.String)
+  id: Conn(System.String)
+  parent: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  langs:
+  - csharp
+  - vb
+  name: Conn(string)
+  nameWithType: ISql<TConnection, TStringBuilder>.Conn(string)
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>.Conn(string)
+  type: Method
+  source:
+    remote:
+      path: SQL/ISQL.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Conn
+    path: ../SQL/ISQL.cs
+    startLine: 9
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.SQL
+  summary: Build connection to SQL.
+  example: []
+  syntax:
+    content: TConnection Conn(string connectionString)
+    parameters:
+    - id: connectionString
+      type: System.String
+      description: Connection string
+    return:
+      type: '{TConnection}'
+      description: ''
+    content.vb: Function Conn(connectionString As String) As TConnection
+  overload: Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn*
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder).Conn(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder).Conn(String)
+  name.vb: Conn(String)
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString
+  commentId: M:Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString
+  id: GetSqlConnString
+  parent: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  langs:
+  - csharp
+  - vb
+  name: GetSqlConnString()
+  nameWithType: ISql<TConnection, TStringBuilder>.GetSqlConnString()
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>.GetSqlConnString()
+  type: Method
+  source:
+    remote:
+      path: SQL/ISQL.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: GetSqlConnString
+    path: ../SQL/ISQL.cs
+    startLine: 15
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.SQL
+  summary: Get enviroment variable and combine to sql connection srting.
+  example: []
+  syntax:
+    content: TStringBuilder GetSqlConnString()
+    return:
+      type: '{TStringBuilder}'
+      description: Connection String Class
+    content.vb: Function GetSqlConnString() As TStringBuilder
+  overload: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString*
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder).GetSqlConnString()
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder).GetSqlConnString()
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  commentId: M:Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  id: GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  parent: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  langs:
+  - csharp
+  - vb
+  name: GetSqlConnString(DbConn)
+  nameWithType: ISql<TConnection, TStringBuilder>.GetSqlConnString(DbConn)
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>.GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+  type: Method
+  source:
+    remote:
+      path: SQL/ISQL.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: GetSqlConnString
+    path: ../SQL/ISQL.cs
+    startLine: 29
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.SQL
+  summary: Get enviroment variable and combine to sql connection srting.
+  example: []
+  syntax:
+    content: TStringBuilder GetSqlConnString(DbConn info)
+    parameters:
+    - id: info
+      type: Cathay.SDK.Cloud.Interface.SQL.DbConn
+    return:
+      type: '{TStringBuilder}'
+      description: Connection String Class
+    content.vb: Function GetSqlConnString(info As DbConn) As TStringBuilder
+  overload: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString*
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder).GetSqlConnString(DbConn)
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder).GetSqlConnString(Cathay.SDK.Cloud.Interface.SQL.DbConn)
+references:
+- uid: Cathay.SDK.Cloud.Interface.SQL
+  commentId: N:Cathay.SDK.Cloud.Interface.SQL
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.SQL
+  nameWithType: Cathay.SDK.Cloud.Interface.SQL
+  fullName: Cathay.SDK.Cloud.Interface.SQL
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.SQL
+    name: SQL
+    href: Cathay.SDK.Cloud.Interface.SQL.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.SQL
+    name: SQL
+    href: Cathay.SDK.Cloud.Interface.SQL.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn
+  href: Cathay.SDK.Cloud.Interface.SQL.ISql-2.html#Cathay.SDK.Cloud.Interface.SQL.ISql`2.Conn(System.String)
+  name: Conn
+  nameWithType: ISql<TConnection, TStringBuilder>.Conn
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>.Conn
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder).Conn
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder).Conn
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{TConnection}'
+  commentId: '!:TConnection'
+  definition: TConnection
+  name: TConnection
+  nameWithType: TConnection
+  fullName: TConnection
+- uid: TConnection
+  commentId: '!:TConnection'
+  name: TConnection
+  nameWithType: TConnection
+  fullName: TConnection
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString
+  href: Cathay.SDK.Cloud.Interface.SQL.ISql-2.html#Cathay.SDK.Cloud.Interface.SQL.ISql`2.GetSqlConnString
+  name: GetSqlConnString
+  nameWithType: ISql<TConnection, TStringBuilder>.GetSqlConnString
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>.GetSqlConnString
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder).GetSqlConnString
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder).GetSqlConnString
+- uid: '{TStringBuilder}'
+  commentId: '!:TStringBuilder'
+  definition: TStringBuilder
+  name: TStringBuilder
+  nameWithType: TStringBuilder
+  fullName: TStringBuilder
+- uid: TStringBuilder
+  name: TStringBuilder
+  nameWithType: TStringBuilder
+  fullName: TStringBuilder
+- uid: Cathay.SDK.Cloud.Interface.SQL.DbConn
+  commentId: T:Cathay.SDK.Cloud.Interface.SQL.DbConn
+  parent: Cathay.SDK.Cloud.Interface.SQL
+  href: Cathay.SDK.Cloud.Interface.SQL.DbConn.html
+  name: DbConn
+  nameWithType: DbConn
+  fullName: Cathay.SDK.Cloud.Interface.SQL.DbConn

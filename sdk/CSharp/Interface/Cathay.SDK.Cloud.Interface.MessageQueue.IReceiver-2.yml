@@ -1,0 +1,547 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  commentId: T:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  id: IReceiver`2
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue
+  children:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage(System.Boolean)
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Boolean)
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Int32,System.Boolean)
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync(System.Int32,System.Boolean)
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IReceiver<T, R>
+  nameWithType: IReceiver<T, R>
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>
+  type: Interface
+  source:
+    remote:
+      path: MessageQueue/IReceiver.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: IReceiver
+    path: ../MessageQueue/IReceiver.cs
+    startLine: 2
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.MessageQueue
+  syntax:
+    content: public interface IReceiver<T, R>
+    typeParameters:
+    - id: T
+    - id: R
+    content.vb: Public Interface IReceiver(Of T, R)
+  nameWithType.vb: IReceiver(Of T, R)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R)
+  name.vb: IReceiver(Of T, R)
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage(System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage(System.Boolean)
+  id: PullMessage(System.Boolean)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  langs:
+  - csharp
+  - vb
+  name: PullMessage(bool)
+  nameWithType: IReceiver<T, R>.PullMessage(bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessage(bool)
+  type: Method
+  source:
+    remote:
+      path: MessageQueue/IReceiver.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: PullMessage
+    path: ../MessageQueue/IReceiver.cs
+    startLine: 11
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.MessageQueue
+  summary: 取得訊息
+  example: []
+  syntax:
+    content: T PullMessage(bool received = true)
+    parameters:
+    - id: received
+      type: System.Boolean
+    return:
+      type: '{T}'
+      description: 單筆/多筆訊息
+    content.vb: Function PullMessage(received As Boolean = True) As T
+  overload: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage*
+  nameWithType.vb: IReceiver(Of T, R).PullMessage(Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessage(Boolean)
+  name.vb: PullMessage(Boolean)
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Boolean)
+  id: PullMessages(System.Boolean)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  langs:
+  - csharp
+  - vb
+  name: PullMessages(bool)
+  nameWithType: IReceiver<T, R>.PullMessages(bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessages(bool)
+  type: Method
+  source:
+    remote:
+      path: MessageQueue/IReceiver.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: PullMessages
+    path: ../MessageQueue/IReceiver.cs
+    startLine: 12
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.MessageQueue
+  syntax:
+    content: IEnumerable<T> PullMessages(bool received = true)
+    parameters:
+    - id: received
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Function PullMessages(received As Boolean = True) As IEnumerable(Of T)
+  overload: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages*
+  nameWithType.vb: IReceiver(Of T, R).PullMessages(Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessages(Boolean)
+  name.vb: PullMessages(Boolean)
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Int32,System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Int32,System.Boolean)
+  id: PullMessages(System.Int32,System.Boolean)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  langs:
+  - csharp
+  - vb
+  name: PullMessages(int, bool)
+  nameWithType: IReceiver<T, R>.PullMessages(int, bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessages(int, bool)
+  type: Method
+  source:
+    remote:
+      path: MessageQueue/IReceiver.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: PullMessages
+    path: ../MessageQueue/IReceiver.cs
+    startLine: 13
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.MessageQueue
+  syntax:
+    content: IEnumerable<T> PullMessages(int number, bool received = true)
+    parameters:
+    - id: number
+      type: System.Int32
+    - id: received
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.IEnumerable{{T}}
+    content.vb: Function PullMessages(number As Integer, received As Boolean = True) As IEnumerable(Of T)
+  overload: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages*
+  nameWithType.vb: IReceiver(Of T, R).PullMessages(Integer, Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessages(Integer, Boolean)
+  name.vb: PullMessages(Integer, Boolean)
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync(System.Int32,System.Boolean)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync(System.Int32,System.Boolean)
+  id: PullMessagesAsync(System.Int32,System.Boolean)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  langs:
+  - csharp
+  - vb
+  name: PullMessagesAsync(int, bool)
+  nameWithType: IReceiver<T, R>.PullMessagesAsync(int, bool)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessagesAsync(int, bool)
+  type: Method
+  source:
+    remote:
+      path: MessageQueue/IReceiver.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: PullMessagesAsync
+    path: ../MessageQueue/IReceiver.cs
+    startLine: 14
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.MessageQueue
+  syntax:
+    content: Task<IEnumerable<R>> PullMessagesAsync(int millisecond, bool received = true)
+    parameters:
+    - id: millisecond
+      type: System.Int32
+    - id: received
+      type: System.Boolean
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{R}}}
+    content.vb: Function PullMessagesAsync(millisecond As Integer, received As Boolean = True) As Task(Of IEnumerable(Of R))
+  overload: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync*
+  nameWithType.vb: IReceiver(Of T, R).PullMessagesAsync(Integer, Boolean)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessagesAsync(Integer, Boolean)
+  name.vb: PullMessagesAsync(Integer, Boolean)
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received(System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received(System.String)
+  id: Received(System.String)
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  langs:
+  - csharp
+  - vb
+  name: Received(string)
+  nameWithType: IReceiver<T, R>.Received(string)
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.Received(string)
+  type: Method
+  source:
+    remote:
+      path: MessageQueue/IReceiver.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Received
+    path: ../MessageQueue/IReceiver.cs
+    startLine: 15
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.MessageQueue
+  syntax:
+    content: bool Received(string receivedID)
+    parameters:
+    - id: receivedID
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Function Received(receivedID As String) As Boolean
+  overload: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received*
+  nameWithType.vb: IReceiver(Of T, R).Received(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).Received(String)
+  name.vb: Received(String)
+references:
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue
+  commentId: N:Cathay.SDK.Cloud.Interface.MessageQueue
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.MessageQueue
+  nameWithType: Cathay.SDK.Cloud.Interface.MessageQueue
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue
+    name: MessageQueue
+    href: Cathay.SDK.Cloud.Interface.MessageQueue.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue
+    name: MessageQueue
+    href: Cathay.SDK.Cloud.Interface.MessageQueue.html
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage
+  href: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver-2.html#Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessage(System.Boolean)
+  name: PullMessage
+  nameWithType: IReceiver<T, R>.PullMessage
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessage
+  nameWithType.vb: IReceiver(Of T, R).PullMessage
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessage
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages
+  href: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver-2.html#Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessages(System.Boolean)
+  name: PullMessages
+  nameWithType: IReceiver<T, R>.PullMessages
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessages
+  nameWithType.vb: IReceiver(Of T, R).PullMessages
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessages
+- uid: System.Collections.Generic.IEnumerable{{T}}
+  commentId: T:System.Collections.Generic.IEnumerable{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync
+  href: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver-2.html#Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.PullMessagesAsync(System.Int32,System.Boolean)
+  name: PullMessagesAsync
+  nameWithType: IReceiver<T, R>.PullMessagesAsync
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.PullMessagesAsync
+  nameWithType.vb: IReceiver(Of T, R).PullMessagesAsync
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).PullMessagesAsync
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{{R}}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IEnumerable{`1}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<IEnumerable<R>>
+  nameWithType: Task<IEnumerable<R>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IEnumerable<R>>
+  nameWithType.vb: Task(Of IEnumerable(Of R))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IEnumerable(Of R))
+  name.vb: Task(Of IEnumerable(Of R))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: R
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: R
+  - name: )
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received
+  href: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver-2.html#Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2.Received(System.String)
+  name: Received
+  nameWithType: IReceiver<T, R>.Received
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>.Received
+  nameWithType.vb: IReceiver(Of T, R).Received
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R).Received
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

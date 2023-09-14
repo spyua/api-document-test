@@ -3,18 +3,17 @@
     "content": [
       {
         "files": [
-          "api/**.yml",
-          "api/index.md",
-		  "sdk/**.yml",
-		  "sdk/index.md"
+		  "sdk/**/**/**/**.yml",
+          "sdk/**/**/**/**.md",
+		  
+		  "project/**/toc.yml",
+		  "project/**.md",
         ]
       },
       {
         "files": [
           "articles/**.md",
           "articles/**/toc.yml",
-		  "sdk/**.md",
-          "sdk/**/toc.yml",
           "toc.yml",
           "*.md"
         ]

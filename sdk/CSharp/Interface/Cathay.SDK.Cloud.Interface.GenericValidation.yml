@@ -1,0 +1,693 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation
+  commentId: T:Cathay.SDK.Cloud.Interface.GenericValidation
+  id: GenericValidation
+  parent: Cathay.SDK.Cloud.Interface
+  children:
+  - Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPath(System.String)
+  - Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob})
+  - Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable{System.String})
+  - Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobPrefix(System.String)
+  - Cathay.SDK.Cloud.Interface.GenericValidation.CheckSourceStream(System.IO.Stream)
+  langs:
+  - csharp
+  - vb
+  name: GenericValidation
+  nameWithType: GenericValidation
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation
+  type: Class
+  source:
+    remote:
+      path: Storage/GenericValidation.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: GenericValidation
+    path: ../Storage/GenericValidation.cs
+    startLine: 7
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface
+  summary: A collection of generic library wise validations
+  example: []
+  syntax:
+    content: public static class GenericValidation
+    content.vb: Public Module GenericValidation
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobPrefix(System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobPrefix(System.String)
+  id: CheckBlobPrefix(System.String)
+  parent: Cathay.SDK.Cloud.Interface.GenericValidation
+  langs:
+  - csharp
+  - vb
+  name: CheckBlobPrefix(string)
+  nameWithType: GenericValidation.CheckBlobPrefix(string)
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobPrefix(string)
+  type: Method
+  source:
+    remote:
+      path: Storage/GenericValidation.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: CheckBlobPrefix
+    path: ../Storage/GenericValidation.cs
+    startLine: 15
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface
+  summary: Validates blob prefix search
+  example: []
+  syntax:
+    content: public static void CheckBlobPrefix(string prefix)
+    parameters:
+    - id: prefix
+      type: System.String
+      description: ''
+    content.vb: Public Shared Sub CheckBlobPrefix(prefix As String)
+  overload: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobPrefix*
+  nameWithType.vb: GenericValidation.CheckBlobPrefix(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobPrefix(String)
+  name.vb: CheckBlobPrefix(String)
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPath(System.String)
+  commentId: M:Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPath(System.String)
+  id: CheckBlobFullPath(System.String)
+  parent: Cathay.SDK.Cloud.Interface.GenericValidation
+  langs:
+  - csharp
+  - vb
+  name: CheckBlobFullPath(string)
+  nameWithType: GenericValidation.CheckBlobFullPath(string)
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPath(string)
+  type: Method
+  source:
+    remote:
+      path: Storage/GenericValidation.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: CheckBlobFullPath
+    path: ../Storage/GenericValidation.cs
+    startLine: 34
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface
+  summary: Validates blob full path
+  example: []
+  syntax:
+    content: public static void CheckBlobFullPath(string fullPath)
+    parameters:
+    - id: fullPath
+      type: System.String
+      description: ''
+    content.vb: Public Shared Sub CheckBlobFullPath(fullPath As String)
+  overload: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPath*
+  nameWithType.vb: GenericValidation.CheckBlobFullPath(String)
+  fullName.vb: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPath(String)
+  name.vb: CheckBlobFullPath(String)
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable{System.String})
+  id: CheckBlobFullPaths(System.Collections.Generic.IEnumerable{System.String})
+  parent: Cathay.SDK.Cloud.Interface.GenericValidation
+  langs:
+  - csharp
+  - vb
+  name: CheckBlobFullPaths(IEnumerable<string>)
+  nameWithType: GenericValidation.CheckBlobFullPaths(IEnumerable<string>)
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    remote:
+      path: Storage/GenericValidation.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: CheckBlobFullPaths
+    path: ../Storage/GenericValidation.cs
+    startLine: 42
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface
+  summary: Checks blob full path for generic rules
+  example: []
+  syntax:
+    content: public static void CheckBlobFullPaths(IEnumerable<string> fullPaths)
+    parameters:
+    - id: fullPaths
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Shared Sub CheckBlobFullPaths(fullPaths As IEnumerable(Of String))
+  overload: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths*
+  nameWithType.vb: GenericValidation.CheckBlobFullPaths(IEnumerable(Of String))
+  fullName.vb: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: CheckBlobFullPaths(IEnumerable(Of String))
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob})
+  commentId: M:Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob})
+  id: CheckBlobFullPaths(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob})
+  parent: Cathay.SDK.Cloud.Interface.GenericValidation
+  langs:
+  - csharp
+  - vb
+  name: CheckBlobFullPaths(IEnumerable<Blob>)
+  nameWithType: GenericValidation.CheckBlobFullPaths(IEnumerable<Blob>)
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable<Cathay.SDK.Cloud.Interface.Storage.Blob>)
+  type: Method
+  source:
+    remote:
+      path: Storage/GenericValidation.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: CheckBlobFullPaths
+    path: ../Storage/GenericValidation.cs
+    startLine: 55
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface
+  summary: Checks blob full path for generic rules
+  example: []
+  syntax:
+    content: public static void CheckBlobFullPaths(IEnumerable<Blob> blobs)
+    parameters:
+    - id: blobs
+      type: System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob}
+    content.vb: Public Shared Sub CheckBlobFullPaths(blobs As IEnumerable(Of Blob))
+  overload: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths*
+  nameWithType.vb: GenericValidation.CheckBlobFullPaths(IEnumerable(Of Blob))
+  fullName.vb: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable(Of Cathay.SDK.Cloud.Interface.Storage.Blob))
+  name.vb: CheckBlobFullPaths(IEnumerable(Of Blob))
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation.CheckSourceStream(System.IO.Stream)
+  commentId: M:Cathay.SDK.Cloud.Interface.GenericValidation.CheckSourceStream(System.IO.Stream)
+  id: CheckSourceStream(System.IO.Stream)
+  parent: Cathay.SDK.Cloud.Interface.GenericValidation
+  langs:
+  - csharp
+  - vb
+  name: CheckSourceStream(Stream)
+  nameWithType: GenericValidation.CheckSourceStream(Stream)
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation.CheckSourceStream(System.IO.Stream)
+  type: Method
+  source:
+    remote:
+      path: Storage/GenericValidation.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: CheckSourceStream
+    path: ../Storage/GenericValidation.cs
+    startLine: 66
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface
+  summary: Checks source stream for generic rules
+  example: []
+  syntax:
+    content: public static void CheckSourceStream(Stream inputStream)
+    parameters:
+    - id: inputStream
+      type: System.IO.Stream
+    content.vb: Public Shared Sub CheckSourceStream(inputStream As Stream)
+  overload: Cathay.SDK.Cloud.Interface.GenericValidation.CheckSourceStream*
+references:
+- uid: Cathay.SDK.Cloud.Interface
+  commentId: N:Cathay.SDK.Cloud.Interface
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface
+  nameWithType: Cathay.SDK.Cloud.Interface
+  fullName: Cathay.SDK.Cloud.Interface
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobPrefix*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobPrefix
+  href: Cathay.SDK.Cloud.Interface.GenericValidation.html#Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobPrefix(System.String)
+  name: CheckBlobPrefix
+  nameWithType: GenericValidation.CheckBlobPrefix
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobPrefix
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPath*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPath
+  href: Cathay.SDK.Cloud.Interface.GenericValidation.html#Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPath(System.String)
+  name: CheckBlobFullPath
+  nameWithType: GenericValidation.CheckBlobFullPath
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPath
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths
+  href: Cathay.SDK.Cloud.Interface.GenericValidation.html#Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths(System.Collections.Generic.IEnumerable{System.String})
+  name: CheckBlobFullPaths
+  nameWithType: GenericValidation.CheckBlobFullPaths
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation.CheckBlobFullPaths
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob}
+  commentId: T:System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Blob>
+  nameWithType: IEnumerable<Blob>
+  fullName: System.Collections.Generic.IEnumerable<Cathay.SDK.Cloud.Interface.Storage.Blob>
+  nameWithType.vb: IEnumerable(Of Blob)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Cathay.SDK.Cloud.Interface.Storage.Blob)
+  name.vb: IEnumerable(Of Blob)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+    href: Cathay.SDK.Cloud.Interface.Storage.Blob.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Cathay.SDK.Cloud.Interface.Storage.Blob
+    name: Blob
+    href: Cathay.SDK.Cloud.Interface.Storage.Blob.html
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation.CheckSourceStream*
+  commentId: Overload:Cathay.SDK.Cloud.Interface.GenericValidation.CheckSourceStream
+  href: Cathay.SDK.Cloud.Interface.GenericValidation.html#Cathay.SDK.Cloud.Interface.GenericValidation.CheckSourceStream(System.IO.Stream)
+  name: CheckSourceStream
+  nameWithType: GenericValidation.CheckSourceStream
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation.CheckSourceStream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io

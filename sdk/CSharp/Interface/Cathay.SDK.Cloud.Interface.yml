@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface
+  commentId: N:Cathay.SDK.Cloud.Interface
+  id: Cathay.SDK.Cloud.Interface
+  children:
+  - Cathay.SDK.Cloud.Interface.GenericValidation
+  - Cathay.SDK.Cloud.Interface.StoragePath
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.Cloud.Interface
+  nameWithType: Cathay.SDK.Cloud.Interface
+  fullName: Cathay.SDK.Cloud.Interface
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+references:
+- uid: Cathay.SDK.Cloud.Interface.GenericValidation
+  commentId: T:Cathay.SDK.Cloud.Interface.GenericValidation
+  href: Cathay.SDK.Cloud.Interface.GenericValidation.html
+  name: GenericValidation
+  nameWithType: GenericValidation
+  fullName: Cathay.SDK.Cloud.Interface.GenericValidation
+- uid: Cathay.SDK.Cloud.Interface.StoragePath
+  commentId: T:Cathay.SDK.Cloud.Interface.StoragePath
+  href: Cathay.SDK.Cloud.Interface.StoragePath.html
+  name: StoragePath
+  nameWithType: StoragePath
+  fullName: Cathay.SDK.Cloud.Interface.StoragePath

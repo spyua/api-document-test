@@ -1,0 +1,342 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IMessageQueue
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IMessageQueue
+ ">
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/new/main/apiSpec/new?filename=Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue.md&amp;value=---%0Auid%3A%20Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue">
+
+
+
+  <h1 id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue" class="text-break">
+    Interface IMessageQueue
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/MessageQueue/IMessageQueue.cs/#L3"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cathay.html">Cathay</a>.<a class="xref" href="Cathay.SDK.html">SDK</a>.<a class="xref" href="Cathay.SDK.Cloud.html">Cloud</a>.<a class="xref" href="Cathay.SDK.Cloud.Interface.html">Interface</a>.<a class="xref" href="Cathay.SDK.Cloud.Interface.MessageQueue.html">MessageQueue</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Cathay.SDK.Cloud.Interface.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IMessageQueue</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue_CreateReceiver_" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.CreateReceiver*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue_CreateReceiver_System_String_System_Int32_" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.CreateReceiver(System.String,System.Int32)">
+  CreateReceiver(string, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/MessageQueue/IMessageQueue.cs/#L13"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>建立接收端</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CreateReceiver(string name, int number = 1)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>topic name/queue name/queue url</p>
+</dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>回傳訊息數量</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue_PublishQueueMessage_" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishQueueMessage*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue_PublishQueueMessage_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_String_" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishQueueMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+  PublishQueueMessage(string, Dictionary&lt;string, string&gt;, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/MessageQueue/IMessageQueue.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>推送訊息到佇列</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool PublishQueueMessage(string message, Dictionary&lt;string, string&gt; attribute = null, string queue = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>訊息內容</p>
+</dd>
+    <dt><code>attribute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>queue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>佇列名稱</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否推送成功</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue_PublishTopicMessage_" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessage*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue_PublishTopicMessage_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_String_" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessage(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+  PublishTopicMessage(string, Dictionary&lt;string, string&gt;, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/MessageQueue/IMessageQueue.cs/#L25"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>推送訊息到訂閱TOPIC</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool PublishTopicMessage(string message, Dictionary&lt;string, string&gt; attribute = null, string topic = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>訊息內容</p>
+</dd>
+    <dt><code>attribute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>訊息屬性</p>
+</dd>
+    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Topic名稱</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否推送成功</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue_PublishTopicMessages_" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessages*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue_PublishTopicMessages_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_String_" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.PublishTopicMessages(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.String)">
+  PublishTopicMessages(IEnumerable&lt;string&gt;, bool, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/MessageQueue/IMessageQueue.cs/#L33"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>推送訊息到訂閱TOPIC(多筆)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int PublishTopicMessages(IEnumerable&lt;string&gt; messages, bool ignoreFail = false, string topic = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>messages</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>ignoreFail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>是否忽略失敗訊息</p>
+</dd>
+    <dt><code>topic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Topic名稱</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>是否推送成功</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue_Received_" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.Received*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_MessageQueue_IMessageQueue_Received_System_String_" data-uid="Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.Received(System.String)">
+  Received(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/MessageQueue/IMessageQueue.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool Received(string receivedID)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>receivedID</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/MessageQueue/IMessageQueue.cs/#L3" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

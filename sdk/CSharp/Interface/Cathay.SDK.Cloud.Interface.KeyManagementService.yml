@@ -1,0 +1,49 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService
+  commentId: N:Cathay.SDK.Cloud.Interface.KeyManagementService
+  id: Cathay.SDK.Cloud.Interface.KeyManagementService
+  children:
+  - Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  - Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.Cloud.Interface.KeyManagementService
+  nameWithType: Cathay.SDK.Cloud.Interface.KeyManagementService
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+references:
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  commentId: T:Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+  href: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo.html
+  name: IBaseKeyInfo
+  nameWithType: IBaseKeyInfo
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IBaseKeyInfo
+- uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+  commentId: T:Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+  href: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient-1.html
+  name: IKeyManagementServiceClient<T>
+  nameWithType: IKeyManagementServiceClient<T>
+  fullName: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient<T>
+  nameWithType.vb: IKeyManagementServiceClient(Of T)
+  fullName.vb: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient(Of T)
+  name.vb: IKeyManagementServiceClient(Of T)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+    name: IKeyManagementServiceClient
+    href: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient`1
+    name: IKeyManagementServiceClient
+    href: Cathay.SDK.Cloud.Interface.KeyManagementService.IKeyManagementServiceClient-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

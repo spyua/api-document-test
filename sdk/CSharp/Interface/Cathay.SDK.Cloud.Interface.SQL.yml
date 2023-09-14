@@ -1,0 +1,102 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.SQL
+  commentId: N:Cathay.SDK.Cloud.Interface.SQL
+  id: Cathay.SDK.Cloud.Interface.SQL
+  children:
+  - Cathay.SDK.Cloud.Interface.SQL.DbConn
+  - Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.Cloud.Interface.SQL
+  nameWithType: Cathay.SDK.Cloud.Interface.SQL
+  fullName: Cathay.SDK.Cloud.Interface.SQL
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+references:
+- uid: Cathay.SDK.Cloud.Interface.SQL.DbConn
+  commentId: T:Cathay.SDK.Cloud.Interface.SQL.DbConn
+  parent: Cathay.SDK.Cloud.Interface.SQL
+  href: Cathay.SDK.Cloud.Interface.SQL.DbConn.html
+  name: DbConn
+  nameWithType: DbConn
+  fullName: Cathay.SDK.Cloud.Interface.SQL.DbConn
+- uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  commentId: T:Cathay.SDK.Cloud.Interface.SQL.ISql`2
+  href: Cathay.SDK.Cloud.Interface.SQL.ISql-2.html
+  name: ISql<TConnection, TStringBuilder>
+  nameWithType: ISql<TConnection, TStringBuilder>
+  fullName: Cathay.SDK.Cloud.Interface.SQL.ISql<TConnection, TStringBuilder>
+  nameWithType.vb: ISql(Of TConnection, TStringBuilder)
+  fullName.vb: Cathay.SDK.Cloud.Interface.SQL.ISql(Of TConnection, TStringBuilder)
+  name.vb: ISql(Of TConnection, TStringBuilder)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+    name: ISql
+    href: Cathay.SDK.Cloud.Interface.SQL.ISql-2.html
+  - name: <
+  - name: TConnection
+  - name: ','
+  - name: " "
+  - name: TStringBuilder
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.SQL.ISql`2
+    name: ISql
+    href: Cathay.SDK.Cloud.Interface.SQL.ISql-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TConnection
+  - name: ','
+  - name: " "
+  - name: TStringBuilder
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.SQL
+  commentId: N:Cathay.SDK.Cloud.Interface.SQL
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.SQL
+  nameWithType: Cathay.SDK.Cloud.Interface.SQL
+  fullName: Cathay.SDK.Cloud.Interface.SQL
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.SQL
+    name: SQL
+    href: Cathay.SDK.Cloud.Interface.SQL.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.SQL
+    name: SQL
+    href: Cathay.SDK.Cloud.Interface.SQL.html

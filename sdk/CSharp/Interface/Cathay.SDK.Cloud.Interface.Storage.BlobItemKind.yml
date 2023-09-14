@@ -1,0 +1,142 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  id: BlobItemKind
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  children:
+  - Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.File
+  - Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.Folder
+  langs:
+  - csharp
+  - vb
+  name: BlobItemKind
+  nameWithType: BlobItemKind
+  fullName: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  type: Enum
+  source:
+    remote:
+      path: Storage/BlobltemKind.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: BlobItemKind
+    path: ../Storage/BlobltemKind.cs
+    startLine: 5
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: Type of the blob item in the storage
+  example: []
+  syntax:
+    content: public enum BlobItemKind
+    content.vb: Public Enum BlobItemKind
+- uid: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.File
+  commentId: F:Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.File
+  id: File
+  parent: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  langs:
+  - csharp
+  - vb
+  name: File
+  nameWithType: BlobItemKind.File
+  fullName: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.File
+  type: Field
+  source:
+    remote:
+      path: Storage/BlobltemKind.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: File
+    path: ../Storage/BlobltemKind.cs
+    startLine: 10
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: The file
+  example: []
+  syntax:
+    content: File = 0
+    return:
+      type: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+- uid: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.Folder
+  commentId: F:Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.Folder
+  id: Folder
+  parent: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  langs:
+  - csharp
+  - vb
+  name: Folder
+  nameWithType: BlobItemKind.Folder
+  fullName: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.Folder
+  type: Field
+  source:
+    remote:
+      path: Storage/BlobltemKind.cs
+      branch: main
+      repo: https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface.git
+    id: Folder
+    path: ../Storage/BlobltemKind.cs
+    startLine: 15
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+  namespace: Cathay.SDK.Cloud.Interface.Storage
+  summary: The folder
+  example: []
+  syntax:
+    content: Folder = 1
+    return:
+      type: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+references:
+- uid: Cathay.SDK.Cloud.Interface.Storage
+  commentId: N:Cathay.SDK.Cloud.Interface.Storage
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.Storage
+  nameWithType: Cathay.SDK.Cloud.Interface.Storage
+  fullName: Cathay.SDK.Cloud.Interface.Storage
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Storage
+    name: Storage
+    href: Cathay.SDK.Cloud.Interface.Storage.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.Storage
+    name: Storage
+    href: Cathay.SDK.Cloud.Interface.Storage.html
+- uid: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  commentId: T:Cathay.SDK.Cloud.Interface.Storage.BlobItemKind
+  parent: Cathay.SDK.Cloud.Interface.Storage
+  href: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind.html
+  name: BlobItemKind
+  nameWithType: BlobItemKind
+  fullName: Cathay.SDK.Cloud.Interface.Storage.BlobItemKind

@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue
+  commentId: N:Cathay.SDK.Cloud.Interface.MessageQueue
+  id: Cathay.SDK.Cloud.Interface.MessageQueue
+  children:
+  - Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  - Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  langs:
+  - csharp
+  - vb
+  name: Cathay.SDK.Cloud.Interface.MessageQueue
+  nameWithType: Cathay.SDK.Cloud.Interface.MessageQueue
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue
+  type: Namespace
+  assemblies:
+  - Cathay.SDK.Cloud.Interface
+references:
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  commentId: T:Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+  parent: Cathay.SDK.Cloud.Interface.MessageQueue
+  href: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType.html
+  name: ClientType
+  nameWithType: ClientType
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.ClientType
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  commentId: T:Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+  href: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue.html
+  name: IMessageQueue
+  nameWithType: IMessageQueue
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IMessageQueue
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  commentId: T:Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+  href: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver-2.html
+  name: IReceiver<T, R>
+  nameWithType: IReceiver<T, R>
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver<T, R>
+  nameWithType.vb: IReceiver(Of T, R)
+  fullName.vb: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver(Of T, R)
+  name.vb: IReceiver(Of T, R)
+  spec.csharp:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+    name: IReceiver
+    href: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver-2.html
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: R
+  - name: '>'
+  spec.vb:
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver`2
+    name: IReceiver
+    href: Cathay.SDK.Cloud.Interface.MessageQueue.IReceiver-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: R
+  - name: )
+- uid: Cathay.SDK.Cloud.Interface.MessageQueue
+  commentId: N:Cathay.SDK.Cloud.Interface.MessageQueue
+  href: Cathay.html
+  name: Cathay.SDK.Cloud.Interface.MessageQueue
+  nameWithType: Cathay.SDK.Cloud.Interface.MessageQueue
+  fullName: Cathay.SDK.Cloud.Interface.MessageQueue
+  spec.csharp:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue
+    name: MessageQueue
+    href: Cathay.SDK.Cloud.Interface.MessageQueue.html
+  spec.vb:
+  - uid: Cathay
+    name: Cathay
+    href: Cathay.html
+  - name: .
+  - uid: Cathay.SDK
+    name: SDK
+    href: Cathay.SDK.html
+  - name: .
+  - uid: Cathay.SDK.Cloud
+    name: Cloud
+    href: Cathay.SDK.Cloud.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface
+    name: Interface
+    href: Cathay.SDK.Cloud.Interface.html
+  - name: .
+  - uid: Cathay.SDK.Cloud.Interface.MessageQueue
+    name: MessageQueue
+    href: Cathay.SDK.Cloud.Interface.MessageQueue.html

@@ -1,0 +1,521 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Image Upload API v1 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Image Upload API v1 ">
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/spyua/api-document-test/blob/main/project/信用卡紅利平台/upload-image.md/#L1">
+  </head>
+
+  <script type="module">
+    import options from './../../public/main.js'
+    import { init } from './../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="image-upload-api">Image Upload API v1</h1>
+<!-- Generator: Widdershins v4.0.1 -->
+
+<blockquote>
+<p>Scroll down for code samples, example requests and responses. Select a language for code samples from the tabs above or the mobile navigation menu.</p>
+</blockquote>
+<h1 id="authentication">Authentication</h1>
+<ul>
+<li>API Key (Bearer)
+<ul>
+<li>Parameter Name: <strong>Authorization</strong>, in: header. JWT Authorization header using the Bearer scheme (Example: 'Bearer 12345abcdef')</li>
+</ul>
+</li>
+</ul>
+<h1 id="image-upload-api-image">Image</h1>
+<h2 id="post__uploadimage">post__UploadImage</h2>
+<p><code>POST /UploadImage</code></p>
+<p><em>上傳圖片</em></p>
+<blockquote>
+<p>Body parameter</p>
+</blockquote>
+<pre><code class="lang-yaml">file: string
+
+</code></pre>
+<h3 id="post__uploadimage-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>body</td>
+<td>body</td>
+<td>object</td>
+<td>false</td>
+<td>none</td>
+</tr>
+<tr>
+<td>» file</td>
+<td>body</td>
+<td>string(binary)</td>
+<td>false</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre><code>{&quot;message&quot;:&quot;string&quot;,&quot;data&quot;:{&quot;fileName&quot;:&quot;string&quot;,&quot;originalFileName&quot;:&quot;string&quot;,&quot;fileLinkPath&quot;:&quot;string&quot;,&quot;mediaLink&quot;:&quot;string&quot;,&quot;size&quot;:0,&quot;createTime&quot;:&quot;2019-08-24T14:15:22Z&quot;,&quot;updateTime&quot;:&quot;2019-08-24T14:15:22Z&quot;}}
+</code></pre>
+<pre><code class="lang-json">{
+  &quot;message&quot;: &quot;string&quot;,
+  &quot;data&quot;: {
+    &quot;fileName&quot;: &quot;string&quot;,
+    &quot;originalFileName&quot;: &quot;string&quot;,
+    &quot;fileLinkPath&quot;: &quot;string&quot;,
+    &quot;mediaLink&quot;: &quot;string&quot;,
+    &quot;size&quot;: 0,
+    &quot;createTime&quot;: &quot;2019-08-24T14:15:22Z&quot;,
+    &quot;updateTime&quot;: &quot;2019-08-24T14:15:22Z&quot;
+  }
+}
+</code></pre>
+<h3 id="post__uploadimage-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td><a href="#schemaimageinformationdtoapiresponse">ImageInformationDtoApiResponse</a></td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+Bearer
+</aside>
+<h2 id="delete__deleteimage">delete__DeleteImage</h2>
+<p><code>DELETE /DeleteImage</code></p>
+<h3 id="delete__deleteimage-parameters">Parameters</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>In</th>
+<th>Type</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>FileName</td>
+<td>query</td>
+<td>string</td>
+<td>false</td>
+<td>Cloud上檔案名稱</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre><code>{&quot;message&quot;:&quot;string&quot;,&quot;data&quot;:null}
+</code></pre>
+<pre><code class="lang-json">{
+  &quot;message&quot;: &quot;string&quot;,
+  &quot;data&quot;: null
+}
+</code></pre>
+<h3 id="delete__deleteimage-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td><a href="#schemaobjectapiresponse">ObjectApiResponse</a></td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+Bearer
+</aside>
+<h2 id="get__getallimages">get__GetAllImages</h2>
+<p><code>GET /GetAllImages</code></p>
+<blockquote>
+<p>Example responses</p>
+</blockquote>
+<blockquote>
+<p>200 Response</p>
+</blockquote>
+<pre><code>{&quot;message&quot;:&quot;string&quot;,&quot;data&quot;:[{&quot;fileName&quot;:&quot;string&quot;,&quot;originalFileName&quot;:&quot;string&quot;,&quot;fileLinkPath&quot;:&quot;string&quot;,&quot;mediaLink&quot;:&quot;string&quot;,&quot;size&quot;:0,&quot;createTime&quot;:&quot;2019-08-24T14:15:22Z&quot;,&quot;updateTime&quot;:&quot;2019-08-24T14:15:22Z&quot;}]}
+</code></pre>
+<pre><code class="lang-json">{
+  &quot;message&quot;: &quot;string&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;fileName&quot;: &quot;string&quot;,
+      &quot;originalFileName&quot;: &quot;string&quot;,
+      &quot;fileLinkPath&quot;: &quot;string&quot;,
+      &quot;mediaLink&quot;: &quot;string&quot;,
+      &quot;size&quot;: 0,
+      &quot;createTime&quot;: &quot;2019-08-24T14:15:22Z&quot;,
+      &quot;updateTime&quot;: &quot;2019-08-24T14:15:22Z&quot;
+    }
+  ]
+}
+</code></pre>
+<h3 id="get__getallimages-responses">Responses</h3>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Schema</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>200</td>
+<td><a href="https://tools.ietf.org/html/rfc7231#section-6.3.1">OK</a></td>
+<td>Success</td>
+<td><a href="#schemaimageinformationdtolistapiresponse">ImageInformationDtoListApiResponse</a></td>
+</tr>
+</tbody>
+</table>
+<aside class="warning">
+To perform this operation, you must be authenticated by means of one of the following methods:
+Bearer
+</aside>
+<h1 id="schemas">Schemas</h1>
+<h2 id="tocS_ImageInformationDto">ImageInformationDto</h2>
+<!-- backwards compatibility -->
+<a id="schemaimageinformationdto"></a>
+<a id="schema_ImageInformationDto"></a>
+<a id="tocSimageinformationdto"></a>
+<a id="tocsimageinformationdto"></a>
+<pre><code class="lang-json">{
+  &quot;fileName&quot;: &quot;string&quot;,
+  &quot;originalFileName&quot;: &quot;string&quot;,
+  &quot;fileLinkPath&quot;: &quot;string&quot;,
+  &quot;mediaLink&quot;: &quot;string&quot;,
+  &quot;size&quot;: 0,
+  &quot;createTime&quot;: &quot;2019-08-24T14:15:22Z&quot;,
+  &quot;updateTime&quot;: &quot;2019-08-24T14:15:22Z&quot;
+}
+
+</code></pre>
+<h3 id="properties">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fileName</td>
+<td>string¦null</td>
+<td>false</td>
+<td>none</td>
+<td>Cloud上檔案名稱</td>
+</tr>
+<tr>
+<td>originalFileName</td>
+<td>string¦null</td>
+<td>false</td>
+<td>none</td>
+<td>原始檔案名稱</td>
+</tr>
+<tr>
+<td>fileLinkPath</td>
+<td>string¦null</td>
+<td>false</td>
+<td>none</td>
+<td>Cloud Storage Path</td>
+</tr>
+<tr>
+<td>mediaLink</td>
+<td>string¦null</td>
+<td>false</td>
+<td>none</td>
+<td>Download Url</td>
+</tr>
+<tr>
+<td>size</td>
+<td>integer(int64)¦null</td>
+<td>false</td>
+<td>none</td>
+<td>檔案大小</td>
+</tr>
+<tr>
+<td>createTime</td>
+<td>string(date-time)</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>updateTime</td>
+<td>string(date-time)</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocS_ImageInformationDtoApiResponse">ImageInformationDtoApiResponse</h2>
+<!-- backwards compatibility -->
+<a id="schemaimageinformationdtoapiresponse"></a>
+<a id="schema_ImageInformationDtoApiResponse"></a>
+<a id="tocSimageinformationdtoapiresponse"></a>
+<a id="tocsimageinformationdtoapiresponse"></a>
+<pre><code class="lang-json">{
+  &quot;message&quot;: &quot;string&quot;,
+  &quot;data&quot;: {
+    &quot;fileName&quot;: &quot;string&quot;,
+    &quot;originalFileName&quot;: &quot;string&quot;,
+    &quot;fileLinkPath&quot;: &quot;string&quot;,
+    &quot;mediaLink&quot;: &quot;string&quot;,
+    &quot;size&quot;: 0,
+    &quot;createTime&quot;: &quot;2019-08-24T14:15:22Z&quot;,
+    &quot;updateTime&quot;: &quot;2019-08-24T14:15:22Z&quot;
+  }
+}
+
+</code></pre>
+<h3 id="properties-1">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string¦null</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>data</td>
+<td><a href="#schemaimageinformationdto">ImageInformationDto</a></td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocS_ImageInformationDtoListApiResponse">ImageInformationDtoListApiResponse</h2>
+<!-- backwards compatibility -->
+<a id="schemaimageinformationdtolistapiresponse"></a>
+<a id="schema_ImageInformationDtoListApiResponse"></a>
+<a id="tocSimageinformationdtolistapiresponse"></a>
+<a id="tocsimageinformationdtolistapiresponse"></a>
+<pre><code class="lang-json">{
+  &quot;message&quot;: &quot;string&quot;,
+  &quot;data&quot;: [
+    {
+      &quot;fileName&quot;: &quot;string&quot;,
+      &quot;originalFileName&quot;: &quot;string&quot;,
+      &quot;fileLinkPath&quot;: &quot;string&quot;,
+      &quot;mediaLink&quot;: &quot;string&quot;,
+      &quot;size&quot;: 0,
+      &quot;createTime&quot;: &quot;2019-08-24T14:15:22Z&quot;,
+      &quot;updateTime&quot;: &quot;2019-08-24T14:15:22Z&quot;
+    }
+  ]
+}
+
+</code></pre>
+<h3 id="properties-2">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string¦null</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>data</td>
+<td>[<a href="#schemaimageinformationdto">ImageInformationDto</a>]¦null</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+<h2 id="tocS_ObjectApiResponse">ObjectApiResponse</h2>
+<!-- backwards compatibility -->
+<a id="schemaobjectapiresponse"></a>
+<a id="schema_ObjectApiResponse"></a>
+<a id="tocSobjectapiresponse"></a>
+<a id="tocsobjectapiresponse"></a>
+<pre><code class="lang-json">{
+  &quot;message&quot;: &quot;string&quot;,
+  &quot;data&quot;: null
+}
+
+</code></pre>
+<h3 id="properties-3">Properties</h3>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Required</th>
+<th>Restrictions</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>message</td>
+<td>string¦null</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+<tr>
+<td>data</td>
+<td>any</td>
+<td>false</td>
+<td>none</td>
+<td>none</td>
+</tr>
+</tbody>
+</table>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/spyua/api-document-test/blob/main/project/信用卡紅利平台/upload-image.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,272 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>自動化設定專案 </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="自動化設定專案 ">
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/spyua/api-document-test/blob/main/sdk/Java/GCP/cub-cloud-gcp-autoconfig.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="自動化設定專案">自動化設定專案</h1>
+
+<blockquote>
+<p>例如ＤＢ連線我們會封裝設定方式起來，讓使用者透過參數檔即可連線ＤＢ且會仿造Spring Boot的功能將Connection Pool &amp; transaction &amp; DataSource自動配置好</p>
+</blockquote>
+<h1 id="如何連線資料庫">如何連線資料庫</h1>
+<p>配置設定檔已達到資料庫的連線自動化配置，在目前SDK中最多可以達到同時配置兩個資料庫連線設定。
+若要配置第三台需要自己實作相關設定配置。以下範例提供單一資料庫與雙資料庫連線配置的方法，</p>
+<h3 id="單一資料庫連線---使用spring-boot-自動化設定">單一資料庫連線 - 使用Spring Boot 自動化設定</h3>
+<h4 id="資料庫連線設定">資料庫連線設定</h4>
+<pre><code class="lang-properties"># 啟用Spring Cloud GCP 資料庫自動化配置設定 (Default 設定為 true 可以省略配置)
+spring.cloud.gcp.sql.enabled=true
+# 欲連線資料庫名稱
+spring.cloud.gcp.sql.database-name=&lt;DATA BASE NAME&gt;
+# GCP連線位置
+spring.cloud.gcp.sql.instance-connection-name=&lt;PROJECT ID&gt;:&lt;REGION ID&gt;:&lt;INSTANCE&gt;
+# 連線帳號
+spring.datasource.username=&lt;ACCOUNT&gt;
+# 連線密碼
+spring.datasource.password=&lt;PASSWORD&gt;
+</code></pre>
+<h4 id="連線池配置-hikaircp">連線池配置 HikairCP</h4>
+<pre><code class="lang-properties"># 連線逾時時間建議設定為30秒
+spring.datasource.hikari.connection-timeout=30000
+# 閒置連線最小數量建議設定5個連線數
+spring.datasource.hikari.minimum-idle=5
+# 閒置池最大連線數量建議設定為32個連線數
+spring.datasource.hikari.maximum-pool-size=32
+# 閒置連線存活時間建議設定 5 分鐘
+spring.datasource.hikari.idle-timeout=300000
+# 連線數最長存活時間建議設定30分鐘
+spring.datasource.hikari.max-lifetime=1800000
+# 自動Commit 預設為 true (建議設為False)
+spring.datasource.hikari.auto-commit=false
+</code></pre>
+<h4 id="啟用orm-jap-配置">啟用ORM JAP 配置</h4>
+<pre><code class="lang-properties"># 建議設定DDL指令不執行
+spring.jpa.hibernate.ddl-auto=none
+# 指定Jpa資料庫驅動種類
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+</code></pre>
+<h3 id="雙資料庫連線---使用sdk自動化配置">雙資料庫連線 - 使用SDK自動化配置</h3>
+<h4 id="資料庫連線設定-1">資料庫連線設定</h4>
+<pre><code class="lang-properties"># 關閉Spring GCP SQL 自動配置功能
+spring.cloud.gcp.sql.enabled=false
+
+# 第一組配置設定
+# 設定一組連線設定啟用(預設 false)
+cub.cloud.datasource.primary.enable= true
+# 欲連線資料庫名稱
+cub.cloud.datasource.primary.dataBaseName= &lt;DATA BASE NAME&gt;
+# GCP 專案名稱
+cub.cloud.datasource.primary.projectId=&lt;PROJECT ID&gt;
+# GCP 資料庫實際位置
+cub.cloud.datasource.primary.regionId=&lt;REGION ID&gt;
+# GCP 資料庫實例名稱
+cub.cloud.datasource.primary.instance=&lt;INSTANCE&gt;
+# 連線帳號
+cub.cloud.datasource.primary.username= &lt;ACCOUNT&gt;
+# 連線密碼
+cub.cloud.datasource.primary.password= &lt;PASSWORD&gt;
+
+# 第二組配置設定
+# 設定二組連線設定啟用(預設 false)
+cub.cloud.datasource.secondary.enable= true
+# 欲連線資料庫名稱
+cub.cloud.datasource.secondary.dataBaseName= &lt;DATA BASE NAME&gt;
+# GCP 專案名稱
+cub.cloud.datasource.secondary.projectId=&lt;PROJECT ID&gt;
+# GCP 資料庫實際位置
+cub.cloud.datasource.secondary.regionId=&lt;REGION ID&gt;
+# GCP 資料庫實例名稱
+cub.cloud.datasource.secondary.instance=&lt;INSTANCE&gt;
+# 連線帳號
+cub.cloud.datasource.secondary.username= &lt;ACCOUNT&gt;
+# 連線密碼
+cub.cloud.datasource.secondary.password= &lt;PASSWORD&gt;
+</code></pre>
+<h4 id="連線池配置-hikaircp-1">連線池配置 HikairCP</h4>
+<pre><code class="lang-properties">#第一組連線池設定
+# 連線逾時時間建議設定為30秒
+cub.cloud.datasource.primary.hikari.connectionTimeout=30000
+# 閒置連線最小數量建議設定5個連線數
+cub.cloud.datasource.primary.hikari.minimumIdle=5
+# 閒置池最大連線數量建議設定為32個連線數
+cub.cloud.datasource.primary.hikari.maximumPoolSize= 32
+# 閒置連線存活時間建議設定 6 分鐘
+cub.cloud.datasource.primary.hikari.idleTimeout =300000
+# 連線數最長存活時間建議設定30分鐘
+cub.cloud.datasource.primary.hikari.maxLifeTime=1800000
+# 自動Commit 預設為 true (建議設為False)
+cub.cloud.datasource.primary.hikari.autoCommit= false
+
+#第二組連線池設定
+# 連線逾時時間建議設定為30秒
+cub.cloud.datasource.secondary.hikari.connectionTimeout=30000
+# 閒置連線最小數量建議設定5個連線數
+cub.cloud.datasource.secondary.hikari.minimumIdle=5
+# 閒置池最大連線數量建議設定為32個連線數
+cub.cloud.datasource.secondary.hikari.maximumPoolSize= 32
+# 閒置連線存活時間建議設定 5 分鐘
+cub.cloud.datasource.secondary.hikari.idleTimeout =300000
+# 連線數最長存活時間建議設定30分鐘
+cub.cloud.datasource.secondary.hikari.maxLifeTime=1800000
+# 自動Commit 預設為 true (建議設為False)
+cub.cloud.datasource.secondary.hikari.autoCommit= false
+</code></pre>
+<h4 id="啟用orm-jap-配置-1">啟用ORM JAP 配置</h4>
+<pre><code class="lang-properties"># 建議設定DDL指令不執行
+spring.jpa.hibernate.ddl-auto=none
+# 指定Jpa資料庫驅動種類
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+#第一組 Entity ＆ Repository配置
+cub.cloud.jpa.primary.entity.path=&lt;YOUR PACKAGE&gt;
+cub.cloud.jpa.primary.repository.path=&lt;YOUR PACKAGE&gt;
+
+#第二組 Entity ＆ Repository配置
+cub.cloud.jpa.secondary.entity.path=&lt;YOUR PACKAGE&gt;
+cub.cloud.jpa.secondary.repository.path=&lt;YOUR PACKAGE&gt;
+
+</code></pre>
+<h3 id="額外配置">額外配置</h3>
+<pre><code class="lang-properties"># 顯示ORM執行時所編譯出來的SQL指令
+spring.jpa.show-sql=true
+# 開啟HikariCP Debug模式，可以檢視相關設定
+logging.level.com.zaxxer.hikari.HikariConfig=DEBUG
+logging.level.com.zaxxer.hikari=TRACE
+</code></pre>
+<h1 id="如何使用jdbctempalte">如何使用JdbcTempalte</h1>
+<h3 id="單一資料庫連線---使用spring-boot自動配置的singleton物件">單一資料庫連線 - 使用Spring Boot自動配置的Singleton物件</h3>
+<h4 id="注入jdbctemplate">注入JdbcTemplate</h4>
+<pre><code class="lang-java">@Autowired
+JdbcTemplate jdbcTemplate;
+</code></pre>
+<h3 id="雙資料庫連線---使用sdk配置的singleton物件">雙資料庫連線 - 使用SDK配置的Singleton物件</h3>
+<p>此處需要特別注意一下，因為配置的JdbcTemplate會有兩個，需要特別使用@Qualifier來篩選指定的物件，以免框架自動注入到同一個JdbcTemplate。</p>
+<pre><code class="lang-java">//第一個連線配置物件
+@Autowired
+@Qualifier(&quot;primaryJdbcTemplate&quot;)
+JdbcTemplate primaryJdbcTemplate;
+
+//第二個連線配置物件
+@Autowired
+@Qualifier(&quot;primaryTransactionManager&quot;)
+JdbcTemplate secondaryJdbcTemplate;
+</code></pre>
+<h1 id="交易事務的使用">交易事務的使用</h1>
+<p>在事務方面的使用，要非常注意，目前的SDK不提供分散式事務管理的機制，因此針對每一個資料庫的操作，事務都是獨立的，不可以混用，否則是很有可能會造成資料異常的狀況。
+因此在使用@Transactional需要特別告知目前是使用哪一個TransactionManager，如下圖。</p>
+<pre><code class="lang-java">//第一個資料庫事務管理
+@Transactional(transactionManager = &quot;primaryTransactionManager&quot;,rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
+public void doSomething(){
+    dosomething.....
+  };
+
+//第二個資料庫事務管理
+@Transactional(transactionManager = &quot;secondaryTransactionManager&quot;,rollbackFor = Exception.class, propagation = Propagation.REQUIRED)
+public void doSomething(){
+  dosomething.....
+  };
+</code></pre>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/spyua/api-document-test/blob/main/sdk/Java/GCP/cub-cloud-gcp-autoconfig.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

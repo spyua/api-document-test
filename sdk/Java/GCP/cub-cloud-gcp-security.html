@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Security </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Security ">
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/spyua/api-document-test/blob/main/sdk/Java/GCP/cub-cloud-gcp-security.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="security">Security</h1>
+
+<ul>
+<li><a href="#project-description">專案說明</a></li>
+<li><a href="#gcp-kms">1.GCP KMS</a>
+<ul>
+<li><a href="#gcp-kms-di">a.注入使用</a></li>
+<li><a href="#gcp-kms-keySetting">b.建立金鑰設定</a></li>
+<li><a href="#gcp-kms-methodDoc">c.方法使用說明</a>
+<ul>
+<li><a href="#gcp-kms-se">I.對明文進行對稱加密</a></li>
+<li><a href="#gcp-kms-sd">II.對密文進行對稱解密</a></li>
+<li><a href="#gcp-kms-ase">III.對明文進行非對稱加密</a></li>
+<li><a href="#gcp-kms-asd">IV.非對稱解密</a></li>
+<li><a href="#gcp-kms-hmace">V.使用HMAC加密明文</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><a id="project-description"></a></p>
+<h2 id="專案說明">專案說明</h2>
+<ol>
+<li>實作GCP KMS相關功能。</li>
+<li>實作GCP Security Manager相關功能。</li>
+</ol>
+<p><a id="gcp-kms"></a></p>
+<h2 id="1gcp-kms">1.GCP KMS</h2>
+<p>KMSServiceImpl 是一個用於密鑰管理和加解密操作的Java服務類。它實現了 KMSService<keyinfodto> 介面，提供</keyinfodto></p>
+<ol>
+<li><strong>對稱加密和解密</strong></li>
+<li><strong>非對稱加密和解密</strong></li>
+<li><strong>HMAC加密</strong></li>
+</ol>
+<p><a id="gcp-kms-di"></a></p>
+<h3 id="a注入使用">a.注入使用</h3>
+<pre><code class="lang-java">  @Autowired
+  KMSService&lt;KeyInfoDto&gt; kmsService;
+</code></pre>
+<p><a id="gcp-kms-keySetting"></a></p>
+<h3 id="b建立金鑰設定">b.建立金鑰設定</h3>
+<pre><code class="lang-java">  KeyInfoDto key = new KeyInfoDto();
+  key.setProjectId(&quot;your-project-id&quot;);
+  key.setLocationId(&quot;key-location-name&quot;);
+  key.setKeyRingId(&quot;key-ring-id&quot;);   
+  key.setKeyId(&quot;key-id&quot;);
+  key.setKeyVersion(&quot;key-version&quot;);
+</code></pre>
+<p><a id="gcp-kms-methodDoc"></a></p>
+<h3 id="c方法使用說明">c.方法使用說明</h3>
+<p><a id="gcp-kms-se"></a></p>
+<h4 id="i-對明文進行對稱加密--symmetricencryptkeyinfodto-keyinfo-string-plaintext">I. 對明文進行對稱加密 : symmetricEncrypt(KeyInfoDto keyInfo, String plaintext)</h4>
+<ul>
+<li><p>參數</p>
+<ul>
+<li>keyInfo : 密鑰信息DTO。</li>
+<li>plaintext : 需要加密的明文。</li>
+</ul>
+</li>
+<li><p>返回值 : 加密後的Base64字串。</p>
+</li>
+<li><p>範例 :</p>
+<pre><code class="lang-java">KeyInfoDto keyInfo = new KeyInfoDto();
+
+// 設置您的keyInfo參數...
+
+String encrypt = kmsService.symmetricEncrypt(keyInfo,&quot;明文&quot;);
+</code></pre>
+</li>
+</ul>
+<br>
+<p><a id="gcp-kms-sd"></a></p>
+<h4 id="ii-對密文進行對稱解密--symmetricdecryptkeyinfodto-keyinfo-string-ciphertext">II. 對密文進行對稱解密 : symmetricDecrypt(KeyInfoDto keyInfo, String ciphertext)</h4>
+<ul>
+<li><p>參數</p>
+<ul>
+<li>keyInfo : 密鑰信息DTO。</li>
+<li>ciphertext : 需要解密的密文。</li>
+</ul>
+</li>
+<li><p>返回值 : 解密後的明文。</p>
+</li>
+<li><p>範例 :</p>
+<pre><code class="lang-java">KeyInfoDto keyInfo = new KeyInfoDto();
+
+// 設置您的keyInfo參數...
+
+String decrypt = kmsService.symmetricDecrypt(key,&quot;密文&quot;);
+</code></pre>
+</li>
+</ul>
+<br>
+<p><a id="gcp-kms-ase"></a></p>
+<h4 id="iii-對明文進行非對稱加密--asymmetricencryptkeyinfodto-keyinfo-string-publickeypem-string-plaintext">III. 對明文進行非對稱加密 : asymmetricEncrypt(KeyInfoDto keyInfo, String publicKeyPem, String plaintext)</h4>
+<ul>
+<li><p>參數</p>
+<ul>
+<li>keyInfo: 密鑰信息DTO。</li>
+<li>publicKeyPem: 公鑰（PEM格式）。</li>
+<li>plaintext: 需要加密的明文。</li>
+</ul>
+</li>
+<li><p>返回值: 加密後的Base64字串。</p>
+</li>
+<li><p>範例:</p>
+<pre><code class="lang-java">KeyInfoDto keyInfo = new KeyInfoDto();
+
+// 設置您的keyInfo參數...
+
+// 從檔案讀取pem
+String publicKeyPath = Paths.get(&quot;pub file path&quot;);
+String publicKeyPem = new String(Files.readAllBytes(publicKeyPath), StandardCharsets.UTF_8);
+
+// 非對稱加密
+String asyncEncrypt = kmsService.asymmetricEncrypt(key,publicKeyPem,testPlaintext);
+</code></pre>
+</li>
+</ul>
+<br>
+<p><a id="gcp-kms-asd"></a></p>
+<h4 id="iv-非對稱解密--asymmetricdecryptkeyinfodto-keyinfo-string-ciphertext">IV. 非對稱解密 : asymmetricDecrypt(KeyInfoDto keyInfo, String ciphertext)</h4>
+<ul>
+<li><p>參數</p>
+<ul>
+<li>keyInfo: 密鑰信息DTO。</li>
+<li>ciphertext: 需要解密的密文。</li>
+</ul>
+</li>
+<li><p>返回值: 解密後的明文。</p>
+</li>
+<li><p>範例:</p>
+<pre><code class="lang-java">KeyInfoDto keyInfo = new KeyInfoDto();
+
+// 設置您的keyInfo參數...
+
+String decryptedText = kmsServiceImpl.asymmetricDecrypt(keyInfo, &quot;密文&quot;);
+</code></pre>
+<br>
+</li>
+</ul>
+<p><a id="gcp-kms-hmace"></a></p>
+<h4 id="v-使用hmac加密明文--hmacencryptkeyinfodto-keyinfo-string-plaintext">V. 使用HMAC加密明文 : hmacEncrypt(KeyInfoDto keyInfo, String plaintext)</h4>
+<ul>
+<li><p>參數</p>
+<ul>
+<li>keyInfo: 密鑰信息DTO。</li>
+<li>plaintext: 需要加密的明文。</li>
+</ul>
+</li>
+<li><p>返回值: 加密後的Base64字串。</p>
+</li>
+<li><p>範例:</p>
+<pre><code class="lang-java">KeyInfoDto keyInfo = new KeyInfoDto();
+
+// 設置您的keyInfo參數...
+
+String hmacEncryptedText = kmsServiceImpl.hmacEncrypt(keyInfo, &quot;明文&quot;);
+</code></pre>
+</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/spyua/api-document-test/blob/main/sdk/Java/GCP/cub-cloud-gcp-security.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

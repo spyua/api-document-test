@@ -616,6 +616,69 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "sdk/Java/GCP/cub-cloud-gcp-autoconfig.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Java/GCP/cub-cloud-gcp-autoconfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sdk/Java/GCP/cub-cloud-gcp-pubsub.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Java/GCP/cub-cloud-gcp-pubsub.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sdk/Java/GCP/cub-cloud-gcp-security.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Java/GCP/cub-cloud-gcp-security.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sdk/Java/GCP/cub-cloud-gcp-storage.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Java/GCP/cub-cloud-gcp-storage.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "sdk/Java/GCP/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Java/GCP/intro.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "sdk/Java/GCP/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "sdk/Java/GCP/toc.html"
+        },
+        ".json": {
+          "relative_path": "sdk/Java/GCP/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "sdk/Java/intro.md",
       "output": {
         ".html": {

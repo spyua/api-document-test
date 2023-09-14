@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Storage </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Storage ">
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/spyua/api-document-test/blob/main/sdk/Java/GCP/cub-cloud-gcp-storage.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="storage">Storage</h1>
+
+<h3 id="專案說明">專案說明</h3>
+<ol>
+<li>實作GCP Storage相關功能</li>
+</ol>
+<h3 id="sample">Sample</h3>
+<p>前置作業：設定檔
+需在 application.properties 中設定 project-id</p>
+<pre><code class="lang-properties"> # Storage
+ spring.cloud.gcp.project-id=[PROJECT_ID]
+</code></pre>
+<p>前置作業：引入Storage</p>
+<pre><code class="lang-java">  @Autowired
+  private StorageImpl storage;
+</code></pre>
+<br>
+<ul>
+<li><p>上傳檔案</p>
+<pre><code class="lang-java">try {
+    storage.upload([UPLOAD_PATH], [STREAM], [APPEND]);
+} catch (Exception e) {
+    throw new RuntimeException(e);
+}
+</code></pre>
+<p>參數說明</p>
+<table>
+<thead>
+<tr>
+<th>參數</th>
+<th>格式</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UPLOAD_PATH</td>
+<td>Path</td>
+<td>上傳路徑： [bucket_name]/[folder]/[fileName.txt]</td>
+</tr>
+<tr>
+<td>STREAM</td>
+<td>InputStream</td>
+<td>檔案內容</td>
+</tr>
+<tr>
+<td>APPEND</td>
+<td>Boolean</td>
+<td>true: 新增檔案，會檢查檔案是否存在 <br> false: 更新檔案，需存在相同檔名<br>          直接複寫，若檔案修改前被異動則更新失敗</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<br>
+<ul>
+<li><p>讀取檔案（單筆）</p>
+<pre><code class="lang-java">InputStream stream = service.getStorageObject([PATH]);
+// print file content
+String content = new BufferedReader(new InputStreamReader(stream))
+              .lines().collect(Collectors.joining(&quot;\n&quot;));
+System.out.println(content);
+</code></pre>
+<p>參數說明</p>
+<table>
+<thead>
+<tr>
+<th>參數</th>
+<th>格式</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PATH</td>
+<td>Path</td>
+<td>檔案路徑： [bucket_name]/[folder]/[fileName.txt]</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<br>
+<ul>
+<li><p>取得檔案（多筆）</p>
+<pre><code class="lang-java">  List&lt;String&gt; path = new ArrayList&lt;String&gt;();
+  path.add([PATH_1]);
+  path.add([PATH_2]);
+  List&lt;StorageObject&lt;Blob&gt;&gt; files = storage.getStorageObjects(path);
+</code></pre>
+<p>參數說明</p>
+<table>
+<thead>
+<tr>
+<th>參數</th>
+<th>格式</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PATH</td>
+<td>Path</td>
+<td>檔案路徑： [bucket_name]/[folder]/[fileName.txt]</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<br>
+<ul>
+<li><p>篩選檔案</p>
+<pre><code class="lang-java">  StorageListOptions options = new StorageListOptions();
+  options.setBucketName([BucketName]);
+  options.setFolderPath([Folder]);
+  options.setFilePrefix([FilePrefix]);
+  options.setMaxResults(10);
+  List&lt;StorageObject&lt;Blob&gt;&gt; blobs = storage.getStorageObjects(options);
+</code></pre>
+<p>參數說明</p>
+<table>
+<thead>
+<tr>
+<th>參數</th>
+<th>格式</th>
+<th>說明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BucketName</td>
+<td>String</td>
+<td>bucket名稱</td>
+</tr>
+<tr>
+<td>FolderPath</td>
+<td>Path</td>
+<td>檔案資料夾位置</td>
+</tr>
+<tr>
+<td>FilePrefix</td>
+<td>String</td>
+<td>檔名前綴，要使用前綴<font color="red">必須包含</font>FolderPath設定</td>
+</tr>
+<tr>
+<td>MaxResults</td>
+<td>Integer</td>
+<td>最大資料數</td>
+</tr>
+</tbody>
+</table>
+<p><a href="https://cloud.google.com/storage/docs/samples/storage-list-files-with-prefix">參考文件</a></p>
+</li>
+</ul>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/spyua/api-document-test/blob/main/sdk/Java/GCP/cub-cloud-gcp-storage.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

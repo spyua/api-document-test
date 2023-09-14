@@ -1,0 +1,332 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>PubSub </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="PubSub ">
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/spyua/api-document-test/blob/main/sdk/Java/GCP/cub-cloud-gcp-pubsub.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="pubsub">PubSub</h1>
+
+<h2 id="專案說明">專案說明</h2>
+<ol>
+<li>推播訊息</li>
+<li>同步與非同步主動拉訊息</li>
+<li>訂閱頻道持續接收</li>
+</ol>
+<h2 id="version">Version</h2>
+<table>
+<thead>
+<tr>
+<th>SDK</th>
+<th>Version</th>
+<th>Git</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cub-cloud-gcp-pubsub</td>
+<td>1.0.0</td>
+<td>待鍵入連結</td>
+</tr>
+</tbody>
+</table>
+<h2 id="專案引入說明">專案引入說明</h2>
+<h3 id="maven-pom-setting">Maven Pom Setting</h3>
+<blockquote>
+<p>使用版本管理Pom，需繼承cub-cloud-general-parent</p>
+</blockquote>
+<pre><code class="lang-xml">&lt;parent&gt;
+    &lt;groupId&gt;cub.cloud&lt;/groupId&gt;
+    &lt;artifactId&gt;cub-cloud-general-parent&lt;/artifactId&gt;
+    &lt;version&gt;1.0.0&lt;/version&gt;
+&lt;/parent&gt;
+</code></pre>
+<blockquote>
+<p>在相依關係加入PubSub SDK專案</p>
+</blockquote>
+<pre><code class="lang-xml">&lt;dependency&gt;
+      &lt;groupId&gt;cub.cloud&lt;/groupId&gt;
+      &lt;artifactId&gt;cub-cloud-gcp-pubsub&lt;/artifactId&gt;
+&lt;/dependency&gt;
+
+</code></pre>
+<blockquote>
+<p>若不想要依賴版本管理Pom，則可直引用，差異在於需要指定版本。</p>
+</blockquote>
+<pre><code class="lang-xml">&lt;dependency&gt;
+      &lt;groupId&gt;cub.cloud&lt;/groupId&gt;
+      &lt;artifactId&gt;cub-cloud-gcp-pubsub&lt;/artifactId&gt;
+      &lt;version&gt;1.0.0&lt;/version&gt;
+&lt;/dependency&gt;
+
+</code></pre>
+<h2 id="api-使用說明">API 使用說明</h2>
+<h3 id="如果您是在本機開發請確認以下設定">如果您是在本機開發，請確認以下設定</h3>
+<ol>
+<li>與GCP環境驗證設定</li>
+</ol>
+<blockquote>
+<p>常用的方法有下列 - 參考官方文件 <a href="https://cloud.google.com/docs/authentication/provide-credentials-adc?hl=zh-cn">Link</a></p>
+<ol>
+<li>GCP SDK - gcloud</li>
+<li>Json Key - Json驗證檔案</li>
+<li>Oauth2驗證</li>
+</ol>
+</blockquote>
+<p>若您採用的不是GCP SDK驗證，需要在專案中的application.properties/.yml中設定，下列資訊：</p>
+<blockquote>
+<p>properties</p>
+</blockquote>
+<pre><code class="lang-properties=">spring.cloud.gcp.project-id=my-gcp-project-id
+</code></pre>
+<blockquote>
+<p>yml</p>
+</blockquote>
+<pre><code class="lang-yaml">spring:
+    cloud:
+        gcp:
+            project-id: my-gcp-project-id
+</code></pre>
+<h2 id="注入sdk服務">注入SDK服務</h2>
+<p>在您需要用到PubSub功能的實作物件中，透過Spring Boot IOC進行注入。</p>
+<pre><code class="lang-java">  // 透過Spring IOC Container注入服務
+  @Autowired
+  private Publisher publisher; //推播訊息
+
+  @Autowired
+  private Receiver receiver;  //主動收取訊息
+</code></pre>
+<h2 id="publisher--pubsubpublisherimpl-推播訊息使用範例">Publisher : PubSubPublisherImpl 推播訊息使用範例</h2>
+<h3 id="單筆訊息推播">單筆訊息推播</h3>
+<p>此方法為同步方式進行單筆推播</p>
+<pre><code class="lang-java">  // PubSub訊息標籤
+  Map&lt;String, String&gt; attributes = new HashMap&lt;&gt;();
+  attributes.put(&quot;info&quot;, &quot;demo&quot;);
+  
+  // 單筆推播訊息
+  publisher.publishTopicMessage(&quot;TOPIC&quot;, &quot;Message&quot;, attributes);
+</code></pre>
+<h3 id="多筆訊息逐步推播">多筆訊息逐步推播</h3>
+<p>此方法為多筆逐步推播，與單筆相同為同步處理方式。</p>
+<pre><code class="lang-java">   List&lt;String&gt; inputList = new ArrayList&lt;&gt;();
+   inputList.add(&quot;Message 1&quot;);
+   inputList.add(&quot;Message 2&quot;);
+   inputList.add(&quot;Message 3&quot;);
+
+   publisher.publishTopicMessages(&quot;TOPIC&quot;,inputList);
+</code></pre>
+<h2 id="receivertrk--pubsubreceiverimpl-主動接收訊息">Receiver&lt;T,R,K&gt; : PubSubReceiverImpl 主動接收訊息</h2>
+<h3 id="同步接收無自動進行ack動作">同步接收，無自動進行Ack動作</h3>
+<pre><code class="lang-java">  //接收訊息
+  List&lt;AcknowledgeablePubsubMessage&gt; messages = receiver.pullMessages(&quot;topic1-sub&quot;, 1);
+  
+  //建立處理成功要進行Ack的清單
+  List&lt;AcknowledgeablePubsubMessage&gt; successProcessList = new ArrayList&lt;&gt;();
+
+  messages.forEach( x -&gt; {
+          //將取回的訊息進行處理
+          System.out.println(x.getPubsubMessage().getData());
+            
+          //處理成功加入ack清單
+          successProcessList.add(x);
+        });
+
+  //進行ack
+  receiver.acknowledges(successProcessList);
+</code></pre>
+<h3 id="同步接收自動進行ack動作">同步接收，自動進行Ack動作</h3>
+<pre><code class="lang-java">  //取回訊息，並且會自動Ack
+  List&lt;PubsubMessage&gt; messages = receiver.pullMessagesAndAck(&quot;topic1-sub&quot;, 1);
+  
+  //訊息處理
+  messages.forEach(x -&gt; System.out.println(x.getData()));
+</code></pre>
+<h3 id="非同步接收無自動進行ack動作">非同步接收，無自動進行Ack動作</h3>
+<pre><code class="lang-java">
+  //呼叫非同步取回一個Future讓後續決定可以怎麼處理
+  ListenableFuture&lt;List&lt;AcknowledgeablePubsubMessage&gt;&gt; future = (ListenableFuture&lt;List&lt;AcknowledgeablePubsubMessage&gt;&gt;) receiver.pullMessagesAsync(&quot;topic1-sub&quot;, 1);
+
+  //定義Future成功處理的事和失敗處理的事
+  future.addCallback(new ListenableFutureCallback&lt;List&lt;AcknowledgeablePubsubMessage&gt;&gt;() {
+      
+      @Override
+      public void onSuccess(List&lt;AcknowledgeablePubsubMessage&gt; result) {
+        //當成功作些什麼
+        //做完之後記得要ack
+        receiver.acknowledges(result);
+      }
+
+      @Override
+      public void onFailure(Throwable ex) {
+        //當失敗做些什麼
+      }
+   );
+  // 等待非同步執行結果時可以做些別的事
+
+  // 非同步執行結果取回;
+  future.get();
+</code></pre>
+<h3 id="非同步接收自動進行ack動作">非同步接收，自動進行Ack動作</h3>
+<pre><code class="lang-java">  //呼叫非同步取回一個Future讓後續決定可以怎麼處理
+  ListenableFuture&lt;List&lt;PubsubMessage&gt;&gt; future = (ListenableFuture&lt;List&lt;PubsubMessage&gt;&gt;) receiver.pullMessagesAndAckAsync(&quot;topic1-sub&quot;, 1);
+  
+  //定義Future成功處理的事和失敗處理的事
+  future.addCallback(new ListenableFutureCallback&lt;List&lt;PubsubMessage&gt;&gt;() {
+      
+      @Override
+      public void onSuccess(List&lt;PubsubMessage&gt; result) {
+        //當成功作些什麼
+      }
+
+      @Override
+      public void onFailure(Throwable ex) {
+        //當失敗做些什麼
+      }
+  });
+  
+  // 等待非同步執行結果時可以做些別的事
+
+  // 非同步執行結果取回;
+  future.get();
+</code></pre>
+<h2 id="subscribe">Subscribe</h2>
+<p>在這邊展示如何透鍋監聽的方式收取訊息，這邊的方式與官方教學文件一樣，可以參考連結<a href="https://cloud.google.com/pubsub/docs/spring?hl=zh-cn">Link</a>，下面為展示的程式碼。</p>
+<pre><code class="lang-java">  @Configuration
+  public class PubSubSubscriptionConfig {
+
+  private static final Log LOGGER = LogFactory.getLog(PubSubSubscriptionConfig.class);
+
+  // 讓Spring 去協助配置一個準備監聽的頻道
+  @Bean
+  public MessageChannel inputMessageChannel() {
+    return new PublishSubscribeChannel();
+  }
+
+  // 建立一個Adapter監聽的渠道，並且將PubSubTemplate設定給他，後續他將會使用PubSubTemplate來訂閱消息
+  @Bean
+  public PubSubInboundChannelAdapter inboundChannelAdapter(
+      @Qualifier(&quot;inputMessageChannel&quot;) MessageChannel messageChannel,
+      PubSubTemplate pubSubTemplate) 
+  {
+    PubSubInboundChannelAdapter adapter =
+        new PubSubInboundChannelAdapter(pubSubTemplate, &quot;topic1-sub&quot;); //第二個參數為訂閱的主題
+    adapter.setOutputChannel(messageChannel);
+    adapter.setAckMode(AckMode.MANUAL);
+    adapter.setPayloadType(String.class);
+    return adapter;
+  }
+
+  @ServiceActivator(inputChannel = &quot;inputMessageChannel&quot;)
+  public void messageReceiver(
+      String payload,
+      @Header(GcpPubSubHeaders.ORIGINAL_MESSAGE) BasicAcknowledgeablePubsubMessage message) {
+    // 當收到訊息進行處理
+    LOGGER.info(&quot;Message arrived via an inbound channel adapter from sub-one! Payload: &quot; + payload);
+    // 記得這邊要進行Ack
+    message.ack();
+  }
+}
+</code></pre>
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/spyua/api-document-test/blob/main/sdk/Java/GCP/cub-cloud-gcp-pubsub.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

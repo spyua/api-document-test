@@ -1,0 +1,474 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IBlobStorage
+ </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IBlobStorage
+ ">
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <link rel="stylesheet" href="../../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../../public/main.css">
+      <meta name="docfx:navrel" content="../../../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/new/main/apiSpec/new?filename=Cathay_SDK_Cloud_Interface_Storage_IBlobStorage.md&amp;value=---%0Auid%3A%20Cathay.SDK.Cloud.Interface.Storage.IBlobStorage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+  </head>
+
+  <script type="module">
+    import options from './../../../public/main.js'
+    import { init } from './../../../public/docfx.min.js'
+    init(options)
+  </script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../../index.html">
+            <img id="logo" class="svg" src="../../../logo.svg" alt="">
+            
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage">
+
+
+
+  <h1 id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage" class="text-break">
+    Interface IBlobStorage
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/Storage/IBlobStorage.cs/#L6"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Cathay.html">Cathay</a>.<a class="xref" href="Cathay.SDK.html">SDK</a>.<a class="xref" href="Cathay.SDK.Cloud.html">Cloud</a>.<a class="xref" href="Cathay.SDK.Cloud.Interface.html">Interface</a>.<a class="xref" href="Cathay.SDK.Cloud.Interface.Storage.html">Storage</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>Cathay.SDK.Cloud.Interface.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Slim interface providing access to blob storage.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBlobStorage : IDisposable</code></pre>
+  </div>
+
+
+
+
+
+
+
+  <dl class="typelist derived">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable.dispose">IDisposable.Dispose()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_DeleteAsync_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.DeleteAsync*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_DeleteAsync_System_Collections_Generic_IEnumerable_System_String__System_Boolean_System_Threading_CancellationToken_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.DeleteAsync(System.Collections.Generic.IEnumerable{System.String},System.Boolean,System.Threading.CancellationToken)">
+  DeleteAsync(IEnumerable&lt;string&gt;, bool, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/Storage/IBlobStorage.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deletes an object by it's full path.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task DeleteAsync(IEnumerable&lt;string&gt; fullPaths, bool mustExist, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Path to delete. If this path points to a folder, the folder is deleted recursively.</p>
+</dd>
+    <dt><code>mustExist</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when ID is null.</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when ID is too long. Long IDs are the ones longer than 50 characters.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_ExistsAsync_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.ExistsAsync*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_ExistsAsync_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.ExistsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+  ExistsAsync(IEnumerable&lt;string&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/Storage/IBlobStorage.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checksi if blobs exists in the storage</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyCollection&lt;bool&gt;&gt; ExistsAsync(IEnumerable&lt;string&gt; fullPaths, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>List of paths to blobs</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;&gt;</dt>
+    <dd><p>List of results of true and false indicating existence</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_GetBlobsAsync_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.GetBlobsAsync*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_GetBlobsAsync_System_Collections_Generic_IEnumerable_System_String__System_Threading_CancellationToken_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.GetBlobsAsync(System.Collections.Generic.IEnumerable{System.String},System.Threading.CancellationToken)">
+  GetBlobsAsync(IEnumerable&lt;string&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/Storage/IBlobStorage.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets blob information which is useful for retreiving blob metadata</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyCollection&lt;Blob&gt;&gt; GetBlobsAsync(IEnumerable&lt;string&gt; fullPaths, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPaths</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Cathay.SDK.Cloud.Interface.Storage.Blob.html">Blob</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_ListAsync_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.ListAsync*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_ListAsync_Cathay_SDK_Cloud_Interface_Storage_ListOptions_System_Threading_CancellationToken_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.ListAsync(Cathay.SDK.Cloud.Interface.Storage.ListOptions,System.Threading.CancellationToken)">
+  ListAsync(ListOptions?, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/Storage/IBlobStorage.cs/#L14"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the list of available blobs</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;IReadOnlyCollection&lt;Blob&gt;&gt; ListAsync(ListOptions? options = null, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Cathay.SDK.Cloud.Interface.Storage.ListOptions.html">ListOptions</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="Cathay.SDK.Cloud.Interface.Storage.Blob.html">Blob</a>&gt;&gt;</dt>
+    <dd><p>List of blob IDs</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_OpenReadAsync_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.OpenReadAsync*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_OpenReadAsync_System_String_System_Threading_CancellationToken_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.OpenReadAsync(System.String,System.Threading.CancellationToken)">
+  OpenReadAsync(string, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/Storage/IBlobStorage.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Opens the blob stream to read.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task&lt;Stream&gt; OpenReadAsync(string fullPath, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Blob's full path</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;</dt>
+    <dd><p>Stream in an open state, or null if blob doesn't exist by this ID. It is your responsibility to close and dispose this
+stream after use.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when any parameter is null</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when ID is too long. Long IDs are the ones longer than 50 characters.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_SetBlobsAsync_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.SetBlobsAsync*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_SetBlobsAsync_System_Collections_Generic_IEnumerable_Cathay_SDK_Cloud_Interface_Storage_Blob__System_Threading_CancellationToken_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.SetBlobsAsync(System.Collections.Generic.IEnumerable{Cathay.SDK.Cloud.Interface.Storage.Blob},System.Threading.CancellationToken)">
+  SetBlobsAsync(IEnumerable&lt;Blob&gt;, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/Storage/IBlobStorage.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Set blob information which is useful for setting blob attributes (user metadata etc.)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task SetBlobsAsync(IEnumerable&lt;Blob&gt; blobs, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>blobs</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Cathay.SDK.Cloud.Interface.Storage.Blob.html">Blob</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_WriteAsync_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.WriteAsync*"></a>
+
+  <h3 id="Cathay_SDK_Cloud_Interface_Storage_IBlobStorage_WriteAsync_System_String_System_IO_Stream_System_Boolean_System_Threading_CancellationToken_" data-uid="Cathay.SDK.Cloud.Interface.Storage.IBlobStorage.WriteAsync(System.String,System.IO.Stream,System.Boolean,System.Threading.CancellationToken)">
+  WriteAsync(string, Stream, bool, CancellationToken)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/Storage/IBlobStorage.cs/#L29"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Uploads data to a blob from stream.
+overwritten.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Task WriteAsync(string fullPath, Stream dataStream, bool append = false, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>fullPath</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Blob metadata</p>
+</dd>
+    <dt><code>dataStream</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd><p>Stream to upload from</p>
+</dd>
+    <dt><code>append</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When true, appends to the file instead of writing a new one.</p>
+</dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>Writeable stream</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when any parameter is null</p>
+</dd>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when ID is too long. Long IDs are the ones longer than 50 characters.</p>
+</dd>
+  </dl>
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Cathay-CADS/Cathay.SDK.Cloud.Interface/blob/main/Storage/IBlobStorage.cs/#L6" class="edit-link">Edit this page</a>
+        </div>
+
+        
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+
+    <footer class="border-top">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
